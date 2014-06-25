@@ -1,0 +1,957 @@
+<html>
+<!--
+	Author: 	Dr. Johan T. den Dunnen
+	Date: 	17-11-02	
+	URL: 	http://www.dmd.nl/standards.html
+-->
+
+<head>
+<title>HGVS recommendations: standards</title>
+<style type="text/css">
+
+<!--  
+
+h1 {
+ font-family : Verdana,Arial,Helvetica,Geneva,sans-serif;
+ color : #0099cc;
+
+}
+
+h2 {
+ font-family : Verdana,Arial,Helvetica,Geneva,sans-serif;
+ color : #ff9900;
+
+}
+
+h3 {
+ font-family : Verdana,Arial,Helvetica,Geneva,sans-serif;
+ color : #0099cc;
+
+}
+
+h4 {
+ font-family : Verdana,Arial,Helvetica,Geneva,sans-serif;
+ color : #0099cc;
+
+}
+
+h5 {
+font-family : Verdana, Arial, Helvetica, Geneva, sans-serif;
+color : #ffffff;
+
+}
+
+.norm {
+
+ font-weight : normal;
+
+ }
+ -->
+</style>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#0000FF" vlink="#9999ff">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="10" bgcolor="#CCFF99">
+  <tr>
+    <td width="25%" valign="top" bgcolor="#FFFFFF"><a href="http://www.HGVS.org/"><img
+    src="small.gif" width="155" height="94" border="0"></a></td>
+    <td width="75%" valign="CENTER" bgcolor="#FFFFFF" bordercolor="#FFFFFF"><h2 align="center">Standards
+    - definitions, symbols, nucleotides, codons, amino acids <i>(v2.0)</i> </h2>
+    </td>
+  </tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="10">
+  <tr>
+    <td width="100%" valign="BOTTOM" bgcolor="#0099cc"><h4 align="center"><font size="3"
+    color="#FFFFFF"><i><br>
+    Last modified November 19, 2013</i></font></h4>
+    </td>
+  </tr>
+</table>
+
+<p align="center"><i><font face="Times New Roman">Since references to WWW-sites are not
+yet acknowledged as citations, please mention <a
+href="http://www3.interscience.wiley.com/cgi-bin/fulltext/68503056/PDFSTART">den Dunnen JT
+and Antonarakis SE (2000). Hum.Mutat. 15:7-12</a> when referring to these pages.</font></i></p>
+
+<hr>
+
+<h2>Content</h2>
+
+<ul>
+  <li><a href="#define">definitions</a></li>
+  <li><a href="#characters">characters used</a></li>
+  <li><a href="#nucleotide">nucleotides (DNA / RNA)</a></li>
+  <li><a href="#aacode">genetic code</a></li>
+  <li><a href="#aalist">amino acid descriptions</a>&nbsp; - <em>one / three letter code</em></li>
+</ul>
+
+<hr>
+
+<h2><a NAME="define"></a>Definitions</h2>
+
+<p align="left">for the description of sequence variants the following definitions are
+used </p>
+
+<h3 align="left">DNA/RNA</h3>
+
+<ul>
+  <li><b>conversion</b>&nbsp;&nbsp; =&nbsp;&nbsp; a sequence change where a range of
+    nucleotides are replaced by a sequence from elsewhere in the genome</li>
+  <li><b>deletion</b>&nbsp;&nbsp; =&nbsp;&nbsp; a sequence change where one or more
+    nucleotides are removed (<i>deleted</i>)</li>
+  <li><b>deletion/insertion (indel)</b>&nbsp; =&nbsp; a sequence change where one or more
+    nucleotides are replaced by one or more other nucleotides<br>
+    <i>&nbsp;&nbsp;&nbsp;</i>&nbsp;&nbsp;&nbsp;&nbsp; <i>NOTE:&nbsp; </i>when <em><strong>one</strong></em>
+    nucleotide is replaced by <em><strong>one</strong></em> other nucleotide the change is
+    called a <em>substitution</em></li>
+  <li><b>duplication&nbsp;</b>&nbsp; =&nbsp;&nbsp; a sequence change where a copy of one or
+    more nucleotides are inserted directly 3'-flanking of the original copy<br>
+    <i>&nbsp;&nbsp;&nbsp;</i>&nbsp;&nbsp;&nbsp;&nbsp; <i>NOTE:&nbsp; </i>when the copied
+    sequence is not inserted directly 3'-flanking of the original copy the change is called an
+    <i>insertion</i></li>
+  <li><b>insertion</b>&nbsp;&nbsp; =&nbsp;&nbsp; a sequence change where one or more
+    nucleotides are inserted between two nucleotides but where the insertion is not a copy of
+    a sequence immediately 5'-flanking (<i>see duplication</i>)</li>
+  <li><b>inversion</b>&nbsp;&nbsp; =&nbsp;&nbsp; a sequence change where more then one
+    nucleotides replacing the original sequence are the reverse complement of the original
+    sequence</li>
+  <li><b>substitution</b>&nbsp;&nbsp; =&nbsp;&nbsp; a sequence change where one nucleotide is
+    replaced by one other nucleotide<br>
+    <i>&nbsp;&nbsp;&nbsp;</i>&nbsp;&nbsp;&nbsp;&nbsp; <i>NOTE:&nbsp; </i>a sequence change
+    where <i><b>one nucleotide</b></i> is replaced by <b><i>more</i></b> then one other
+    nucleotides is a deletion-insertion (indel)<br>
+    <i>&nbsp;&nbsp;&nbsp;</i>&nbsp;&nbsp;&nbsp;&nbsp; <i>NOTE:&nbsp; </i>a sequence change
+    where <i><b>more then one nucleotides</b></i> is replaced by <b><i>one or more</i></b>
+    other nucleotides is a deletion-insertion (indel)</li>
+  <li><b>translocation</b>&nbsp;&nbsp; =&nbsp;&nbsp; a sequence change where the sequence of
+    one chromosome at the so called breakpoint (or junction) changes to that of another
+    chromosome<br>
+    <i>&nbsp;&nbsp;&nbsp;</i>&nbsp;&nbsp;&nbsp;&nbsp; <i>NOTE:&nbsp; </i>a translocation
+    occurs when 2 chromosomes break and the fragments rejoin to the another chromosome. A full
+    description of a (reciprokal) translocation consists of 2 parts, one describing the first
+    junction, the second describing the other junction (e.g. the chromosome 4;X junction as
+    well as the chromosome X;4 junction)</li>
+  <li><strong>transposition</strong>&nbsp;&nbsp; =&nbsp;&nbsp; a sequence change where a range
+    of nucleotides moves from one position to another position, i.e. a deletion at one
+    postions combined with the insertion of the deleted sequence at another postion</li>
+</ul>
+
+<h3>Protein</h3>
+
+<ul>
+  <li><b>conversion</b>&nbsp;&nbsp; =&nbsp;&nbsp; a sequence change where a range of amino
+    acids are replaced by a sequence from elsewhere in the genome</li>
+  <li><b>deletion</b>&nbsp;&nbsp; =&nbsp;&nbsp; a sequence change where one or more amino
+    acids are removed (<i>deleted</i>)</li>
+  <li><strong>deletion/insertion (indel)</strong> <ul>
+      <li><em><strong>in frame</strong></em> = a sequence change where one or more amino acids are
+        replaced by one or more other namino acids<br>
+        <i>&nbsp;&nbsp;&nbsp;</i>&nbsp;&nbsp;&nbsp;&nbsp; <i>NOTE:&nbsp; </i>when <em><strong>one</strong></em>
+        amino acid is replaced by <em><strong>one</strong></em> other amino acid the change is
+        called a <em>substitution</em></li>
+      <li><em><strong>frame shift</strong></em> = a sequence change that affects an amino acid <em><strong>between</strong></em>
+        the first (<em>initiation, ATG</em>) and last codon (<em>termination, stop</em>),
+        replacing the normal C-terminal sequence with one encoded by <strong><em>another reading
+        frame</em></strong> (specified <em><small><font color="#FF0000"><strong>2013-10-11</strong></font></small></em>)</li>
+    </ul>
+  </li>
+  <li><b>duplication&nbsp;</b>&nbsp; =&nbsp;&nbsp; a sequence change where a copy of one or
+    more amino acids are inserted directly 3'-flanking of the original copy<br>
+    <i>&nbsp;&nbsp;&nbsp;</i>&nbsp;&nbsp;&nbsp;&nbsp; <i>NOTE:&nbsp; </i>when the copied
+    sequence is not inserted directly 3'-flanking of the original copy the change is called an
+    <i>insertion</i></li>
+  <li><em><img border="0" src="new.gif" width="31" height="12"></em><b>extension&nbsp; =
+    &nbsp; </b>a sequence change that affects either the first (<em>start, translation
+    initiation, N-terminus. ATG</em>) or last codon (<em>translation termination, stop</em>)
+    and as a consequence extend the protein sequence N- or C-terminally with one or more amino
+    acids</li>
+  <li><b>insertion</b>&nbsp;&nbsp; =&nbsp;&nbsp; a sequence change where one or more amino
+    acids are inserted between two amino acids but where the insertion is not a copy of a
+    sequence immediately 5'-flanking (<i>see duplication</i>)</li>
+  <li><b>substitution</b>&nbsp;&nbsp; =&nbsp;&nbsp; a sequence change where one amino acid is
+    replaced by one other amino acid<br>
+    <i>&nbsp;&nbsp;&nbsp;</i>&nbsp;&nbsp;&nbsp;&nbsp; <i>NOTE:&nbsp; </i>a sequence change
+    where <i><b>one amino acid</b></i> is replaced by <b><i>more</i></b> then one other amino
+    acid is a deletion-insertion (indel)<br>
+    <i>&nbsp;&nbsp;&nbsp;</i>&nbsp;&nbsp;&nbsp;&nbsp; <i>NOTE:&nbsp; </i>a sequence change
+    where <i><b>more then one amino acid</b></i> is replaced by <b><i>one or more</i></b>
+    other amino acids is a deletion-insertion (indel)</li>
+</ul>
+
+<hr>
+
+<h2><a NAME="characters"></a>Characters used</h2>
+
+<p align="left">Below an overview of all different characters and signs used in the
+description of sequence variants with their meaning. </p>
+
+<ul>
+  <li><a NAME="refseq"></a><u><a href="refseq.html"><b>reference sequences</b></a></u> <ul>
+      <li>c. = coding DNA reference sequence</li>
+      <li>g. = genomic reference sequence</li>
+      <li>m. = mitochondrial reference sequence</li>
+      <li>n. = non-coding RNA reference sequence (gene producing an RNA transcript but not a
+        protein)</li>
+      <li>r.&nbsp; = RNA reference sequence</li>
+      <li>p. = protein reference sequence<br>
+      </li>
+    </ul>
+  </li>
+  <li><a NAME="traiso"></a><b>diferent transcripts / protein isoforms generated from one gene</b>
+    <ul>
+      <li>_v = specifies transcript variants in coding DNA variant descriptions (e.g.
+        NM_000109.3(DMD<b><i>_v2</i></b>):c.4G&gt;T)</li>
+      <li>_i = specifies protein isoforms in protein variant descriptions (e.g. NM_000109.3 (DMD<b><i>_i2</i></b>):p.Glu2*)<br>
+      </li>
+    </ul>
+  </li>
+  <li><a NAME="number"></a><b>numbering</b> <ul>
+      <li><i><u>genomic, mitochondrial, non-coding RNA, RNA and protein reference sequence</u></i>
+        <ul>
+          <li>N = nucleotide N in reference sequence (e.g. 311A&gt;G)</li>
+        </ul>
+      </li>
+      <li><i><u>coding DNA reference sequence</u></i> <ul>
+          <li>N = nucleotide N in protein coding sequence (e.g. 11A&gt;G)</li>
+          <li>-N = nucleotide N 5' of the ATG translation initiation codon (e.g. -4A&gt;G)<br>
+            <i><b>NOTE:</b></i> so located in the 5'UTR or 5' of the transcription initiation site
+            (upstream of the gene, incl. promoter)</li>
+          <li>*N = nucleotide N 3' of the translation stop codon (e.g. *6A&gt;G)<br>
+            <i><b>NOTE:</b></i> so located in the 3'UTR or 3' of the polyA-addition site
+            (incl.downstream of the gene)</li>
+          <li>N+M = nucleotide M in the intron after (3' of) position N in the coding DNA reference
+            sequence (e.g. 30+4A&gt;G)</li>
+          <li>N-M = nucleotide M in the intron before (5' of) position N in the coding DNA reference
+            sequence (e.g. 301-2A&gt;G)</li>
+          <li>-N+M / -N-M = nucleotide in an intron in the 5'UTR (e.g. -45+4A&gt;G)</li>
+          <li>*N+M / *N-M = nucleotide in an intron in the 3'UTR (e.g. *212-2A&gt;G) </li>
+          <li><b><i>NOTE: </i></b>suggestions have been made to specifically number non-transcribed
+            nucleotides (i.e. 5' of the transcription initiation site (cap-site) or 3' of the
+            polyA-addition site), but these are currently not part of the HGVS recommendations (<i><a
+            href="disc.html#untrans">see Discussion</a></i>).<br>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><b>specific characters</b> <ul>
+      <li>+ (plus) = <a href="#number"><i>see Standards - numbering</i></a></li>
+      <li>- (minus) = <i><a href="#number">see Standards - numbering</a></i></li>
+      <li>* (asterisk) = translation termination (stop) codon (<a href="#aacode"><i>see Standards
+        - amino acids</i></a>)</li>
+      <li>_ (underscore) = nucleotide numbering, used to indicate a range (e.g. in combination<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; with a deletion, duplication, insertion&nbsp;or
+        variable sequence)</li>
+      <li>&gt; (greater then) = changes to (<i>substitution</i>) <ul>
+          <li>c.5T&gt;G substitution<i><b><br>
+            NOTE:</b> used at DNA and RNA level, not at protein level</i></li>
+        </ul>
+      </li>
+      <li>: (colon) = separates the description of a reference sequence and the actual description
+        of a variant&nbsp;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e.g. M13855.3:c.1A&gt;G</li>
+      <li>[] = encloses changes from one allele (chromosome) <ul>
+          <li>c.[76A&gt;C; 83G&gt;C] two changes in one allele (chromosome)</li>
+          <li>c.[76A&gt;C];[83G&gt;C] changes in the two alleles (chromosomes)</li>
+          <li>c.123+74TG[4];[5] a TG di-nucleotide repeat of length 4 on one allele and of length 5 on
+            the other allele</li>
+          <li>c.32-?_357+?[3]&nbsp; a <b>triplication</b> of an exon (coding DNA reference sequence
+            running from nucleotide 32 to 357)</li>
+        </ul>
+      </li>
+      <li>; (semi-colon) =&nbsp; separator between different changes in one allele or between two
+        alleles <ul>
+          <li>c.[76A&gt;C]; [83G&gt;C] changes in the two alleles (chromosomes)</li>
+          <li>c.[76A&gt;C; 83G&gt;C] two changes in one allele (chromosome)</li>
+          <li>c.[76A&gt;C (;) 83G&gt;C] two changes where it is unknown whether they are in the same
+            or different alleles (chromosomes)</li>
+        </ul>
+      </li>
+      <li>^ = or <ul>
+          <li>c.[370A&gt;C^372C&gt;R] back translation of the variant p.Ser124Arg, where the Ser-124
+            codon at c.370_372 is AGC; assuming a substitution change Arg-124 can be encoded by six
+            possible codons, CGN (CGA, CGG, CGC, CGT) and AGR (AGA, AGG)</li>
+        </ul>
+      </li>
+      <li>, (comma) =&nbsp; separator between different transcripts or&nbsp;proteins generated
+        from one allele (chromosome) <ul>
+          <li>r.[76a&gt;c, 73_87del] denotes the nucleotide change c.76A&gt;C causing the appearance
+            of two RNA molecules, one carrying variant 76a&gt;c, and one containing a deletion of
+            nucleotides 73 to 87</li>
+          <li>p.[Asn26His, Ala25_Gly29del] denotes two protein changes deriving from a change in one
+            allele at DNA level (c.76A&gt;C) resulting in two transcripts (r.[76a&gt;c, 73_88del] );
+            amino acid Asparagine-25 to Histidine and a deletion of amino acids Asparagine-25 to
+            Glycine-29</li>
+          <li>&nbsp;</li>
+        </ul>
+      </li>
+      <li>=&nbsp; (equals) = indicates 'identical to reference sequence' (no change, wild type
+        sequence)</li>
+      <li>? (question mark) = unknown</li>
+      <p><a NAME="ISCN"></a></p>
+      <li>/ = mosaic cases; separator between the different nucleotides, transcripts and proteins
+        generated from one allele (chromosome, like used by the ISCN) <ul>
+          <li>c.[=/85C&gt;T] somatic or germline mosaicism, i.e. the sample is a mix of c.= and
+            c.85C&gt;T alleles</li>
+        </ul>
+      </li>
+      <li>// = chimeric cases, separator between different nucleotides, transcripts and proteins
+        generated from a mix of four alleles (chromosomes, like used by the ISCN) <ul>
+          <li>c.[=//85C&gt;T] chimerism, i.e. the sample is a mix of two different populations of
+            genetically distinct cells</li>
+        </ul>
+      </li>
+      <li>( ) = indicates uncertainty in the description of a change <ul>
+          <li>c.[76A&gt;C (;) 83G&gt;C] two changes where it is unknown whether they are in the same
+            or different alleles (chromosomes)</li>
+          <li>c.123+74TG(3_6) a TG di-nucleotide repeat found repeated 3 to 6 times in the population
+            (located at nucleotide 74 in the intron following coding DNA nucleotide c.123)</li>
+        </ul>
+      </li>
+      <li>0 (zero) = indicates no product / nothing <ul>
+          <li>c.0 = no DNA from allele detected, e.g. c.[76A&gt;C];[0] for a variant in a X-linked
+            gene in a male</li>
+          <li>r.0 = no RNA from allele detected, e.g. from a promoter variant or deletion</li>
+          <li>p.0 = no protein from allele detected, e.g. from a variant in the translation initiation
+            codon</li>
+        </ul>
+      </li>
+      <li><b><i><img src="new.gif" border="0" width="31" height="12">Under discussion</i></b><br>
+        { } (curly braces) = enclose &quot;sub-alleles&quot;, i.e. changes within the range of
+        duplications, inversions, insertions and gene conversions using nested and composite
+        change formats (<a href="HGVS_extend_PT.doc"><i>see Proposal for complex variants</i></a>)
+        <ul>
+          <li>&nbsp;c.24_65dup{46G&gt;T} an duplication of nucleotides 24 to 65 with a the variant
+            c.46G&gt;T in the duplicated copy<br>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><b>nucleotides, codons &amp; amino acids (V2.0)</b> <ul>
+      <li><u><a href="#nucDNA">DNA</a></u> </li>
+      <li><u><a href="#nucRNA">RNA</a></u> </li>
+      <li><u><a href="#aacode">protein</a></u> <ul>
+          <li>one and three letter amino acid code</li>
+          <li>* = translation termination codon&nbsp; (<i>stop codon</i>)<br>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><b>others</b> <ul>
+      <li>chr = chromosome (e.g. chr19 or chrX)</li>
+      <li>del = deletion</li>
+      <li>dup = duplication</li>
+      <li>ext = <a href="recs-prot.html#extp">extension</a> (e.g. N- or C-terminus of protein)</li>
+      <li>ins = insertion</li>
+      <li>inv = inversion</li>
+      <li>con = (gene) conversion</li>
+      <li>fs = frame shift</li>
+      <li>t = translocation; e.g. <i>t(X;4)(p21.2;q34)</i> </li>
+    </ul>
+  </li>
+</ul>
+
+<hr>
+
+<h2><a NAME="nucleotide"></a>Nucleotides (DNA / RNA)</h2>
+
+<p>For the complete and official list with further details go to <a
+href="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html#500"><i>IUPAC-IUBMB</i></a> or <a
+href="http://www.ncbi.nlm.nih.gov/BLAST/blastcgihelp.shtml"><i>NCBI</i></a> site.</p>
+<font face="Verdana, Arial, Helvetica, sans-serif"><em>
+
+<h3><a NAME="nucDNA"></a>DNA</h3>
+</em></font>
+
+<table BORDER="1" width="488">
+  <tr>
+    <th align="center" width="49">Symbol</th>
+    <th align="center" width="128">Meaning</th>
+    <th width="289" align="center">Description</th>
+  </tr>
+  <tr>
+    <td align="center" width="49">A</td>
+    <td align="center" width="128">A</td>
+    <td width="289" align="center">Adenine&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">C</td>
+    <td align="center" width="128">C</td>
+    <td width="289" align="center">Cytosine</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">G</td>
+    <td align="center" width="128">G</td>
+    <td width="289" align="center">Guanine</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">T</td>
+    <td align="center" width="128">T</td>
+    <td width="289" align="center">Thymine</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">&nbsp;</td>
+    <td align="center" width="128">&nbsp;</td>
+    <td width="289" align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">B</td>
+    <td align="center" width="128">C, G or T</td>
+    <td width="289" align="center">not-A (B follows A in alphabet)</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">D</td>
+    <td align="center" width="128">A, G or T</td>
+    <td width="289" align="center">not-C (D follows C in alphabet)</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">H</td>
+    <td align="center" width="128">A, C or T</td>
+    <td width="289" align="center">not-G (H follows G in alphabet)</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">K</td>
+    <td align="center" width="128">G or T</td>
+    <td width="289" align="center">Keto</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">M</td>
+    <td align="center" width="128">A or C</td>
+    <td width="289" align="center">aMino</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">N</td>
+    <td align="center" width="128">A, C, G or T&nbsp;</td>
+    <td width="289" align="center">aNy</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">R</td>
+    <td align="center" width="128">A or G</td>
+    <td width="289" align="center">puRine</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">S</td>
+    <td align="center" width="128">G or C</td>
+    <td width="289" align="center">Strong interaction (3 H-bonds)</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">V</td>
+    <td align="center" width="128">A, C or G</td>
+    <td width="289" align="center">not-T / not-U ( V follows U&nbsp; in alphabet)</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">W</td>
+    <td align="center" width="128">A or T</td>
+    <td width="289" align="center">Weak interaction (2 H-bonds)</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">Y</td>
+    <td align="center" width="128">C or T</td>
+    <td width="289" align="center">pYrimidine</td>
+  </tr>
+  <tr>
+    <td align="left" width="466" colspan="3">&nbsp;<b><i> Used in alignments only</i></b></td>
+  </tr>
+  <tr>
+    <td align="center" width="49"><font color="#FF0000">X</font></td>
+    <td align="center" width="128"><font color="#FF0000">A, C, G or T&nbsp;</font></td>
+    <td width="289" align="center"><font color="#FF0000">masked nucleotide</font></td>
+  </tr>
+  <tr>
+    <td align="center" width="49"><font color="#FF0000">-</font></td>
+    <td align="center" width="128"><font color="#FF0000">none</font></td>
+    <td width="289" align="center"><font color="#FF0000">gap of indeterminate length</font></td>
+  </tr>
+</table>
+
+<h3><a NAME="nucRNA"></a>RNA</h3>
+
+<table BORDER="1" width="411">
+  <tr>
+    <th align="center" width="49">Symbol</th>
+    <th align="center" width="128">Meaning</th>
+    <th width="212" align="center">Description</th>
+  </tr>
+  <tr>
+    <td align="center" width="49">a</td>
+    <td align="center" width="128">A</td>
+    <td width="212" align="center">Adenosine</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">c</td>
+    <td align="center" width="128">C</td>
+    <td width="212" align="center">Cytidine</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">g</td>
+    <td align="center" width="128">G</td>
+    <td width="212" align="center">Guanosine</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">u</td>
+    <td align="center" width="128">U</td>
+    <td width="212" align="center">Uridine</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">&nbsp;</td>
+    <td align="center" width="128">&nbsp;</td>
+    <td width="212" align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">b</td>
+    <td align="center" width="128">c, g or u</td>
+    <td width="289" align="center">not-a (b follows a in alphabet)</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">d</td>
+    <td align="center" width="128">a, g or u</td>
+    <td width="289" align="center">not-c (d follows c in alphabet)</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">h</td>
+    <td align="center" width="128">a, c or u</td>
+    <td width="289" align="center">not-g (h follows g in alphabet)</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">k</td>
+    <td align="center" width="128">g or u</td>
+    <td width="289" align="center"><u>k</u>eto</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">m</td>
+    <td align="center" width="128">a or c</td>
+    <td width="289" align="center">a<u>m</u>ino</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">n</td>
+    <td align="center" width="128">a, c, g or u&nbsp;</td>
+    <td width="289" align="center">a<u>n</u>y</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">r</td>
+    <td align="center" width="128">a or g</td>
+    <td width="289" align="center">pu<u>r</u>ine</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">s</td>
+    <td align="center" width="128">g or c</td>
+    <td width="289" align="center"><u>s</u>trong interaction (3 H-bonds)</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">v</td>
+    <td align="center" width="128">a, c or g</td>
+    <td width="289" align="center">not-u ( v follows u&nbsp; in alphabet)</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">w</td>
+    <td align="center" width="128">a or u</td>
+    <td width="289" align="center"><u>w</u>eak interaction (2 H-bonds)</td>
+  </tr>
+  <tr>
+    <td align="center" width="49">y</td>
+    <td align="center" width="128">c or u</td>
+    <td width="289" align="center">p<u>y</u>rimidine</td>
+  </tr>
+</table>
+
+<hr>
+
+<h2><a NAME="aacode"></a>Genetic code</h2>
+<em>
+
+<p><b><i>NOTE:</i></b>&nbsp; '*' (<i>alternatively 'Ter'</i>) is used to indicate a
+translation stop codon (replacing the 'X' used previously). To support translation from a
+DNA sequence a &quot;T&quot; is used in the codons although in nature RNA is translated so
+the codons contain U's.&nbsp;</p>
+
+<table BORDER="1" width="709">
+  <tr>
+    <th ALIGN="CENTER" COLSPAN="6" width="703">Nucleotide position in codon</th>
+  </tr>
+  <tr>
+    <th ALIGN="LEFT" width="35">first</th>
+    <th ALIGN="CENTER" COLSPAN="4" width="581">second</th>
+    <th ALIGN="CENTER" width="75">third</th>
+  </tr>
+  <tr>
+    <th width="35">&nbsp;</th>
+    <th ALIGN="center" width="158">T</th>
+    <th ALIGN="center" width="158">C</th>
+    <th ALIGN="center" width="158">A</th>
+    <th ALIGN="center" width="158">G</th>
+  </tr>
+  <tr>
+    <td ALIGN="center" width="35"><b>T</b></td>
+    <td width="139" align="center"><font face="Courier New">TTT - Phe<br>
+    TTC - Phe<br>
+    TTA - <strong>Leu</strong><br>
+    TTG - <strong>Leu</strong></font></td>
+    <td width="145" align="center"><font face="Courier New">TCT - <u><strong>Ser</strong></u><br>
+    TCC - <u><strong>Ser</strong></u><br>
+    TCA - <u><strong>Ser</strong></u><br>
+    TCG - <u><strong>Ser</strong></u></font></td>
+    <td width="121" align="center"><font face="Courier New">TAT - Tyr<br>
+    TAC - Tyr<br>
+    &nbsp;TAA -&nbsp;*/Ter<br>
+    &nbsp;TAG -&nbsp;*/Ter</font></td>
+    <td width="158" align="center"><font face="Courier New">TGT - Cys<br>
+    TGC - Cys<br>
+    TGA -&nbsp;*/Ter<br>
+    TGG - Trp</font></td>
+    <td ALIGN="center" width="75"><b>T<br>
+    C<br>
+    A<br>
+    G</b></td>
+  </tr>
+  <tr>
+    <td ALIGN="center" width="35"><b>C</b></td>
+    <td width="139" align="center"><font face="Courier New">CTT - <strong>Leu</strong><br>
+    CTC - <strong>Leu</strong><br>
+    CTA - <strong>Leu</strong><br>
+    CTG - <strong>Leu</strong></font></td>
+    <td width="145" align="center"><font face="Courier New">CCT - Pro<br>
+    CCC - Pro<br>
+    CCA - Pro<br>
+    CCG - Pro</font></td>
+    <td width="121" align="center"><font face="Courier New">CAT - His<br>
+    CAC - His<br>
+    CAA - Gln<br>
+    CAG - Gln</font></td>
+    <td width="158" align="center"><font face="Courier New">CGT - <em><strong>Arg</strong></em><br>
+    CGC - <em><strong>Arg</strong></em><br>
+    CGA - <em><strong>Arg</strong></em><br>
+    CGG - <em><strong>Arg</strong></em></font></td>
+    <td ALIGN="center" width="75"><b>T<br>
+    C<br>
+    A<br>
+    G</b></td>
+  </tr>
+  <tr>
+    <td ALIGN="center" width="35"><b>A</b></td>
+    <td width="139" align="center"><font face="Courier New">ATT - Ile<br>
+    ATC - Ile<br>
+    ATA - Ile<br>
+    ATG - Met</font></td>
+    <td width="145" align="center"><font face="Courier New">ACT - Thr<br>
+    ACC - Thr<br>
+    ACA - Thr<br>
+    ACG - Thr</font></td>
+    <td width="121" align="center"><font face="Courier New">AAT - Asn<br>
+    AAC - Asn<br>
+    AAA - Lys<br>
+    AAG - Lys</font></td>
+    <td width="158" align="center"><font face="Courier New">AGT - <u><strong>Ser</strong></u><br>
+    AGC - <u><strong>Ser</strong></u><br>
+    AGA - <strong><em>Arg</em></strong><br>
+    AGG - <em><strong>Arg</strong></em></font></td>
+    <td ALIGN="center" width="75"><b>T<br>
+    C<br>
+    A<br>
+    G</b></td>
+  </tr>
+  <tr>
+    <td ALIGN="center" width="35"><b>G</b></td>
+    <td width="139" align="center"><font face="Courier New">GTT - Val<br>
+    GTC - Val<br>
+    GTA - Val<br>
+    GTG - Val</font></td>
+    <td width="145" align="center"><font face="Courier New">GCT - Ala<br>
+    GCC - Ala<br>
+    GCA - Ala<br>
+    GCG - Ala</font></td>
+    <td width="121" align="center"><font face="Courier New">GAT - Asp<br>
+    GAC - Asp<br>
+    GAA - Glu<br>
+    GAG - Glu</font></td>
+    <td width="158" align="center"><font face="Courier New">GGT - Gly<br>
+    GGC - Gly<br>
+    GGA - Gly<br>
+    GGG - Gly</font></td>
+    <td ALIGN="center" width="75"><b>T<br>
+    C<br>
+    A<br>
+    G</b> </td>
+  </tr>
+</table>
+
+<hr>
+</em><font face="Verdana, Arial, Helvetica, sans-serif">
+
+<h2><a NAME="aalist"></a>Amino acid descriptions</h2>
+<em>
+
+<p>For the complete and official list with further details go to <a
+href="http://www.chem.qmul.ac.uk/iupac/AminoAcid/AA1n2.html"><i>IUPAC-IUBMB</i></a> or <a
+href="http://www.ncbi.nlm.nih.gov/BLAST/blastcgihelp.shtml"><i>NCBI</i></a> site. (<b>NOTE:</b>
+formula-images were copied from the IUPAC-IUBMB site)</p>
+</font>
+
+<table BORDER="1" width="979" height="857">
+  <tr>
+    <th width="54" height="57">One letter<br>
+    code</th>
+    <th width="62" height="57">Three letter<br>
+    code</th>
+    <th width="105" height="57">Amino acid</th>
+    <th width="121" height="57">Possible codons</th>
+    <th width="301" height="57">Systemic name</th>
+    <th width="296" height="57">Formula</th>
+  </tr>
+  <tr>
+    <td align="CENTER" width="54" height="38">A</td>
+    <td align="CENTER" width="62" height="38">Ala</td>
+    <td width="105" height="38">Alanine</td>
+    <td width="121" height="38">GCA, GCC,<br>
+    GCG, GCT</td>
+    <td width="301" height="38">2-Aminopropanoic acid</td>
+    <td width="296" height="38">CH3-CH(NH2)-COOH</td>
+  </tr>
+  <tr>
+    <td align="CENTER" width="54" height="38"><i>B</i></td>
+    <td align="CENTER" width="62" height="38"><i>Asx</i></td>
+    <td width="105" height="38"><i>Aspartic acid<br>
+    or Asparagine</i></td>
+    <td width="121" height="38"><i>AAC, AAT,<br>
+    GAC, GAT</i></td>
+    <td width="301" height="38"></td>
+    <td width="296" height="38"></td>
+  </tr>
+  <tr>
+    <td align="CENTER" width="54" height="19">C</td>
+    <td align="CENTER" width="62" height="19">Cys</td>
+    <td width="105" height="19">Cysteine</td>
+    <td width="121" height="19">TGC, TGT</td>
+    <td width="301" height="19">2-Amino-3-mercaptopropanoic acid</td>
+    <td width="296" height="19">HS-CH2-CH(NH2)-COOH</td>
+  </tr>
+  <tr>
+    <td align="CENTER" width="54" height="19">D</td>
+    <td align="CENTER" width="62" height="19">Asp</td>
+    <td width="105" height="19">Aspartic acid</td>
+    <td width="121" height="19">GAC, GAT</td>
+    <td width="301" height="19">2-Aminobutanedioic acid</td>
+    <td width="296" height="19">HOOC-CH2-CH(NH2)-COOH</td>
+  </tr>
+  <tr>
+    <td align="CENTER" width="54" height="19">E</td>
+    <td align="CENTER" width="62" height="19">Glu</td>
+    <td width="105" height="19">Glutamic acid</td>
+    <td width="121" height="19">GAA, GAG</td>
+    <td width="301" height="19">2-Aminopentanedioic acid</td>
+    <td width="296" height="19">HOOC-[CH2]2-CH(NH2)-COOH</td>
+  </tr>
+  <tr>
+    <td align="CENTER" width="54" height="19">F</td>
+    <td align="CENTER" width="62" height="19">Phe</td>
+    <td width="105" height="19">Phenylalanine</td>
+    <td width="121" height="19">TTC, TTT</td>
+    <td width="301" height="19">2-Amino-3-phenylpropanoic acid</td>
+    <td width="296" height="19">C6H5-CH2-CH(NH2)-COOH</td>
+  </tr>
+  <tr>
+    <td align="CENTER" width="54" height="38">G</td>
+    <td align="CENTER" width="62" height="38">Gly</td>
+    <td width="105" height="38">Glycine</td>
+    <td width="121" height="38">GGA, GGC,<br>
+    GGG, GGT</td>
+    <td width="301" height="38">Aminoethanoic acid</td>
+    <td width="296" height="38">CH2(NH2)-COOH</td>
+  </tr>
+  <tr>
+    <td align="CENTER" width="54" height="19">H</td>
+    <td align="CENTER" width="62" height="19">His</td>
+    <td width="105" height="19">Histidine</td>
+    <td width="121" height="19">CAC, CAT</td>
+    <td width="301" height="19">2-Amino-3-(1H-imidazol-4-yl)-propanoic acid</td>
+    <td width="296" height="19"><img border="0" src="AA_His.gif" width="160" height="44"></td>
+  </tr>
+  <tr>
+    <td align="CENTER" width="54" height="19">I</td>
+    <td align="CENTER" width="62" height="19">Ile</td>
+    <td width="105" height="19">Isoleucine</td>
+    <td width="121" height="19">ATA, ATC, ATT</td>
+    <td width="301" height="19">2-Amino-3-methylpentanoic acid</td>
+    <td width="296" height="19">C2H5-CH(CH3)-CH(NH2)-COOH</td>
+  </tr>
+  <tr>
+    <td align="CENTER" width="54" height="19">K</td>
+    <td align="CENTER" width="62" height="19">Lys</td>
+    <td width="105" height="19">Lysine</td>
+    <td width="121" height="19">AAA, AAG</td>
+    <td width="301" height="19">2,6-Diaminohexanoic acid</td>
+    <td width="296" height="19">H2N-[CH2]4-CH(NH2)-COOH</td>
+  </tr>
+  <tr>
+    <td align="CENTER" width="54" height="36">L</td>
+    <td align="CENTER" width="62" height="36">Leu</td>
+    <td width="105" height="36">Leucine</td>
+    <td width="121" height="36">CTA, CTC, CTG,<br>
+    CTT, TTA, TTG</td>
+    <td width="301" height="36">2-Amino-4-methylpentanoic acid</td>
+    <td width="296" height="36">(CH3)2CH-CH2-CH(NH2)-COOH</td>
+  </tr>
+  <tr>
+    <td align="CENTER" width="54" height="19">M</td>
+    <td align="CENTER" width="62" height="19">Met</td>
+    <td width="105" height="19">Methionine</td>
+    <td width="121" height="19">ATG<br>
+    <i>(translation initiation)</i></td>
+    <td width="301" height="19">2-Amino-4-(methylthio)butanoic acid</td>
+    <td width="296" height="19">CH3-S-[CH2]2-CH(NH2)-COOH</td>
+  </tr>
+  <tr>
+    <td align="CENTER" width="54" height="19">N</td>
+    <td align="CENTER" width="62" height="19">Asn</td>
+    <td width="105" height="19">Asparagine</td>
+    <td width="121" height="19">AAC, AAT</td>
+    <td width="301" height="19">2-Amino-3-carbamoylpropanoic acid</td>
+    <td width="296" height="19">H2N-CO-CH2-CH(NH2)-COOH</td>
+  </tr>
+  <tr>
+    <td align="CENTER" width="54" height="38">P</td>
+    <td align="CENTER" width="62" height="38">Pro</td>
+    <td width="105" height="38">Proline</td>
+    <td width="121" height="38">CCA, CCC,<br>
+    CCG, CCT</td>
+    <td width="301" height="38">Pyrrolidine-2-carboxylic acid</td>
+    <td width="296" height="38"><img border="0" src="AA_Pro.gif" width="96" height="44"></td>
+  </tr>
+  <tr>
+    <td align="CENTER" width="54" height="19">Q</td>
+    <td align="CENTER" width="62" height="19">Gln</td>
+    <td width="105" height="19">Glutamine</td>
+    <td width="121" height="19">CAA, CAG</td>
+    <td width="301" height="19">2-Amino-4-carbamoylbutanoic acid</td>
+    <td width="296" height="19">H2N-CO-[CH2]2-CH(NH2)-COOH</td>
+  </tr>
+  <tr>
+    <td align="CENTER" width="54" height="38">R</td>
+    <td align="CENTER" width="62" height="38">Arg</td>
+    <td width="105" height="38">Arginine</td>
+    <td width="121" height="38">AGA, AGG, CGA,<br>
+    CGC, CGG, CGT</td>
+    <td width="301" height="38">2-Amino-5-guanidinopentanoic acid</td>
+    <td width="296" height="38">H2N-C(=NH)-NH-[CH2]3-CH(NH2)-COOH</td>
+  </tr>
+  <tr>
+    <td align="CENTER" width="54" height="38">S</td>
+    <td align="CENTER" width="62" height="38">Ser</td>
+    <td width="105" height="38">Serine</td>
+    <td width="121" height="38">AGC, AGT, TCA,<br>
+    TCC, TCG, TCT</td>
+    <td width="301" height="38">2-Amino-3-hydroxypropanoic acid</td>
+    <td width="296" height="38">HO-CH2-CH(NH2)-COOH</td>
+  </tr>
+  <tr>
+    <td align="CENTER" width="54" height="38">T</td>
+    <td align="CENTER" width="62" height="38">Thr</td>
+    <td width="105" height="38">Threonine</td>
+    <td width="121" height="38">ACA, ACC,<br>
+    ACG, ACT</td>
+    <td width="301" height="38">2-Amino-3-hydroxybutanoic acid</td>
+    <td width="296" height="38">CH<sub><font size="-2">3</font></sub>-CH(OH)-CH(NH<sub><font
+    size="-2">2</font></sub>)-COOH</td>
+  </tr>
+  <tr>
+    <td align="CENTER" width="54" height="19"><i>U</i></td>
+    <td align="CENTER" width="62" height="19"><i>Sec</i></td>
+    <td width="105" height="19"><i>Selenocysteine</i></td>
+    <td width="121" height="19">TGA, ...</td>
+    <td width="301" height="19"></td>
+    <td width="296" height="19"><i>H2N-CH(COOH)--CH2-SeH</i></td>
+  </tr>
+  <tr>
+    <td align="CENTER" width="54" height="19">V</td>
+    <td align="CENTER" width="62" height="19">Val</td>
+    <td width="105" height="19">Valine</td>
+    <td width="121" height="19">GTA, GTC,<br>
+    GTG, GTT</td>
+    <td width="301" height="19">2-Amino-3-methylbutanoic acid</td>
+    <td width="296" height="19">(CH3)2CH-CH(NH2)-COOH</td>
+  </tr>
+  <tr>
+    <td align="CENTER" width="54" height="19">W</td>
+    <td align="CENTER" width="62" height="19">Trp</td>
+    <td width="105" height="19">Tryptophan</td>
+    <td width="121" height="19">TGG</td>
+    <td width="301" height="19">2-Amino-3-(lH-indol-3-yl)-propanoic acid</td>
+    <td width="296" height="19"><img border="0" src="AA_Trp.gif" width="192" height="60"></td>
+  </tr>
+  <tr>
+    <td align="CENTER" width="54" height="19">X</td>
+    <td align="CENTER" width="62" height="19">Xaa</td>
+    <td width="105" height="19">unknown or&nbsp;<br>
+    'other'</td>
+    <td width="121" height="19">NNN</td>
+    <td width="301" height="19"></td>
+    <td width="296" height="19"></td>
+  </tr>
+  <tr>
+    <td align="CENTER" width="54" height="19">Y</td>
+    <td align="CENTER" width="62" height="19">Tyr</td>
+    <td width="105" height="19">Tyrosine</td>
+    <td width="121" height="19">TAC, TAT</td>
+    <td width="301" height="19">2-Amino-3-(4-hydroxyphenyl)-propanoic acid</td>
+    <td width="296" height="19"><img border="0" src="AA_Tyr.gif" width="192" height="36"></td>
+  </tr>
+  <tr>
+    <td align="CENTER" width="54" height="38"><i>Z</i></td>
+    <td align="CENTER" width="62" height="38"><i>Glx</i></td>
+    <td width="105" height="38"><i>Glutamic acid<br>
+    or Glutamine</i></td>
+    <td width="121" height="38"></td>
+    <td width="301" height="38"></td>
+    <td width="296" height="38"></td>
+  </tr>
+  <tr>
+    <td align="CENTER" width="54" height="19"><font color="#FF0000">*</font></td>
+    <td align="CENTER" width="62" height="19"><font color="#FF0000">*&nbsp; (Ter)</font></td>
+    <td width="105" height="19"><font color="#FF0000"><strong>Ter</strong>mination</font></td>
+    <td width="121" height="19"><font color="#FF0000">TAA, TAG, TGA<br>
+    <i>(translation termination)</i></font></td>
+    <td width="301" height="19"><font color="#FF0000">HGVS addition (V2.0)</font></td>
+    <td width="296" height="19"></td>
+  </tr>
+  <tr>
+    <td align="left" width="939" height="19" colspan="6">&nbsp;<b><i> Used in alignments only</i></b></td>
+  </tr>
+  <tr>
+    <td align="CENTER" width="54" height="19">-</td>
+    <td align="CENTER" width="62" height="19">-</td>
+    <td width="105" height="19"><em>gap of indeterminate length</em></td>
+    <td width="121" height="19"></td>
+    <td width="301" height="19"></td>
+    <td width="296" height="19">-</td>
+  </tr>
+</table>
+
+<hr>
+
+<p align="center"></em>| <a HREF="#top">Top of page</a> | <a HREF="index.html">Homepage</a>
+| <a href="checklist.html">Check-list</a> | <a href="standards.html">Standards</a> |<br>
+| <b>Recommendations:</b>&nbsp; <a href="recs.html">general</a>,&nbsp;<a
+href="recs-DNA.html">DNA</a>,&nbsp; <a href="recs-RNA.html">RNA</a>,&nbsp; <a
+href="recs-prot.html">protein</a>, <a href="uncertain.html">uncertain</a> |<br>
+| <a HREF="disc.html">Discussions</a> | <a HREF="FAQ.html">FAQ's</a> | <a
+href="history.html">History</a> |<br>
+| <b>Example descriptions:&nbsp;</b> <a href="quickref.html">QuickRef</a>,&nbsp; <a
+HREF="examplesDNA.html">DNA</a>,&nbsp; <a HREF="examplesRNA.html">RNA</a>,&nbsp; <a
+HREF="examplesAA.html">protein</a> | </p>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="15" bgcolor="#ff9900">
+  <tr>
+    <td><p align="center"><em><font color="#FFFFFF"
+    face="Verdana, Arial, Helvetica, sans-serif" size="-5"><a
+    href="http://www.HGVS.org/copyright.html">Copyright ©</a> </font><font size="1">HGVS 2010
+    All Rights Reserved<br>
+    Website Created by Rania Horaitis, Nomenclature by J.T. Den Dunnen - <a
+    href="http://www.HGVS.org/disclaimer.html">Disclaimer</a> </font></em></td>
+  </tr>
+</table>
+</body>
+</html>

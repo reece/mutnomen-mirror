@@ -1,0 +1,400 @@
+<html>
+<!--
+	Author: 	Dr. Johan T. den Dunnen
+		Date: 	02-01-2005	
+		URL: 	recs-DNA.html
+-->
+
+<head>
+<title>Uncertainties in the description of sequence variants</title>
+<style type="text/css">
+
+<!--  
+
+h2 {
+ font-family : Verdana,Arial,Helvetica,Geneva,sans-serif;
+ color : #ff9900;
+
+}
+
+h3 {
+ font-family : Verdana,Arial,Helvetica,Geneva,sans-serif;
+ color : #0099cc;
+
+}
+
+h4 {
+ font-family : Verdana,Arial,Helvetica,Geneva,sans-serif;
+ color : #0099cc;
+
+}
+
+h5 {
+font-family : Verdana, Arial, Helvetica, Geneva, sans-serif;
+color : #ffffff;
+
+}
+
+.norm {
+
+ font-weight : normal;
+
+ }
+ -->
+</style>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#0000FF" vlink="#9999ff">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="10" bgcolor="#CCFF99">
+  <tr>
+    <td width="25%" valign="top" bgcolor="#FFFFFF"><a href="http://www.HGVS.org"><img
+    src="small.gif" border="0" width="155" height="94"></a></td>
+    <td width="75%" valign="CENTER" bgcolor="#FFFFFF" bordercolor="#FFFFFF"><h3 align="center">Coping
+    with uncertainties in the description of sequence variants</h3>
+    </td>
+  </tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="10">
+  <tr>
+    <td width="100%" valign="BOTTOM" bgcolor="#0099cc"><h4 align="center"><font size="3"
+    color="#FFFFFF"><i><br>
+    Last modified November 1, 2012</i></font></h4>
+    </td>
+  </tr>
+</table>
+
+<p align="center"><i>Since references to WWW-sites are not yet acknowledged as citations,
+please mention <a
+href="http://www3.interscience.wiley.com/cgi-bin/fulltext/68503056/PDFSTART">den Dunnen JT
+and Antonarakis SE (2000). Hum.Mutat. 15:7-12</a> when referring to these pages.</i></p>
+
+<hr>
+
+<h2>Contents</h2>
+
+<ul>
+  <li><a href="#sum"><b>Summary</b></a></li>
+  <li><a href="#intro"><b>Introduction</b></a> <ul>
+      <li><a href="#note-dup">NOTE - duplications</a></li>
+    </ul>
+  </li>
+  <li><b>Subjects</b> <ul>
+      <li><a href="#incomplete">incomplete descriptions&nbsp; - examples</a> </li>
+      <li><a href="recs.html">exonic d</a><a href="#exondel">eletions / duplications</a> </li>
+      <li><a href="#FISH">FISH-detected rearrangements</a> </li>
+      <li><a href="#array">Array-detected rearrangements</a> </li>
+      <li><a href="#cyto">Cytogenetic rearrangements</a> </li>
+      <li><a href="#2in1">two changes in one individual</a> - <i>alleles unknown</i> </li>
+    </ul>
+  </li>
+</ul>
+
+<hr>
+
+<h2><a NAME="sum"></a>Summary</h2>
+
+<p>This page discusses how to cope with <em><strong>uncertainties</strong></em> in the
+description of sequence variants. In addition we link to all current recommendations and
+indicate how to start discussions regarding extensions/modifications. Do you agree /
+disagree?, did we miss cases?, do you want to make suggestions?; please contact us <em>by
+E-mail</em> (<strong>to:</strong> HGVSmn @ JohanDenDunnen.nl) or using the <em><a
+href="http://dmz-web03.lumc.nl/new.hgvs.org/?q=forum/2">HGVS variant description forum</a></em>.
+</p>
+
+<hr>
+
+<h2><a NAME="intro"></a>Introduction</h2>
+
+<p>Often clear changes can be detected in the genome, but a precise description in
+relation to the genomic sequence is not possible. Examples include cytogenetically
+detectable changes and changes detected using Fluorescence In Situ Hybridisation
+(FISH).&nbsp;Other examples are cases were genomic deletions / duplications are detected
+indirectly using RNA analysis; although the change can be described exactly at RNA-level,
+the genomic sequence spanning the breakpoint of the rearrangement is required to describe
+the change at DNA-level. Finally there are examples, mostly from older publications, where
+the changes detected are not described precisely (<i>&quot;an 11 nucleotide deletion in
+exon 3&quot;</i>) or uniquely (<i>&quot;changing amino acid Gly-17 to Arg&quot;</i>).</p>
+
+<p>In many diseases pathogenic changes are found which delete or duplicate (sets of) whole
+exons. These changes are detected with technologies like PCR, Southern blotting, MAPH and
+MLPA. The analysis however does not reveal the breakpoints at a molecular level.
+Incorporation of these variants in sequence variation databases is very important, most
+importantly to be able to determine their frequency. In addition, in cases like Duchenne
+and Becker Muscular Dystrophy (DMD/BMD), the breakpoints are predictors for the severity
+of the disease, i.e. a truncated reading frame causing DMD, an open reading frame causing
+BMD.&nbsp; </p>
+
+<p>There is currently a growing demand to be able to include such changes in catalogs of
+all DNA sequence changes. Although it is clear that publications need to contain <em><b>exact
+descriptions</b></em> of the changes reported, in real life this is often not the cases.
+Furthermore it can become quite complicated to exactly describe the variants and one
+should wonder whether this adds useful knowledge. Take the example of MLPA were one probe
+is used to detect the copy number of one exon. Effectively, when the signal for a probe is
+decreased, it only indicates that the short probe sequence (15-25 nucleotides) does not
+hybridize to the target sequence and can therefore not be extended and detected. It is
+common practice (after excluding other variants when only 1 exon probe is affected) to
+describe the result as a change affecting the entire set of exons, like &quot;<em>a
+deletion of exons 23-27&quot;</em> or &quot;<em>c.3163-?_3786+?del</em>&quot;. When indeed
+the location of the probe would need to be included the description becomes too complex to
+be useful.</p>
+
+<p><a NAME="unrec"></a><b><u>Main recommendation</u></b><i><br>
+</i>To indicate uncertainties in the description of sequence changes the question mark (<em><strong>&quot;?&quot;</strong></em>)
+and brackets (<em><strong>&quot;(...)&quot;</strong></em>) are used. When the exact
+position of a change is not known, <em><strong>the range of the uncertainty is listed
+between brackets</strong></em> (like <strong><i>(5' border_3' border)</i></strong>) and it
+is attempted to <i><b>describe the change on DNA-level as precisely as possible</b></i>.</p>
+
+<p>The deletion of genomic sequences can be detected using several different methods,
+incl. FISH, Southern blot, quantitative PCR, MAPH and MLPA. One could argue that - to be
+as precise as possible - the description of the deletion should include information of the
+probe sequences used. Although our recommendation is indeed to do this, it should be noted
+that this has its limitations. Using some methods, the presence of a probe signal only
+indicates that a (large) part of the probe is present (e.g. BAC-derived FISH signals). On
+the other hand, the absence of a signal does not mean that the entire target sequence is
+missing; PCR results are negative when only one of the two primer annealing sites is
+deleted (<a href="FAQ.html#exdel"><i>see FAQ</i></a>) and a MLPA scores a deletion when a
+single nucleotide substiturion affects the probe hybridisation site.</p>
+
+<h4><strong><a NAME="note-dup"></a>NOTE</strong></h4>
+
+<p>For duplications the same recommendations hold, except that duplications are designated
+by <b>&quot;dup&quot;</b> after an indication of the nucleotides flanking the duplicated
+region, e.g. <b><i>c.88-?_301+?dup</i></b> (<em><a HREF="recs-DNA.html#dup">see
+Recommendations</a></em>). It should be noted however that the description<strong>
+&quot;dup&quot;</strong> (<em><a href="standards.html#define">see Standards</a></em>) may <strong><em>by
+definition</em></strong> only be used when the additional copy is located directly
+3'-flanking the original copy (a tandem duplication). In most cases there will be no
+experimental proof of this, the additional copy may reside anywhere in the gene/genome
+(i.e. inserted/transposed). It has been suggested that it is thus better to describe
+exonic duplications using the format for repeated sequences, i.e. <i><b>c.88-?_301+?[2]</b></i>
+(<em><a href="recs-DNA.html#var">see Recommendations</a></em>).</p>
+
+<hr>
+
+<h2>Subjects</h2>
+
+<hr>
+
+<h3>Incomplete descriptions - examples</h3>
+
+<p>When the exact position of a change is not known, the range of the uncertainty is
+listed between brackets (<b>&quot;()&quot;</b>, <em><a href="#unrec">see Recommendation</a></em>).</p>
+
+<h4><u>Examples</u></h4>
+
+<ul>
+  <li><i>c.(67_70)insG (p.Gly23fs) </i>indicates the insertion of a G in codon 23 at an unkown
+    position</li>
+  <li><i>c.(165_253)del11</i> indicates an 11 nucleotide deletion in exon 3<i> (NOTE: in
+    relation to the coding DNA reference sequence, exon 3 is located from position 165 to 253)</i></li>
+  <li>the best description to describe at protein level the consequence of c.577_578ins4 (with
+    the 4 nucleotides inserted not specified) is p.(fs*)?.</li>
+  <li>the sequence surrounding codon Phe-508 in the CFTR gene is ..-ATC-TTT-GGT-...; deletion
+    of TC-T (c.1520_1522del), C-TT (c.1521_1523del) and -TTT- (c.1522_1524del) at DNA level
+    all three result at protein level in p.Phe508del.&nbsp;Consequently, when in patients with
+    Cystic Fibrosis the variant is reported as &quot;<em><strong>deltaF508</strong></em>&quot;,
+    without giving details on DNA level, one can only derive a description as
+    c.(1520_1524)del3. When one assumes the change at DNA level is c.1522_1524delTTT, deletion
+    of exactly the Phe-508 encoding triplet, one is wrong. The most frequently found change is
+    c.1521_1523delCTT.</li>
+</ul>
+<em>
+
+<hr>
+
+<h3><a NAME="exondel"></a>Exonic deletions / duplications</h3>
+</em>
+
+<p>The description should be based on the reference sequence used and include the position
+of the most extreme region(s) tested (e.g. segment PCR-ed, probes used for hybridisation,
+etc.). For clarity and to make descriptions not too complicated, it is allowed to describe
+deletions (duplications) assuming that when a probe for a specific exon scores deleted
+(duplicated) that the entire exon is deleted (duplicated), i.e. detailed knowledge
+regarding the exact location of the probe sequence used is not used in the description.<br>
+<em><strong>NOTE:</strong></em> it should be clearly indicated which technology was used
+(MLPA, PCR, etc.) and where primer/probe sequences can be found. For rearrangements
+affecting only 1-exon it should be indicated whether DNA sequencing was performed to
+exclude variants affecting the primer/probe target sequences.When different probes for one
+exon score different, this information must be used in the description of the sequence
+change (<a href="FAQ.html#exdel"><i>see FAQ</i></a>).</p>
+
+<p>Deletions are designated by <b>&quot;del&quot;</b> after an indication of the first and
+last nucleotide(s) deleted (<a HREF="recs-DNA.html#del">see Recommendations</a>).</p>
+
+<h4><u>Examples</u></h4>
+
+<ul>
+  <li><i><b>c.88-?_301+?del</b> </i>denotes the deletion of exons 3 to 4, starting at an
+    unknown position in intron 2, upstream of coding DNA nucleotide 88, and ending at an
+    unknown position in intron 4, downstream of coding DNA nucleotide 301.</li>
+  <li><i><b>c.(?_-30)_12+?del</b> </i>describes a deletion starting somewhere upstream from
+    the 5' end of a gene (located at coding DNA nucleotide -30) and ending in the intron
+    between coding DNA nucleotides 12 and 13 (intron 1).</li>
+  <li><i><b>c.(?_-30)_(*220_?)del</b> </i>denotes the deletion of the entire gene (coding DNA
+    reference sequence running from -30 (cap site) to *220 (polyA-addition site))<i><br>
+    <b>NOTE:</b> when regions outside the gene have been tested and found to be present /
+    absent this can be indicated in a &quot;Remarks&quot; field. Alternatively, one can
+    determine what the position of the genomic sequences tested is and use these positions in
+    the description (e.g. position of oligonucleotide used in PCR, MLPA, SNParray, and/or of
+    the probe used for hybridisation).</i></li>
+</ul>
+<em>
+
+<hr>
+
+<h3><a NAME="FISH"></a>FISH-detected rearrangements</h3>
+</em>
+
+<p>Many chromosomal rearrangements, especially in the past, have been detected using
+techniques like Southern blotting and Fluorescence In Situ Hybridisation (FISH). The
+description of these changes was often in tabular or graphical format based on either
+position-ordered probe names or relative chromosomal positions. Especially when FISH was
+used, relatively little or often even no actual DNA sequence of the probe(s) used was
+known. In those days, even when a probe sequence was known, this information was of little
+help to determine the probe location more precisely.</p>
+
+<p>With the availability of the reference human genome sequence, this situation has
+dramatically changed. Now, any piece of DNA probe sequence can be used to position that
+probe with great precision on the human genome map. In addition, the clones used to
+generate the human genome sequence are freely available and have become the preferred
+probes for new FISH experiments. The latter is especially true for genome-wide array-CGH
+experiments using ordered PAC/BAC-clones. As a consequence of these developments it is now
+possible to describe these changes based on DNA sequences. <i><b>NOTE: </b><a
+href="disc.html#indicator">see Discussion</a></i>. <em></p>
+
+<p></em>Following the recommendation to describe rearrangements using the format <strong><i>(5'
+border_3' border)</i></strong> for FISH probes this becomes&nbsp; <em><strong>(last-positive-clone_first-negative-clone)_
+(last-negative-clone_first-positive-clone)</strong></em>.<em></p>
+
+<h4></em><u>Examples</u><em></h4>
+
+<ul>
+  <li><b>chrX:g.(AC096506.5_AL109609.5)_(AL451144.5_AL050305.9)del</b> </em>describes a
+    genomic deletion on the X-chromosome detected using FISH. The deletion spans from PAC
+    probes RP4-556A22 (GenBank AL109609.5) to RP11-151J4 (GenBank AL451144.5), both yielding
+    no signal. On the telomeric side (p-arm) the closest probe tested positive was PAC
+    RP11-64I1 (GenBank AC096506.5), on the centromeric side the closest probe tested positive
+    was RP6-60B16 (GenBank AL050305.9).&nbsp;<em><br>
+    <b>NOTE:</b> a description like <b>(AC096506.5_AL109609.5)del</b> indicates that the
+    breakpoint of the deletion is somewhere between these two sequences (here PAC-derived) and
+    gives a direct link to the human genome sequence.<br>
+    </em>When the genomic positions of these sequences are known, the deletion can also be
+    described directly <b>in relation to the genome sequence as </b><em><strong>chrX.hg19:g.(32,218,983_32,238,146)_(32,984,039_33,252,615)del</strong></em>,
+    i.e.
+    (genomic-end-position-last-positive-clone_genomic-start-position-first-negative-clone)_
+    (genomic-end-position-last-negative-clone_genomic-start-position-first-positive-clone).
+    Although this description is more precise in relation to the genome sequence, the
+    information regarding the probe sequences used can not be derived from the description and
+    needs to be reported separately. Note the addition of &quot;<em><strong>.hg19</strong></em>&quot;
+    to indicate the reference genome build used for the description.<em></li>
+  <li><b>chrX:g.(?_AL109609.5)_(AL451144.5_?)del</b> </em>describes a genomic deletion on the
+    X-chromosome detected using FISH. The deletion spans from PAC probes RP4-556A22 (GenBank
+    AL109609.5) to RP11-151J4 (GenBank AL451144.5), both yielding no signal. <b>No flanking
+    positive probes were tested</b>, making it unclear how far the deletion extends (compare
+    with previous description).<em></li>
+  <li><b>chrX:g.(AC096506.5_AL109609.5)_AL451144.5del</b></em> describes a genomic deletion on
+    the X-chromosome detected using FISH. The deletion spans from PAC probes RP4-556A22
+    (GenBank AL109609.5) to RP11-151J4 (GenBank AL451144.5). On the telomeric side (p-arm) the
+    closest probe tested positive was PAC RP11-64I1 (GenBank AC096506.5), while RP4-556A22
+    (GenBank AL109609.5) tested negative. On the centromeric side the probe RP11-151J4
+    (GenBank AL451144.5) gave a <b>reduced signal</b>, indicating that the breakpoint lies
+    inside this clone (note that this identifier is <b>not</b> between brackets).<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; An alternative description is
+    chrX.hg19:g.(AC096506.5_AL109609.5)_AL451144.5:g.(1_100207)del where
+    AL451144.5:g.(1_100207) indicates that the range where the deletion junction lies spans
+    nucleotides 1 to 100,207. One can argue whether this addition is very informative. Note
+    also the addition of &quot;<em><strong>.hg19</strong></em>&quot; to indicate the reference
+    genome build used for the description.<em></li>
+</ul>
+
+<hr>
+
+<h3><a NAME="array"></a>Array-detected rearrangements</h3>
+</em>
+
+<p>Basically, chromosomal rearrangements and other DNA sequence variants detected using
+array technology can, based on the array-probe sequences used, be described as those for
+FISH-detected rearrangements (<a href="#FISH"><i>see FISH-detected rearrangements</i></a>).
+An advantage here is that the array probes used are often exactly defined, being mostly
+relatively short 20-60-mer oligonucleotide sequences. This information can be used to
+exactly describe the rearrangements at the nucleotide level. <em></p>
+
+<p>For deletions the basic format is
+(last-probe-present_first-probe-deleted)_(last-probe-deleted_first-probe-present). </p>
+
+<h4></em><u>Examples</u><em></h4>
+
+<ul>
+  <li><b>chrX.hg19:g.(32,218,983_32,238,146)_(32,984,039_33,252,615)del</b> </em>describes a
+    deletion on the X chromosome, based on reference genome build hg19, starting between
+    nucleotides 32,218,983 to 32,238,146 and ending between nucleotides 32,984,039 to
+    33,252,615.<em></li>
+  <li><b>chrX.hg19:g.(?_32,238,146)_(32,984,039_?)del</b> </em>describes a deletion on the
+    human X chromosome, based on reference genome build hg19, starting upstream of nucleotide
+    32,238,146 and ending downstream of nucleotide 32,984,039.<em><br>
+    <b>NOTE:</b> the description leaves it thus unclear how far the deletion might extend,
+    suggesting no up- or downstream probes were tested (and scored positive).</li>
+  <li><b>g.(rs2342234_rs3929856)_(rs10507342_rs947283)del</b> (alternatively
+    chr13.hg19:g.(18,858,133_18,867,056)_(24,517,730_24,531,502)del)</em> describes a genomic
+    deletion on chromosome 13 detected using a SNP-array. The deletion spans from dbSNP
+    entries rs3929856 to rs10507342, both yielding no signal. On the centromeric side (q-arm)
+    the closest probe tested positive was rs2342234, on the telomeric side the closest probe
+    tested positive was rs947283.<em><b><br>
+    NOTE:</b> although the alternative description based on the human genome nucleotide
+    numbering is more precise, the information regarding the probe sequences used is
+    lost.&nbsp;</li>
+  <li><b>g.(?_rs3929856)_(rs10507342_?)del</b> (alternatively
+    chr13.hg19:g.(?_18,867,056)_(24,517,730_?)del) </em>describes a deletion detected using an
+    array spanning from dbSNP entries rs3929856 to rs10507342. The description assumes no
+    flanking positive probes were tested, making it unclear how far the deletion extends.<em></li>
+</ul>
+
+<hr>
+
+<h3><a NAME="cyto"></a></em>Cytogenetic rearrangements</h3>
+
+<p>A nomenclature system to describe cytogenetically detectable rearrangements has been
+suggested early on (<a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=4041569&amp;dopt=Abstract">see
+ISCN 1985</a>). Current recommendations in this areas are made by the &quot;Standing
+Committee on Human Cytogenetic Nomenclature&quot; and were published recently as <a
+href="http://content.karger.com/ProdukteDB/produkte.asp?Aktion=showproducts&amp;searchWhat=books&amp;ProduktNr=257302">ISCN
+2013</a>&quot;.<em></p>
+</em>
+
+<hr>
+
+<h3><a NAME="2in1"></a>Two changes in one individual</h3>
+
+<p>When <i><b>two sequence changes</b></i> are found in one individual but it is <i><b>unknown</b></i>
+whether they are <b><i>located on the same or on different alleles</i></b>, the change is
+described using the format c.[76A&gt;C(;)483G&gt;C] (<i><a href="recs.html#2in1">see
+Recommendations</a></i>).</p>
+
+<hr>
+
+<p align="center">| <a HREF="#top">Top of page</a> | <a HREF="index.html">MutNomen
+homepage</a> | <a href="checklist.html">Check-list</a> |<br>
+| <b>Recommendations:</b> <a href="recs.html">general</a>,&nbsp; <a href="recs-RNA.html">RNA</a>,&nbsp;
+<a href="recs-prot.html">protein</a> |<br>
+| <a HREF="disc.html">Discussions</a> | <a HREF="FAQ.html">FAQ's</a> | <a
+href="standards.html">Symbols, codons, etc.</a> | <a href="history.html">History</a> |<br>
+| <b>Example descriptions:&nbsp;</b> <a href="quickref.html">QuickRef / symbols</a>,&nbsp;
+<a HREF="examplesDNA.html">DNA</a>,&nbsp; <a HREF="examplesRNA.html">RNA</a>,&nbsp; <a
+HREF="examplesAA.html">protein</a> | </p>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="15" bgcolor="#ff9900">
+  <tr>
+    <td><p align="center"><i><font color="#FFFFFF"
+    face="Verdana, Arial, Helvetica, sans-serif" size="-5"><a
+    href="http://www.HGVS.org/copyright.html">Copyright ©</a> </font><font size="1">HGVS 2007
+    All Rights Reserved<br>
+    Website Created by Rania Horaitis, Nomenclature by J.T. Den Dunnen - <a
+    href="http://www.HGVS.org/disclaimer.html">Disclaimer</a> </font></i></td>
+  </tr>
+</table>
+</body>
+</html>

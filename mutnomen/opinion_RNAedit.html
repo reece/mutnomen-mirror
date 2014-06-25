@@ -1,0 +1,158 @@
+<html>
+<!--
+	Author: 	Dr. Johan T. den Dunnen
+	Date: 	17-11-2002	
+	URL: 	recs.html
+-->
+
+<head>
+<title>Nomenclature for the description of sequence variants (mutation nomenclature)</title>
+<style type="text/css">
+
+<!--  
+
+h2 {
+ font-family : Verdana,Arial,Helvetica,Geneva,sans-serif;
+ color : #ff9900;
+
+}
+
+h3 {
+ font-family : Verdana,Arial,Helvetica,Geneva,sans-serif;
+ color : #0099cc;
+
+}
+
+h4 {
+ font-family : Verdana,Arial,Helvetica,Geneva,sans-serif;
+ color : #0099cc;
+
+}
+
+h5 {
+font-family : Verdana, Arial, Helvetica, Geneva, sans-serif;
+color : #ffffff;
+
+}
+
+p { 
+font-family : Verdana, Arial, Helvetica, Geneva, sans-serif;
+color : #000000;
+margin-left : 5%;
+
+ }
+
+.norm {
+
+ font-weight : normal;
+
+ }
+ -->
+</style>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#0000FF" vlink="#9999ff">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="10" bgcolor="#CCFF99">
+  <tr>
+    <td width="25%" valign="top" bgcolor="#FFFFFF"><a href="http://www.HGVS.org"><img
+    src="small.gif" border="0" width="155" height="94"></a></td>
+    <td width="75%" valign="CENTER" bgcolor="#FFFFFF" bordercolor="#FFFFFF"><h3 align="center"><font
+    size="6">Opinions please</font> </h3>
+    </td>
+  </tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="10">
+  <tr>
+    <td width="100%" valign="BOTTOM" bgcolor="#0099cc"><h4 align="center"><font size="3"
+    color="#FFFFFF"><i><br>
+    Last modified August, 2011</i></font></h4>
+    </td>
+  </tr>
+</table>
+
+<hr>
+
+<h2>RNA editing</h2>
+
+<hr>
+
+<p>As guardian of the HGVS recommendations for the description of sequence variants I have
+received the request to indicate <em><strong>how to describe modifications of DNA, RNA and
+protein</strong></em> molecules. The most pressing are those to describe RNA editing and
+DNA methylation.<br>
+<br>
+My suggestion for RNA editing, now open for comments, is to describe this as;
+
+<ul>
+  <li>g.1287@ on genomic DNA level</li>
+  <li>c.143@ on coding DNA level</li>
+  <li>r.143c&gt;u on RNA level</li>
+  <li>p.(His48Pro) on protein level (i.e. simply the predicted consequences)</li>
+</ul>
+
+<p>So, for a nucleotide edited at RNA level on DNA describe it by adding a &quot;@&quot;
+to the position.<br>
+<br>
+Based on the current recommendations the descriptions on DNA level could be g.= / c.=
+because nothing changes. The change is only at RNA and potentially protein level. The
+reason to suggest a specific description&nbsp; at DNA level is to make it easier to
+retrieve information on RNA editing from databases;
+
+<ol>
+  <li>some databases use c.= to indicate the second, normal allele in dominant diseases.
+    Searching for c.= would thus retrieve all these entries.</li>
+  <li>retrieving information with a search for g.= / c.= would retrieve all entries for which
+    RNA editing has been reported, and not for a specific site one is interested in.</li>
+  <li>using g.= / c.= at DNA level, to allow specific searches at RNA level, we would need to
+    make a discrimination between &quot;DNA-based&quot; changes (like r.143c&gt;u) and those
+    derived from RNA editing (e.g. r.143c@u). This seems less attractive, especially since we
+    already have a proper nomenclature for this.</li>
+  <li>even today some database still have no fields for RNA findings, they can thus not store
+    data derived from RNA editing.</li>
+  <li>currently most genomic information is retrieved through a DNA file (e.g. exome variant
+    queries) and people are more likely to 'forget' to check RNA data. Consequently, the fact
+    that a site has been changed which is known to be edited in RNA (with whatever functional
+    consequences) would be missed.</li>
+  <li>vi) when analysing RNA based sequence data people will encounter sequence variants,
+    check the DNA database, not find the variant (RNA editing is not marked in the database)
+    and subsequently fail trying to confirm the variants through genomic DNA analysis.
+    Spoiling precious resources.</li>
+</ol>
+
+<p>RNA editing is not of one type and the change r.143c&gt;u is probably not correct
+because the 'c' is not really changed to a 'u'. At some point we probably need to suggest
+ways to exactly describe the modification that was found but I believe we can do that
+later. Making such recommendations can then be combined with those for DNA modifications
+(like methylation with methyl or hydroxy-methyl groups) making sure they follow the same
+rules.<br>
+<br>
+The use of the '@' character versus other characters (&amp;, $, ~, #) is of course
+debatable. Another option is to use a three-letter abbreviation like 'del' and 'ins', e.g.
+edt (g.1287edt / c.143edt) but this is seems less attractive (longer and potentially
+confusing). The '@' is just there like a short footnote, indicating, 'note this site,
+something is happening at ('@') this position.<br>
+<br>
+Best regards,</p>
+
+<blockquote>
+  <p>Johan den Dunnen<br>
+  Human Genome Variation Society<br>
+  mail to: ddunnen @ HumGen.nl<br>
+  </p>
+</blockquote>
+
+<hr>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="15" bgcolor="#ff9900">
+  <tr>
+    <td><p align="center"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif"
+    size="-5"><a href="http://www.HGVS.org/copyright.html">Copyright ©</a> </font><font
+    size="1">HGVS 2010 All Rights Reserved<br>
+    Website Created by Rania Horaitis, Nomenclature by J.T. Den Dunnen - <a
+    href="http://www.HGVS.org/disclaimer.html">Disclaimer</a> </font></td>
+  </tr>
+</table>
+</body>
+</html>

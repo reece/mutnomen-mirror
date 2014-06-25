@@ -1,0 +1,458 @@
+<html>
+<!--
+	Author: 	Dr. Johan T. den Dunnen
+	Date: 	17-11-02	
+	URL: 	http://www.dmd.nl/mutnomen_current.html
+-->
+
+<head>
+<title>Nomenclature for the description of sequence variants: codons and amino acids</title>
+<style type="text/css">
+
+<!--  
+
+h1 {
+ font-family : Verdana,Arial,Helvetica,Geneva,sans-serif;
+ color : #0099cc;
+
+}
+
+h2 {
+ font-family : Verdana,Arial,Helvetica,Geneva,sans-serif;
+ color : #ff9900;
+
+}
+
+h3 {
+ font-family : Verdana,Arial,Helvetica,Geneva,sans-serif;
+ color : #0099cc;
+
+}
+
+h4 {
+ font-family : Verdana,Arial,Helvetica,Geneva,sans-serif;
+ color : #0099cc;
+
+}
+
+h5 {
+font-family : Verdana, Arial, Helvetica, Geneva, sans-serif;
+color : #ffffff;
+
+}
+
+p { 
+font-family : Verdana, Arial, Helvetica, Geneva, sans-serif;
+color : #000000;
+margin-left : 5%;
+
+ }
+
+.norm {
+
+ font-weight : normal;
+
+ }
+ -->
+</style>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#0000FF" vlink="#9999ff">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="10" bgcolor="#CCFF99">
+  <tr>
+    <td width="25%" valign="top" bgcolor="#FFFFFF"><a href="http://www.HGVS.org/"><img
+    src="small.gif" width="155" height="94" border="0"></a></td>
+    <td width="75%" valign="CENTER" bgcolor="#FFFFFF" bordercolor="#FFFFFF"><h1 align="center">Codons
+    and amino acids </h1>
+    </td>
+  </tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="10">
+  <tr>
+    <td width="100%" valign="BOTTOM" bgcolor="#0099cc"><h4 align="center"><i><font size="3"
+    color="#FFFFFF"><br>
+    Last modified October, 2009</font></i></h4>
+    </td>
+  </tr>
+</table>
+
+<h2>Content</h2>
+
+<ul>
+  <li><a href="#aacode"><font face="Verdana, Arial, Helvetica, sans-serif">genetic code</font></a></li>
+  <li><font face="Verdana, Arial, Helvetica, sans-serif"><a href="#aalist">amino acid
+    descriptions</a>&nbsp; - <em>one / three letter code</em></font></li>
+  <li><font face="Verdana, Arial, Helvetica, sans-serif"><a href="#aaprops">amino acid
+    properties</a></font></li>
+  <li><font face="Verdana, Arial, Helvetica, sans-serif">PAM-matrix</font></li>
+</ul>
+
+<hr>
+
+<h2><a NAME="aacode"></a>Genetic code</h2>
+
+<p><i><b>NOTE</b></i> - starting VarNomen version 3 the '*' is used to indicate a
+translation stop codon, replacing the 'X' used previously (see Background).</p>
+<div align="center"><center>
+
+<table BORDER="1" width="709">
+  <tr>
+    <th ALIGN="CENTER" COLSPAN="6" width="703">Nucleotide position in codon</th>
+  </tr>
+  <tr>
+    <th ALIGN="LEFT" width="35">first</th>
+    <th ALIGN="CENTER" COLSPAN="4" width="581">second</th>
+    <th ALIGN="CENTER" width="75">third</th>
+  </tr>
+  <tr>
+    <th width="35">&nbsp;</th>
+    <th ALIGN="center" width="158">U</th>
+    <th ALIGN="center" width="158">C</th>
+    <th ALIGN="center" width="158">A</th>
+    <th ALIGN="center" width="158">G</th>
+  </tr>
+  <tr>
+    <td ALIGN="center" width="35"><b>U</b></td>
+    <td width="139" align="center"><font face="Courier New">UUU - Phe <br>
+    UUC - Phe <br>
+    UUA - <strong>Leu</strong> <br>
+    UUG - <strong>Leu</strong> </font></td>
+    <td width="145" align="center"><font face="Courier New">UCU - <u><strong>Ser</strong></u> <br>
+    UCC - <u><strong>Ser</strong></u> <br>
+    UCA - <u><strong>Ser</strong></u> <br>
+    UCG - <u><strong>Ser</strong></u> </font></td>
+    <td width="121" align="center"><font face="Courier New">UAU - Tyr <br>
+    UAC - Tyr <br>
+    &nbsp;UAA -&nbsp; *&nbsp;&nbsp; <br>
+    &nbsp;UAG -&nbsp; *&nbsp;&nbsp;</font></td>
+    <td width="158" align="center"><font face="Courier New">UGU - Cys <br>
+    UGC - Cys <br>
+    UGA -&nbsp; *&nbsp; <br>
+    UGG - Trp</font></td>
+    <td ALIGN="center" width="75"><b>U<br>
+    C<br>
+    A<br>
+    G</b></td>
+  </tr>
+  <tr>
+    <td ALIGN="center" width="35"><b>C</b></td>
+    <td width="139" align="center"><font face="Courier New">CUU - <strong>Leu</strong> <br>
+    CUC - <strong>Leu</strong> <br>
+    CUA - <strong>Leu</strong> <br>
+    CUG - <strong>Leu </strong></font></td>
+    <td width="145" align="center"><font face="Courier New">CCU - Pro <br>
+    CCC - Pro <br>
+    CCA - Pro <br>
+    CCG - Pro </font></td>
+    <td width="121" align="center"><font face="Courier New">CAU - His <br>
+    CAC - His <br>
+    CAA - Gln <br>
+    CAG - Gln </font></td>
+    <td width="158" align="center"><font face="Courier New">CGU - <em><strong>Arg</strong></em>
+    <br>
+    CGC - <em><strong>Arg</strong></em> <br>
+    CGA - <em><strong>Arg</strong></em> <br>
+    CGG - <em><strong>Arg</strong></em> </font></td>
+    <td ALIGN="center" width="75"><b>U<br>
+    C<br>
+    A<br>
+    G</b></td>
+  </tr>
+  <tr>
+    <td ALIGN="center" width="35"><b>A</b></td>
+    <td width="139" align="center"><font face="Courier New">AUU - Ile <br>
+    AUC - Ile <br>
+    AUA - Ile <br>
+    AUG - Met </font></td>
+    <td width="145" align="center"><font face="Courier New">ACU - Thr <br>
+    ACC - Thr <br>
+    ACA - Thr <br>
+    ACG - Thr </font></td>
+    <td width="121" align="center"><font face="Courier New">AAU - Asn <br>
+    AAC - Asn <br>
+    AAA - Lys <br>
+    AAG - Lys </font></td>
+    <td width="158" align="center"><font face="Courier New">AGU - <u><strong>Ser</strong></u> <br>
+    AGC - <u><strong>Ser</strong></u> <br>
+    AGA - <strong><em>Arg</em></strong> <br>
+    AGG - <em><strong>Arg</strong></em> </font></td>
+    <td ALIGN="center" width="75"><b>U<br>
+    C<br>
+    A<br>
+    G</b></td>
+  </tr>
+  <tr>
+    <td ALIGN="center" width="35"><b>G</b></td>
+    <td width="139" align="center"><font face="Courier New">GUU - Val <br>
+    GUC - Val <br>
+    GUA - Val <br>
+    GUG - Val </font></td>
+    <td width="145" align="center"><font face="Courier New">GCU - Ala <br>
+    GCC - Ala <br>
+    GCA - Ala <br>
+    GCG - Ala</font></td>
+    <td width="121" align="center"><font face="Courier New">GAU - Asp <br>
+    GAC - Asp <br>
+    GAA - Glu <br>
+    GAG - Glu </font></td>
+    <td width="158" align="center"><font face="Courier New">GGU - Gly <br>
+    GGC - Gly <br>
+    GGA - Gly <br>
+    GGG - Gly </font></td>
+    <td ALIGN="center" width="75"><b>U<br>
+    C<br>
+    A<br>
+    G</b> </td>
+  </tr>
+</table>
+</center></div>
+
+<hr>
+
+<h2><a NAME="aalist"></a>Amino acid descriptions</h2>
+<div align="center"><center>
+
+<table BORDER="1">
+  <tr>
+    <th>One letter<br>
+    code</th>
+    <th>Three letter<br>
+    code</th>
+    <th>Amino acid</th>
+    <th>Possible codons</th>
+  </tr>
+  <tr>
+    <td align="CENTER">A</td>
+    <td align="CENTER">Ala</td>
+    <td>Alanine</td>
+    <td>GCA, GCC, GCG, GCT</td>
+  </tr>
+  <tr>
+    <td align="CENTER">B</td>
+    <td align="CENTER">Asx</td>
+    <td>Asparagine or Aspartic acid</td>
+    <td>AAC, AAT, GAC, GAT</td>
+  </tr>
+  <tr>
+    <td align="CENTER">C</td>
+    <td align="CENTER">Cys</td>
+    <td>Cysteine</td>
+    <td>TGC, TGT</td>
+  </tr>
+  <tr>
+    <td align="CENTER">D</td>
+    <td align="CENTER">Asp</td>
+    <td>Aspartic acid</td>
+    <td>GAC, GAT</td>
+  </tr>
+  <tr>
+    <td align="CENTER">E</td>
+    <td align="CENTER">Glu</td>
+    <td>Glutamic acid</td>
+    <td>GAA, GAG</td>
+  </tr>
+  <tr>
+    <td align="CENTER">F</td>
+    <td align="CENTER">Phe</td>
+    <td>Phenylalanine</td>
+    <td>TTC, TTT</td>
+  </tr>
+  <tr>
+    <td align="CENTER">G</td>
+    <td align="CENTER">Gly</td>
+    <td>Glycine</td>
+    <td>GGA, GGC, GGG, GGT</td>
+  </tr>
+  <tr>
+    <td align="CENTER">H</td>
+    <td align="CENTER">His</td>
+    <td>Histidine</td>
+    <td>CAC, CAT</td>
+  </tr>
+  <tr>
+    <td align="CENTER">I</td>
+    <td align="CENTER">Ile</td>
+    <td>Isoleucine</td>
+    <td>ATA, ATC, ATT</td>
+  </tr>
+  <tr>
+    <td align="CENTER">K</td>
+    <td align="CENTER">Lys</td>
+    <td>Lysine</td>
+    <td>AAA, AAG</td>
+  </tr>
+  <tr>
+    <td align="CENTER">L</td>
+    <td align="CENTER">Leu</td>
+    <td>Leucine</td>
+    <td>CTA, CTC, CTG, CTT, TTA, TTG</td>
+  </tr>
+  <tr>
+    <td align="CENTER">M</td>
+    <td align="CENTER">Met</td>
+    <td>Methionine</td>
+    <td>ATG</td>
+  </tr>
+  <tr>
+    <td align="CENTER">N</td>
+    <td align="CENTER">Asn</td>
+    <td>Asparagine</td>
+    <td>AAC, AAT</td>
+  </tr>
+  <tr>
+    <td align="CENTER">P</td>
+    <td align="CENTER">Pro</td>
+    <td>Proline</td>
+    <td>CCA, CCC, CCG, CCT</td>
+  </tr>
+  <tr>
+    <td align="CENTER">Q</td>
+    <td align="CENTER">Gln</td>
+    <td>Glutamine</td>
+    <td>CAA, CAG</td>
+  </tr>
+  <tr>
+    <td align="CENTER">R</td>
+    <td align="CENTER">Arg</td>
+    <td>Arginine</td>
+    <td>AGA, AGG, CGA, CGC, CGG, CGT</td>
+  </tr>
+  <tr>
+    <td align="CENTER">S</td>
+    <td align="CENTER">Ser</td>
+    <td>Serine</td>
+    <td>AGC, AGT, TCA, TCC, TCG, TCT</td>
+  </tr>
+  <tr>
+    <td align="CENTER">T</td>
+    <td align="CENTER">Thr</td>
+    <td>Threonine</td>
+    <td>ACA, ACC, ACG, ACT</td>
+  </tr>
+  <tr>
+    <td align="CENTER">V</td>
+    <td align="CENTER">Val</td>
+    <td>Valine</td>
+    <td>GTA, GTC, GTG, GTT</td>
+  </tr>
+  <tr>
+    <td align="CENTER">W</td>
+    <td align="CENTER">Trp</td>
+    <td>Tryptophan</td>
+    <td>TGG</td>
+  </tr>
+  <tr>
+    <td align="CENTER">X</td>
+    <td align="CENTER">X</td>
+    <td>any codon</td>
+    <td>NNN</td>
+  </tr>
+  <tr>
+    <td align="CENTER">Y</td>
+    <td align="CENTER">Tyr</td>
+    <td>Tyrosine</td>
+    <td>TAC, TAT</td>
+  </tr>
+  <tr>
+    <td align="CENTER">Z</td>
+    <td align="CENTER">Glx</td>
+    <td>Glutamine or Glutamic acid</td>
+    <td>CAA, CAG, GAA, GAG</td>
+  </tr>
+  <tr>
+    <td align="CENTER">*</td>
+    <td align="CENTER">*</td>
+    <td>stop codon</td>
+    <td>TAA, TAG, TGA</td>
+  </tr>
+  <tr>
+    <td align="CENTER">&nbsp;</td>
+    <td align="CENTER">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</center></div>
+
+<hr>
+
+<h2><a NAME="aaprops"></a>Amino acid properties</h2>
+<div align="center"><center>
+
+<table border="1" width="60%" HEIGHT="397">
+  <tr>
+    <th width="43%" COLSPAN="2" HEIGHT="19">Property</th>
+    <th width="57%" HEIGHT="19">Amino acids</th>
+  </tr>
+  <tr>
+    <td width="43%" COLSPAN="2" HEIGHT="19">small</td>
+    <td width="57%" HEIGHT="19">Ala, Gly</td>
+  </tr>
+  <tr>
+    <td width="43%" COLSPAN="2" HEIGHT="19">acidic / amide</td>
+    <td width="57%" HEIGHT="19">Asp, Glu, Asn, Gln</td>
+  </tr>
+  <tr>
+    <td width="22%" ROWSPAN="2" HEIGHT="44">charged</td>
+    <td width="21%" HEIGHT="19">negative</td>
+    <td width="57%" HEIGHT="19">Asp, Glu</td>
+  </tr>
+  <tr>
+    <td width="21%" HEIGHT="19">positive</td>
+    <td width="57%" HEIGHT="19">Lys, Arg</td>
+  </tr>
+  <tr>
+    <td width="43%" COLSPAN="2" HEIGHT="19">polar</td>
+    <td width="57%" HEIGHT="19">Ala, Gly, Ser, Thr, Pro</td>
+  </tr>
+  <tr>
+    <td width="43%" COLSPAN="2" HEIGHT="19">hydrophobic</td>
+    <td width="57%" HEIGHT="19">Val, Leu, Ile, Met</td>
+  </tr>
+  <tr>
+    <td width="22%" HEIGHT="59" ROWSPAN="2">size</td>
+    <td width="21%" HEIGHT="40">big</td>
+    <td width="57%" HEIGHT="40">Glu, Gln, His, Ile, Lys, Leu, Met, Phe, Trp, Tyr</td>
+  </tr>
+  <tr>
+    <td width="21%" HEIGHT="19">small</td>
+    <td width="57%" HEIGHT="19">Ala, Asn, Asp, Cys, Gly, Pro, Ser, Thr, Val</td>
+  </tr>
+  <tr>
+    <td width="43%" COLSPAN="2" HEIGHT="19">aliphatic</td>
+    <td width="57%" HEIGHT="19">Ile, Leu, Val</td>
+  </tr>
+  <tr>
+    <td width="43%" COLSPAN="2" HEIGHT="19">aromatic</td>
+    <td width="57%" HEIGHT="19">His, Phe, Tyr, Trp</td>
+  </tr>
+</table>
+</center></div>
+
+<hr>
+
+<p align="center">| <a HREF="#top">Top of page</a> | <a HREF="index.html">MutNomen
+homepage</a> | <a href="checklist.html">Check-list</a> |<br>
+| <b>Recommendations:</b>&nbsp; <a href="recs-DNA.html">DNA</a>,&nbsp; <a
+href="recs-RNA.html">RNA</a>,&nbsp; <a href="recs-prot.html">protein</a>, <a
+href="uncertain.html">uncertain</a> |<br>
+| <a HREF="disc.html">Discussions</a> | <a href="standards.html"><font
+face="Verdana, Arial, Helvetica, sans-serif">Symbols, codons, etc.</font></a> | <a
+HREF="FAQ.html">FAQ's</a> | <a href="history.html">History</a> |<br>
+| <b>Example descriptions:&nbsp;</b> <a href="quickref.html">QuickRef / symbols</a>,&nbsp;
+<a HREF="examplesDNA.html">DNA</a>,&nbsp; <a HREF="examplesRNA.html">RNA</a>,&nbsp; <a
+HREF="examplesAA.html">protein</a> | </p>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="15" bgcolor="#ff9900">
+  <tr>
+    <td><p align="center"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif"
+    size="-5"><a href="http://www.HGVS.org/copyright.html">Copyright ©</a> </font><font
+    size="1">HGVS 2007 All Rights Reserved<br>
+    Website Created by Rania Horaitis, Nomenclature by J.T. Den Dunnen - <a
+    href="http://www.HGVS.org/disclaimer.html">Disclaimer</a> </font></td>
+  </tr>
+</table>
+</body>
+</html>
