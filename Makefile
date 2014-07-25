@@ -9,6 +9,7 @@ update: update.log
 update.log: FORCE
 	rm -fr tmp; mkdir -p tmp
 	-wget ${WGET_OPTIONS} http://www.hgvs.org/mutnomen/ 2>&1 >$@
+	rm -fr mutnomen~
 	mv -b tmp/www.hgvs.org/mutnomen .
 	mv $@ mutnomen/
 	rm -fr tmp
