@@ -12,7 +12,7 @@ update:
 	mv tmp/update.log mutnomen/
 	rm -fr tmp
 
-.PHONY: up-push
-up-push: update
+.PHONY: uppu
+uppu: update
 	git commit -a -m "automatic update"
 	git push

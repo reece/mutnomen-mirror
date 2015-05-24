@@ -1,931 +1,77 @@
-<html>
-<!--
-	Author: 	Dr. Johan T. den Dunnen
-	Date: 	17-11-02
-	URL: 	disc.html
--->
-
-<head>
-<title>HGVS recommendations - Discussions</title>
-<style type="text/css">
-
-<!--  
-
-h1 {
- font-family : Verdana,Arial,Helvetica,Geneva,sans-serif;
- color : #0099cc;
-
-}
-
-h2 {
- font-family : Verdana,Arial,Helvetica,Geneva,sans-serif;
- color : #ff9900;
-
-}
-
-h3 {
- font-family : Verdana,Arial,Helvetica,Geneva,sans-serif;
- color : #0099cc;
-
-}
-
-h4 {
- font-family : Verdana,Arial,Helvetica,Geneva,sans-serif;
- color : #0099cc;
-
-}
-
-h5 {
-font-family : Verdana, Arial, Helvetica, Geneva, sans-serif;
-color : #ffffff;
-
-}
-
-.norm {
-
- font-weight : normal;
-
- }
- -->
-</style>
-</head>
-
-<body text="#000000" bgcolor="#FFFFFF" link="#0000FF" vlink="#9999ff">
-
-<table width="100%" border="0" cellspacing="0" cellpadding="10" bgcolor="#CCFF99">
-  <tr>
-    <td width="25%" valign="top" bgcolor="#FFFFFF"><a href="http://www.HGVS.org"><img
-    src="small.gif" border="0" width="155" height="94"></a></td>
-    <td width="75%" valign="CENTER" bgcolor="#FFFFFF" bordercolor="#FFFFFF"><h2 align="center">Discussions
-    regarding the description of sequence variants </h2>
-    </td>
-  </tr>
-</table>
-
-<table width="100%" border="0" cellspacing="0" cellpadding="10">
-  <tr>
-    <td width="100%" valign="BOTTOM" bgcolor="#0099cc"><h4 align="center"><font size="3"
-    color="#FFFFFF"><i><br>
-    Last modified March 22, 2013</i></font></h4>
-    </td>
-  </tr>
-</table>
-<!--	Author: 	Dr. Johan T. den Dunnen	Date: 	08-05-01	URL: 	http://www.dmd.nl/index_discussion.html-->
-
-<p align="center"><i>Since references to WWW-sites are not yet acknowledged as citations,
-please mention <a
-href="http://www3.interscience.wiley.com/cgi-bin/fulltext/68503056/PDFSTART">den Dunnen JT
-and Antonarakis SE (2000). Hum.Mutat. 15:7-12</a> when referring to these pages.</i></p>
-
-<hr>
-
-<h2>Contents</h2>
-
-<ul>
-  <li><a HREF="#intro"><b>Introduction</b></a></li>
-  <li><strong>Discussion / recent modifications</strong> <ul>
-      <li>reference sequences <ul>
-          <li><a HREF="refseq.html">which reference sequence to use</a>&nbsp; <i>(genomic or coding
-            DNA)</i></li>
-          <li><a HREF="#accessionnr">accession number</a></li>
-        </ul>
-      </li>
-      <li><a href="#tradition">traditional descriptions</a></li>
-      <li><b><i><img border="0" src="new.gif" width="31" height="12"></i></b><a href="#untrans">numbering
-        untranscribed nucleotides</a></li>
-      <li><a href="#polymorphism">polymorphisms</a></li>
-      <li><a href="#silent">silent protein changes</a></li>
-      <li><a href="#range">descriptions of a range using &quot;_&quot;</a></li>
-      <li><a href="#2in1">two sequence variants in one individual</a> <ul>
-          <li>two sequence variants in one allele </li>
-          <li><b><i><img border="0" src="new.gif" width="31" height="12"></i></b>two sequence changes
-            with alleles unknown</li>
-          <li>recessive disease <ul>
-              <li>sequence variants in two alleles</li>
-              <li>sequence variants in two genes</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li><a href="#moreRNAs">more transcripts / proteins from one allele</a></li>
-      <li><a href="#largedel">large deletions, split reference sequence</a></li>
-      <li><a HREF="uncertain.html">deletions with unknown molecular breakpoints</a></li>
-      <li><a HREF="#dupins">duplication or insertion</a>, <i><b><img border="0" src="new.gif"
-        width="31" height="12"></b>duplication or (2) ??</i></li>
-      <li><i><b><img border="0" src="new.gif" width="31" height="12"></b><a href="#tri">triplication,
-        quadruplication, ...</a></i></li>
-      <li><i><b><img border="0" src="new.gif" width="31" height="12"></b><a href="#loss">loss from
-        a run of nucleotides</a></i></li>
-      <li><a HREF="#ins">insertions</a></li>
-      <li><a HREF="#indel">insertion-deletions</a>&nbsp;<i> (indels)</i></li>
-      <li><b><i><img border="0" src="new.gif" width="31" height="12"></i></b><a
-        href="#p-initiation">translation initiation</a></li>
-      <li><a HREF="#frameshift">frame shift variants</a> </li>
-    </ul>
-  </li>
-  <li><strong>New recommendations</strong> <ul>
-      <li><a HREF="#refseq">alternative transcripts</a>&nbsp; <i>(Reference Sequence)</i></li>
-      <li><b><i><img border="0" src="new.gif" width="31" height="12"></i></b><a href="#indicator">accepted
-        sequence indicators</a></li>
-      <li><b><i><img border="0" src="new.gif" width="31" height="12">SNPs - </i></b><a href="#SNP">description
-        of SNP's</a>&nbsp; <i>(in Tables and text)</i></li>
-      <li><a href="#homhetr">homo/heterozygotes</a></li>
-      <li><a href="#haplo">haplotypes</a></li>
-      <li><a HREF="#translocation">translocations</a></li>
-      <li><a HREF="#fusion">fused gene products</a></li>
-      <li><a href="#1or3">one or three letter amino acid code</a>&nbsp; <i>(Trp or W)</i></li>
-      <li><a HREF="#Met">translation initiation codon changes</a>&nbsp; <i>(Met1)</i> </li>
-      <li><b><i><img border="0" src="new.gif" width="31" height="12"></i></b><a href="#con">gene
-        conversions</a></li>
-      <li><b><i><img border="0" src="new.gif" width="31" height="12"></i></b><a
-        href="uncertain.html">exact position not known</a></li>
-      <li><em><small><font color="#FF0000"><strong>added 2012-10-12</strong></font></small></em><b><i><img
-        border="0" src="new.gif" width="31" height="12"></i></b><a href="#brackets">protein
-        description between brackets</a></li>
-    </ul>
-  </li>
-  <li><b>Examples&nbsp;to describe changes</b> <ul>
-      <li><a HREF="examplesDNA.html">DNA changes</a></li>
-      <li><a HREF="examplesRNA.html">RNA changes</a></li>
-      <li><a HREF="examplesAA.html">protein changes</a></li>
-    </ul>
-  </li>
-</ul>
-
-<hr>
-
-<h2><a NAME="intro"></a>Introduction</h2>
-
-<hr>
-
-<p>This page gives an overview of the discussions raised and suggestions made to describe
-sequence variations after publication of the latest manuscript on this issue by JT den
-Dunnen and S Antonarakis (2000, <b><i>Mutation nomenclature extensions and suggestions to
-describe complex mutations: a discussion.</i></b> Human Mutation 15: 7-12, <em><a
-href="http://www3.interscience.wiley.com/cgi-bin/fulltext/68503056/PDFSTART">copy in
-PDF-format</a>).</em> We invite investigators to send us further remarks on the issues
-discussed here. Furthermore, we solicit complicated cases not yet covered, with a
-suggestion regarding how to describe these. We hope these pages will be used as a guide to
-describe any sequence change, ultimately evolving into a uniformly accepted standard.</p>
-<em>
-
-<p><strong>For reactions:</strong></em> contact us <em>by E-mail</em> (<strong>to:</strong>
-HGVSmn @ JohanDenDunnen.nl) or using the <em><a
-href="http://dmz-web03.lumc.nl/new.hgvs.org/?q=forum/2">HGVS variant description forum</a></em>.
-</p>
-
-<hr>
-
-<h2><a NAME="modify"></a>Discussion / recent modifications</h2>
-
-<hr>
-
-<h3><a NAME="accessionnr"></a>Accession number</h3>
-
-<p>As correctly pointed out by Peter Slickers (Clondiag Chip Technologies), providing a
-database accession number is not sufficient to identify a sequence in the database
-unambiguously. There may exist several different versions for a given accession. In most
-cases only the annotation changes, while the sequence remains the same, but this is not
-always the case and one can not rely on this (compare e.g. <a
-HREF="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?val=4503642">NM_000130.1</a> and <a
-HREF="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=nucleotide&amp;list_uids=10518500&amp;dopt=GenBank">NM_000130.2</a>).
-Therefore one should always use <b><i>accession AND version</i></b> number to refer to the
-reference sequence (<em><a HREF="index.html">see Recommendations</a></em>).&nbsp;</p>
-
-<hr>
-
-<h3><a NAME="tradition"></a>Traditional descriptions</h3>
-
-<p>In some cases the description of pathogenic changes in genes started well before there
-were any mutation nomenclature recommendations (e.g. in thalassemias and cystic fibrosis).
-When new reports describe variants according to current recommendations, instead of using <i><b>traditional
-descriptions</b></i>, experts in the field experience problems <i><b>&quot;recognizing&quot;</b></i>
-these variants. However, nomenclature rules should be universal and thus can not be made
-to apply for specific situations. The traditional notation only rings a bell for experts
-in the field, for others it is cryptic and confusing.<br>
-Although annoying, traditional descriptions should not be used anymore. When one uses the
-recommended descriptions it will be only a matter of time until also the experts get
-acquainted. The recommendation is to list in the variant summary Table <b>official</b> and
-<b>traditional</b> names next to each other in separate columns, like c.88+2T&gt;G and
-IVS#+2T&gt;G, p.Phe508del and delF508, or c.24dupG and Cd8/9+G.</p>
-
-<hr>
-
-<h3><a NAME="untrans"></a>Numbering untranscribed nucleotides</h3>
-
-<p>Several people have requested to extend the recommendations for the numbering of
-nucleotides using a <b>coding DNA reference sequence</b> to include a specific description
-for <b>untranscribed nucleotides</b> (i.e. 5' of the transcription initiation site
-(cap-site) or 3' of the polyA-addition site). Thus far, these requests have not been
-granted. The main reason is that genes often have <b>several</b> transcription initiation
-sites (promoters/5'-first exons) as well as polyA-addition sites (3'-terminal exons).
-Furthermore, the transcription initiation or cap-site, is <b>often ill-defined</b> (<em><a
-href="refseq.html#coding">see also Practical problems coding DNA reference sequence</a></em>).
-Consequently, the suggested information in the description (indicating that the variant
-lies in untranscribed sequences) is <b>not very reliable and informative</b>. In addition,
-it <b>further complicates</b> the already complex description using a coding DNA Reference
-Sequence. </p>
-
-<p>Recently our knowledge of the genome and its transcription is quickly maturing and
-transcription initiation and polyA-addition sites have been mapped much more precisely.
-When, as recommended, a stable LRG-based reference sequence (<em><a
-href="refseq.html#general">see Recommendations reference sequence</a></em>) is used, these
-uncertainties are less of an issue. </p>
-
-<p>The most mature suggestion is to extend the current recommendations (<em><a
-href="standards.html#number">see Numbering coding DNA reference sequence</a></em>) with; </p>
-
-<h4><u>coding DNA reference sequence</u> </h4>
-
-<ul>
-  <li>-N<b>-uM</b> = nucleotide <b>M</b> 5' (<b>u</b>pstream) of the nucleotide -N of the
-    transcription initiation site -N (e.g. -237-u5A&gt;G)<br>
-    <b>NOTE:</b> restricted to nucleotides 5' of the transcription initiation site (cap site,
-    i.e. upstream of the gene incl. the promoter)</li>
-  <li>*N<b>+dM </b>= nucleotide <b>M </b>3' (<b>d</b>ownstream) of the nucleotide
-    transcription termination site *N (e.g. *237+d5A&gt;G)<br>
-    <b>NOTE:</b> restricted to locations 3' of the polyA-addition site (downstream of the
-    gene)</li>
-</ul>
-
-<hr>
-
-<h3>Polymorphisms</h3>
-
-<p>In the past, descriptions like c.76A/G and p.36L/I (p.36Lys/Ile) have been used to
-describe &quot;polymorphic&quot; sequence variants (<em><a HREF="index.html">see Mutation
-/ polymorphism</a></em>). Note that a description of a variant should be neutral and not
-include any functional conclusion; consequently, polymorphisms and changes affecting
-function (&quot;pathogenic&quot;) <i><b>should not be described differently</b></i>. Note
-that it will often be very difficult to discriminate between variants affecting function
-and those that are truly neutral (not affecting function).</p>
-
-<hr>
-
-<h3><a NAME="silent"></a>Silent protein changes</h3>
-
-<p>Description of so called &quot;silent&quot; changes in the format p.(Leu54Leu)
-(alternatively p.(L54L)) should not be used; descriptions should be given at <b><i>DNA
-level</i></b>. The description at protein level is <i><b>not informative</b></i> and <b><i>not
-unequivocal</i></b> (there are at least five possibilities at DNA level which may underlie
-p.(Leu54Leu)). A correct description has the format c.162C&gt;G (p.(=)), with <i><b>&quot;p.(=)&quot;</b></i>
-indicating that there is no effect on protein level expected. A recent suggestion has been
-to use p.(Leu54=) (alternatively p.(L54=)) but also this description is uninformative,
-indicating that there is no change at protein level (so why mention it).</p>
-
-<hr>
-
-<h3><a NAME="range"></a>Descriptions of a range using &quot;_&quot;</h3>
-
-<p>Initially, the &quot;-&quot;-character (hyphen) was used for two different purposes,
-i.e. to indicate a <i><b>range</b></i> (nucletotides c.12-13delTG) as well as to indicate
-a <i><b>negative number</b></i> (e.g. for intronic sequences like in c.77-2A&gt;G). This
-description might cause confusion, which should be circumvented. For example when the
-change is c.12-13del, does this indicate a deletion <i><u>from coding DNA nucletoide 12 to
-13</u></i> or <i><u>from the intronic nucleotide c.12-13</u></i> ?. Since for intronic
-positions both the &quot;+&quot; and &quot;-&quot; characters are essential, the
-recommendation is to use the &quot;_&quot;-character (underscore) to indicate a
-range.&nbsp;</p>
-
-<hr>
-
-<h3><a NAME="2in1"></a>Two sequence variants in one individual</h3>
-
-<ul>
-  <li><b><i><img border="0" src="new.gif" width="31" height="12"></i><u>Two sequence variants
-    in one allele</u></b><br>
-    den Dunnen&amp;Antonarakis, 2000, <a
-    href="http://dx.doi.org/10.1002/(SICI)1098-1004(200001)15:1%3c7::AID-HUMU4%3e3.0.CO;2-N">Hum.Mut.
-    15: 7-12</a> suggested to describe two sequence variations in one allele as [c.76A&gt;C +
-    c.83G&gt;C], i.e. using a &quot;+&quot;-character to separate the two changes. The
-    previous description was [c.76A&gt;C; c.83G&gt;C] (Antonarakis, S.E. and the Nomenclature
-    Working Group, 1998, <a
-    href="http://dx.doi.org/10.1002/(SICI)1098-1004(1998)11:1%3c1::AID-HUMU1%3e3.0.CO;2-O">Hum.Mut.
-    11: 1-3</a>), i.e. using a &quot;;&quot;-character to separate the two changes. Since the
-    den Dunnen &amp; Antonarakis' suggestion might introduce confusion with older publications<i><b>
-    this suggestion was retracted</b>. Furthermore, for consistency and to keep descriptions
-    as short as possible, it was decided to write all indications of the reference sequence
-    used <b>in front</b> of the square brackets. Correct descriptions are thus;</i></li>
-  <ul>
-    <li><i>c.[76A&gt;C; 83G&gt;C] </i></li>
-    <li>GJB:c.[87delG]</li>
-  </ul>
-  <li><u><a NAME="2unknown"></a></u><b><i><img border="0" src="new.gif" width="31" height="12"></i><u>Two
-    sequence changes with alleles unknown</u></b><br>
-    when two sequences are identified in one individual but when it is not known whether these
-    are on one allele or on different alleles, the recommendation is to describe these as
-    &quot;[change 1(;)change 2]&quot; (<em><a href="FAQ.html#2unknown">see FAQ</a></em>). Of
-    course it <i><b>is recommended</b></i> to determine whether the changes are on the same
-    allele or not. Still, when this has not been done, it is important to make this absolutely
-    clear in a publication.&nbsp;<br>
-    <u>Example;</u> <ul>
-      <li>c.[76A&gt;C(;)83G&gt;C]<i><br>
-        </i></li>
-    </ul>
-  </li>
-  <li><a NAME="2in2"></a><b><u>Recessive disease - two sequence variants in different alleles<br>
-    </u></b>In recessive diseases sequence changes occur in both alleles. The description of
-    the changes found should indicate whether variants were found in both alleles and in which
-    combination. The latter is important since severity might depend on the combination of
-    variants present, while other combinations might not be deleterious at all.<u><br>
-    Examples;</u> </li>
-  <ul>
-    <li>c.[76A&gt;C];[87delG] - description of the pathogenic changes in both alleles in a
-      heterozygous case with a recessive disease<br>
-      <i><b>On protein level</b></i>, the designation is likewise; p.[Arg175*];[Cys305Ser]</li>
-    <li>c.[76A&gt;C];[76A&gt;C] - description of the homozygous changes in a recessive disease</li>
-    <li>c.[76A&gt;C];[?] - a case where only one mutated allele could be identified</li>
-    <li>when there is no change in the other allele the format is c.[76A&gt;C];[=] (<em><a
-      href="FAQ.html#2alleles">see FAQ</a></em>)</li>
-  </ul>
-  <li><a NAME="2in2genes"></a><u><b>Recessive disease - two sequence variants in two genes<br>
-    </b></u>In recent years examples have been identified where in recessive diseases sequence
-    changes occur in two different genes, together having pathogenic consequences. The
-    description should be <i>as for recessive diseases</i> with changes in both alleles of one
-    gene but, to prevent confusion, should <i><b>include a reference to the gene changed</b></i>.<br>
-    <u>Examples;</u> <ul>
-      <li>NM_004004.2:c.[35delG];NM_006783.1:c.[689_690insT] - a recessive disease with variations
-        in two different genes, i.e. GJB2 (NM_004004.2) and GJNB6 (NM_006783.1), located on the
-        same chromosome</li>
-      <li>GJB2:c.[76A&gt;C];GJB6:c.[87delG] - a recessive disease with variations in two different
-        genes, i.e. the GJB2 and GJB6 genes, located on <em><strong>the same chromosome</strong></em>.<i><b>
-        </b></i>On protein level the description is likewise; GJB2:p.[Arg175*];GJB6:p.[Cys305Ser]<br>
-        <em><strong>NOTE:</strong></em> the reference sequences of the GJB2 and GJB6 genes should
-        be described clearly.</li>
-      <li>GJB2:c.76A&gt;C, GJB4:c.3delG - a disease with variations in two different genes, i.e.
-        the GJB2 and GJB4 genes, located on <em><strong>different chromosomes</strong></em>.<i><b>
-        </b></i>On protein level the description is likewise; GJB2:p.Arg175*, GJB4:p.0?<br>
-        <em><strong>NOTE:</strong></em> the reference sequences of the GJB2 and GJB4 genes should
-        be described clearly.</li>
-      <li>GJB2:c.[76A&gt;C];[?] - a case where only one mutated allele could be identified</li>
-    </ul>
-  </li>
-</ul>
-
-<hr>
-
-<h3><a NAME="moreRNAs"></a>More transcripts / proteins from one allele</h3>
-
-<p>As a consequence of the <a HREF="#2in1">above mentioned change</a>, the
-&quot;;&quot;-character should not be used to describe changes which affect
-RNA-processing, i.e. yielding two or more transcripts (den Dunnen &amp; Antonarakis, 2000,
-<a
-href="http://dx.doi.org/10.1002/(SICI)1098-1004(200001)15:1%3c7::AID-HUMU4%3e3.0.CO;2-N">Hum.Mut.
-15: 7-12</a>). <i><b>The suggestion is to use the &quot;,&quot;-character (comma) instead</b></i>
-(<em><a href="recs-RNA.html#2RNA">see Recommendations</a></em>). This rule applies to both
-description at RNA and protein level. </p>
-
-<hr>
-
-<h3><a NAME="largedel"></a>Large deletions, split reference sequence</h3>
-
-<p>If a <i><b>deletion is large</b></i> and the reference sequence is <i><b>split over
-several files</b></i>, list at least once (in order) the respective files containing the
-overall reference sequence. When describing the change, to prevent confusion, include a
-reference to the sequence used, e.g. <b>AC109326.2:g.82398_L78833.1:g.80466del</b>. In the
-&quot;Remarks&quot; column of the summary table the size of the deletion could be
-mentioned (e.g. 160 kb deletion spanning exons 1-22). Please note that, since the
-reference sequence is split over several files, this size can not be deduced from the
-description of the sequence (see also <em><a href="#fusion">Discussion - Fused genes</a></em>).</p>
-
-<hr>
-
-<h3><a NAME="dupins"></a>Duplication or insertion</h3>
-
-<p>Although duplications can be considered as a special type of insertion, the
-recommendation is to describe duplications independently from insertions, using the term <b>&quot;dup&quot;</b>
-. This recommendation also applies for a duplicated mono-, di-, tri-, etc. nucleotide
-stretch. There are several reasons why the recommendation is to describe such changes as a
-&quot;<i><b>duplication</b></i>&quot; (<i><a href="#ins">see Triplication, ...</a></i>) 
-
-<ul>
-  <li>the description is <b>simpler, shorter and more unequivocal</b></li>
-  <li>it is clearer and <b>prevents confusion</b> regarding the exact position introduced when
-    an insertion is incorrectly reported like &quot;22insG&quot; (<i><a href="#ins">see
-    Insertions</a></i>)</li>
-  <li>it prevents discussions regarding the <b>position of the insertion</b>; in the case of a
-    duplication including the intron/exon border (e.g. c.123-8_137dup) would the
-    &quot;insertion&quot; be in the intron or exon ?.&nbsp;</li>
-  <li>insertion more or less includes &quot;<i>coming from elsewhere</i>&quot;. <b>Mechanistically</b>,
-    a duplication is more likely to be caused by DNA polymerase slippage, duplicating a local
-    sequence.</li>
-</ul>
-
-<h4><u><b>Examples</b></u> </h4>
-
-<ul>
-  <li><u>nucleotide level </u><ul>
-      <li><i>c.7dupT (or c.7dup) denotes the duplication (insertion) of a T at position 7 in the
-        sequence ACTTACTGCC to ACTTACT<strong><u>T</u></strong>G<em>CC</i></li>
-      <li><i>c.6_7dup (or c.6_7dupTG) denotes a TG duplication (TG insertion) in the sequence
-        ACATGTGCC to ACATGTG<u><strong>TG</strong></u>CC</i></li>
-    </ul>
-  </li>
-  <li><i><u>protein level<br>
-    </u>p.His7dup (or p.H7dup) describes as a duplicating insertion in the H repeat sequence
-    of MKMGHHHQCC to MKMGHHH<u><strong>H</strong></u>QCC</i></li>
-</ul>
-
-<p><strong>NOTE:</strong></em> the description<strong> &quot;dup&quot;</strong> (<em><a
-href="standards.html#define">see Standards</a></em>) may <strong>by definition</strong>
-only be used when the additional copy is directly 3'-flanking of the original copy (tandem
-duplication). For large duplications (e.g. one or more exons) there will often be <strong>no
-such experimental proof</strong>, the additional copy may be anywhere in the genome (i.e.
-inserted / transposed). It has been suggested that, unless there is experimental evidence,
-such duplications should be described using the format, i.e. c.88-?_301+?<b>(2)</b> &nbsp;
-(<a href="recs-DNA.html#var"><em>see Recommendations</em></a>).<em></p>
-</em>
-
-<hr>
-
-<h3>Triplication, quadruplication, ...</h3>
-
-<p>Duplications are indicated by the term &quot;dup&quot;. The question arose what to do
-when more copies are involved, use <em><strong>triplications, quadruplications</strong></em>,
-etc. ?. There are several possibilities. First, like &quot;dup&quot; for duplications one
-could use &quot;tri&quot; for triplications, &quot;qua&quot; for quadruplications, etc.
-Another possibility is to use the recommendation to describe <em><a
-href="recs-DNA.html#var">sequence repeat variability</a></em> and to use &quot;3&quot; for
-triplication (3 copies), &quot;4&quot; for quadruplication (4 copies), etc. A variant of
-this possibility is to use rep3, rep4, etc.<br>
-To prevent that more and more specific notations are used, making the overall description
-of sequence variants increasingly complicated, tri, qua, rep3, rep4, etc. are not
-recommended. The suggestion is to <em><strong>describe triplications, quadruplications,
-etc. using the format (3), (4)</strong>, etc.<br>
-<strong>NOTE: </strong></em>square brackets (<em><strong>&quot;[]&quot;</strong></em>) are
-not used unless their is experimental evidence that the additional copies are in tandem on
-the same allele.<b><i><em></p>
-
-<h4></em></i><u>Examples</b> </u><em></h4>
-
-<ul>
-  <li></em><u>nucleotide level </u><em><ul>
-      <li>c.87_93[3] </em>describes the presence of two additional copies (a triplication) of the
-        7 nucleotides from coding DNA position 87 to 93.<em></li>
-      <li>c.4987-?_5193+?(4) </em>describes the presence of three additional copies (a
-        quadruplication) of exons 17 to 19 of the BRCA1 gene, from an unknown position in intron
-        16 (c.4987-?) to an unknown position in intron 19 (c.5193+?).<br>
-        <em><strong>NOTE:</strong> </em>the use of round brackets (for &quot;<em>uncertainty</em>&quot;)
-        nicely indicates that the location of the additional copies has not been analysed
-        (although everybody expects them to be in tandem on one allele).<em></li>
-    </ul>
-  </li>
-  <li></em><u>protein level<i><em><br>
-    </u>p.(His5_Cys7[3]) (or p.(H5_C7[3]), RNA not analysed) </em></i>describes as a
-    triplication of the amino acid sequence HQC in MKMGHQCC to MKMGHQC<b><u>HQCHQC</u></b>C<em></li>
-</ul>
-</em>
-
-<hr>
-
-<h3><a NAME="loss"></a><b><img border="0" src="new.gif" width="31" height="12"></b>Loss
-from a run of nucleotides</h3>
-
-<p><u>From Pat O'Neill (Burlington, USA):</u><br>
-<em>I especially like the use of &quot;dup&quot; in place of &quot;ins&quot; when the
-inserted base creates a run of two or more bases. I feel that there <b>should be a
-parallel term for the loss of a base</b> from a run of two or more bases instead of just
-&quot;del&quot;. This is because of the mechanistic implications of both an ins and a del
-of a base in a run. Has this been discussed? My only thought for a term in place of
-&quot;del&quot; is <b>&quot;los&quot; </b>for loss.<br>
-</em><u>Shuji Ogino (Boston, USA)</u> <em>agrees with this suggestion but suggest to use
-the term <b>&quot;dec&quot;</b> for a decrease in length.</em></p>
-
-<p><u>Reply&nbsp; (JdD):</u> Basically the &quot;dup&quot; nomenclature was suggested
-because the description is <b>simpler, shorter and less unequivocal</b> (<em><a
-href="#dupins">see Discussion</a></em>). The potential mechanistic relation is nice but
-was not decisive. Basically a description should be clear/unequivocal and not so much
-contain additional information.</p>
-
-<hr>
-
-<h3><a NAME="ins"></a>Insertions</h3>
-
-<p>The description of insertions has had some discussion. The first point of discussion
-was whether the nucleotides (amino acids) flanking the insertion site had to be given both
-or not. In the past, the description 22insG (or Cys22insGly) was used both to indicate
-insertion <b>at</b> position 22 and insertion <b>after</b> position 22. This situation
-becomes even more complex when a &quot;-&quot; character is involved, like in -14insG or
-456-13insG. Does the latter mean <b>at</b> or <b>after</b> intronic nucleotide 456-13 and
-in addition, <b>after</b> nucleotide 456-13 is that <b>position 456-12 or 456-14</b> ?.
-Consequently, to prevent confusion, <b>both flanking residues have to be listed</b>.&nbsp;<br>
-The second point of discussion was which character to use as a separator. The initial
-suggestion was to use the &quot;^&quot;-character (e.g. p.Q83^C84insQ). However, since a
-character to indicate a range was already available, it was decided to use this character,
-i.e. the &quot;_&quot;-character (<a HREF="#range">see above</a>).</p>
-
-<hr>
-
-<h3><a NAME="indel"></a>Insertion-deletions&nbsp;<font SIZE="3"> (indels)</font></h3>
-
-<p>The occurrence of a combination of a deletion and insertion, sometimes named &quot;<b>indel</b>&quot;,
-is not rare. Based on existing terminology, a recommendation for their description can be
-rather straightforward; a combination of a deletion and insertion at the same site is
-described using the <b>format 112_117delinsTG. </b>On protein level, likewise, as <b>p.Trp33_Lys35delinsArg.&nbsp;</b>
-</p>
-
-<hr>
-
-<h3><a NAME="p-initiation"></a>Translation initiation</h3>
-
-<p><font color="#FF0000"><em><strong><small>date 2012-08-31 </small></strong></em></font>Based
-on a <a
-href="http://https://oi.gene.le.ac.uk/variants.php?select_db=IFITM5&amp;action=search_all&amp;search_Variant%2FDNA=c.-14C%3ET">new
-variant reported in the IFITM5 gene</a> (c.-14C&gt;T, generating a new translation
-initiation codon at position -5), Raymond Dalgleish (Leicester, UK) asked how to describe
-this variant on protein level.</p>
-
-<p><b>The recommendation is to describe the generation of new upstream translation
-initiation codons using the format &quot;p.Met1ext-5&quot;</b>, where &quot;-5&quot; is
-the position of the new translation initiating Methionine.</p>
-
-<p><u>Argumentation</u> 
-
-<ul>
-  <li>the description is clear, unequivocal, short and in line/not in conflict with existing
-    recommendations, incl.<ul>
-      <li>descriptions at protein level should describe the changes observed on protein level (and
-        not try to incorporate knowledge regarding the change at DNA-level)</li>
-      <li>amino acids originating from changes introducing upstream translation initiation are
-        numbered like nucleotides (like ..., Gln-2, Thr-1)</li>
-    </ul>
-  </li>
-  <li>p.Met1ext<strong>Met</strong>-5 is an alternative but &quot;Met&quot; in
-    &quot;Met-5&quot; is redundant</li>
-  <li>describing the variant as an insertion, like p.(Met1_Asp2insAlaLeuGluProMet), is an
-    alternative but the description becomes quite cumbersome when the new initiation codon
-    lies further upstream</li>
-  <li>the &quot;<em><a href="recs-prot.html#sub">Recommendations for the description of
-    protein sequence variants (v2.0)</a></em>&quot; mentioned the example <strong>p.Met1ValextMet-12</strong>.
-    Based on the new recommendation this example has been changed to <strong>p.Met1Valext-12</strong>.</li>
-</ul>
-
-<hr>
-
-<h3>Frame shift variants</h3>
-
-<p><b>NOTE: </b>description clarified with the help of Raymond Dalgleish (Leicester, UK). </p>
-
-<p><b>The recommendation is to designate frame shifting variants by &quot;fs&quot;</b>. It
-is not useful to add much detail in the description of frame shifting variants besides
-(especially in the case of C-terminal variants) the length of the new, shifted reading
-frame.&nbsp;Two notations can be used to describe frame shift changes, a <b>short</b> or a
-<b>long form</b>.</p>
-
-<p><u>Short description</u><br>
-&quot;<b>fs</b>&quot; after a description of the first amino acid affected by the change. 
-
-<ul>
-  <li>p.Arg97fs (alternative p.R97fs) denotes a frame shifting change with Arginine-97 as the
-    first affected amino acid</li>
-</ul>
-
-<p><u>Long description</u><br>
-&quot;<b>fs*#</b>&quot; after a description of the amino acid(s) affected by the change
-and the change occurring at the site of the frame shift. &quot;*#&quot; indicates at which
-codon position the new reading frame ends in a stop (*). The position of the stop in the
-new reading frame is calculated starting at the first amino acid that is changed by the
-frame shift, and ending at the first stop codon (*#).<br>
-<b>NOTE:</b> the shifted reading frame is thus open for '#-1' amino acids. 
-
-<ul>
-  <li>p.Arg97Profs*23 (short p.Arg97fs) denotes a frame shifting change with Arginine-97 as
-    the first affected amino acid, changing into a Proline and the new reading frame ending in
-    a stop at position 23<br>
-    <br>
-    <b>NOTE:</b> the description at protein level does not relate to the change at DNA-level.
-    So a 1 nucleotide deletion (or duplication / insertion) as well as a 100 nucleotide
-    deletion may have the same description at protein level, like p.Arg79fs. The description
-    may differ in the &quot;long description&quot; when the first encoded amino acid in the
-    shifted reading frame differs (e.g. p.Arg97Profs*23, p.Arg97Serfs*23, etc.)</li>
-</ul>
-
-<p>Please note that the frame shift example given in den Dunnen &amp; Antonarakis, 2000, <a
-href="http://dx.doi.org/10.1002/(SICI)1098-1004(200001)15:1%3c7::AID-HUMU4%3e3.0.CO;2-N">Hum.Mut.
-15: 7-12</a> contains a mistakes; p.R97fs*121 (page 11) should be &quot;p.R97fs*25,
-indicating a frame-shifting change with Arginine-97 as the first affected amino acid and
-the new reading frame being open for 24 amino acids&quot;.</p>
-
-<hr>
-
-<h2><a NAME="extend"></a>New recommendations</h2>
-
-<hr>
-
-<h3><a NAME="refseq"></a>Alternative transcripts&nbsp; <font SIZE="3">(Reference Sequence)</font></h3>
-
-<p><em><a HREF="FAQ.html#refseq">As discussed</a></em>, in some cases it is very difficult
-to assign a sequence which can be used as a good reference for numbering. When a coding
-DNA reference sequence is used it should represent <b>the major transcript</b> of the
-gene. Alternatively spliced exons (5'-first, internal or 3'-terminal) derived from within
-the gene can than be best numbered as for intronic sequences. Description of variants in
-transcripts initiating or terminating outside this region is more difficult. The
-suggestion is to described these as usual but to precede them with a unique identifier of
-the alternative transcript and a &quot;:&quot;-character, like c.Dp427c:3G&gt;T. The
-alternative transcript should be precisely described and refer to a specific database
-record (Genbank, EMBL, DDJB)., the accession number of which should be provided.</p>
-
-<p>For example, for the DMD-gene, involved in Duchenne Muscular Dystrophy (DMD), the major
-transcript is that found in muscle, indicated with Dp427m. Other transcripts are initiated
-from within the Dp427m gene, e.g. that found in Purkinje cells (Dp427p) and in retina
-(Dp260), but these are all considered &quot;<b>alternative transcripts</b>&quot;. Variants
-in the respective promoter / exon 1 region can thus be described as intronic sequences in
-relation to the Dp427m coding DNA sequence. However, the brain promoter / exon 1 lies 5'
-of the Dp427m promoter. Thus, a variant in this region should be described using the
-format c.Dp427c:3G&gt;T. Note that this transcript encodes a new translation initiation
-site and that the numbering used starts with nucleotide +1 for the A of the
-ATG-translation initiation codon of the Dp427c-transcript.</p>
-
-<hr>
-
-<h3><a NAME="indicator"></a>Accepted sequence indicators</h3>
-
-<p>For clarity reasons, e.g. to prevent confusion when in one manuscript variants in
-relation to different reference sequences are described, it is recommended to use <b>unique
-sequence indicators</b> as part of the description of each variant. It should be noted
-however that for every indicator the respective <b>reference sequence used</b> should
-always be mentioned. Unique indicator and sequence description should be separated by a
-colon (<b>&quot;:&quot;</b>) (<em><a href="recs.html#indicator">see Recommendations</a></em>).<u><br>
-Examples;</u>&nbsp; 
-
-<ul>
-  <li><b>NM_004006.1:</b>c.3G&gt;T - uses a GenBank file as indicator</li>
-  <li><b>GJB2:</b>c.76A&gt;C - uses a <a href="http://www.genenames.org/guidelines.html">HGNC-approved
-    gene symbol</a> as indicator</li>
-  <li><b>NM_004006.1(DMD):</b>c.3G&gt;T - uses both a GenBank file and a <a
-    href="http://www.genenames.org/guidelines.html">HGNC-approved gene symbol</a> as indicator
-  </li>
-  <li><b>chrX:</b>g.32,218,983_32,984,039del - uses a chromosome indicator (here X)<br>
-    <b>NOTE:</b> the chromosome build used should always be mentioned (e.g. NCBI Build 36.1)</li>
-  <li><b>rs2306220:</b>A&gt;G - using a <a href="http://www.ncbi.nlm.nih.gov/SNP">dbSNP</a>-identifier
-    as indicator</li>
-  <li><b>DXS1219:</b>g.CA[18] (or AFM297yd1:g.CA[18]) - uses marker DXS1219 / AFM297yd1 as
-    indicator </li>
-</ul>
-
-<hr>
-
-<h3>Single Nucleotide Polymorphisms (SNP's)</h3>
-
-<p>Publications reporting linkage or association studies often use a range of different
-markers/SNP's. Such publications should contain an <b>unequivocal description of all
-markers</b> used. An easy way to achieve this is to include in the description a direct,
-unequivocal reference to the <b>reference sequence used</b> (preferably a GenBank or dbSNP
-record).<u><br>
-Examples;</u>&nbsp; 
-
-<ul>
-  <li><b>NM_004006.1:c.3G&gt;T</b> - uses a GenBank file as reference sequence (coding DNA)</li>
-  <li><b>GJB2:c.76A&gt;C</b> - uses a <a href="http://www.genenames.org/guidelines.html">HGNC-approved
-    gene symbol</a> as reference. <b>NOTE:</b> the manuscript should list the GenBank file of
-    the reference sequence of the GJB2 gene (here the coding DNA)</li>
-  <li><b>rs2306220:A&gt;G</b> - using a <a href="http://www.ncbi.nlm.nih.gov/SNP">dbSNP</a>-identifier
-    as a reference<br>
-    <b>NOTE:</b> descriptions like dbSNP2306220:A&gt;G should not be used, they are not
-    unequivocal since it is <b>unknown</b> whether rs2306220 or ss2306220 in meant.</li>
-  <li><b>DXS1219:g.CA[18];[21]</b> (or AFM297yd1:g.CA[18];[21]) - uses marker DXS1219
-    (AFM297yd1) as reference to describe the length of the two CA-repeat alleles. <b>NOTE:</b>
-    although descriptions of marker DXS1219 can be found at several places (e.g. GDB,
-    GenBank), the manuscript should <b>list the GenBank file containing the reference sequence
-    of the marker</b>.</li>
-  <li><b>variants in the promoter region</b> (<em><a href="FAQ.html#promSNP">see FAQ</a></em>)
-    - it is recommended to describe this variant in relation to a genomic reference sequence
-    (like <b>L01538.1:g.1407C&gt;T</b>). Describing a promoter variant in relation to a coding
-    DNA reference sequence (i.e. in relation to the A of the ATG initiation codon) is possible
-    but not very informative. In such cases, next to the coding DNA reference sequence also
-    the genomic reference sequence used should be given (<em><a href="refseq.html#updown">see
-    Discussion</a></em>). A suggestion is to describe the change as &quot;<b>L01538.1:g.1407C&gt;T
-    (at -401 of the ATG)</b>&quot;.</li>
-</ul>
-
-<hr>
-
-<h3>Homo/heterozygotes</h3>
-
-<p>Regarding <b>SNP's and their use in the text of papers</b> Peter Taschner (LUMC,
-Leiden, NEDERLAND) makes the following remark;<br>
-most recommendations for sequence variant nomenclature apply to genotype descriptions in
-tables. Unfortunately, these are not very useful in the general text of a paper. For
-instance, the OPRM1:c.118A&gt;G or dbSNP1799971:A&gt;G designation can be used to describe
-the sequence variant, but in a paper you might like to discuss the phenotypic consequences
-of different genotypes. In fact the current recommendation is to use
-OPRM1:c.[118A&gt;G];[=] to describe a heterozygote and [=];[=] and
-OPRM1:c.[118A&gt;G];[118A&gt;G] for the homozygotes. I would like to <b>suggest to
-describe the genotypes in the text</b> like;</p>
-
-<blockquote>
-  <blockquote>
-    <ul>
-      <li>OPRM1:c.118AA homozygotes </li>
-      <li>OPRM1:c.118GA heterozygotes </li>
-      <li>OPRM1:c.118GG homozygotes </li>
-    </ul>
-  </blockquote>
-</blockquote>
-
-<p>The different alleles could then be designated as the OPRM1:c.118A allele and the
-OPRM1:c.118G allele. In combination with variants of other genes, the genotype
-descriptions could be OPRM1:c.118AA, GJB2:c.76AC double heterozygotes, etc.</p>
-
-<hr>
-
-<h3><a NAME="haplo"></a>Haplotypes</h3>
-
-<p>Haplotypes are a special form of two or more variants in one allele (<em><a
-href="recs-DNA.html#2in">see Recommendations DNA changes</a></em>). When it is once
-clearly described (e.g. in the Materials &amp; Methods) what the order of the variants is
-and which reference sequences were used a rather simple description of&nbsp;a haplotype
-can be used. Allele descriptions (using &quot;<em><strong>[]</strong></em>&quot;) are of
-course only used for variants on one chromosome. Examples; 
-
-<ul>
-  <li>Haplotype with all variants in relation to <b>one coding DNA reference sequence</b> <ul>
-      <li>description of the reference haplotype;&nbsp; NM_004006.1:c.[837G&gt;A; 1704+51T&gt;C;
-        3734C&gt;T; 6438+2669T(16_23); 6571C&gt;T; 7098+13212GT(15_19)]</li>
-      <li>description haplotype;&nbsp; [G;C;C;18;T;17]</li>
-    </ul>
-  </li>
-  <li>Haplotype with all variants in relation to <b>several reference sequences</b>, both
-    genomic and coding DNA <ul>
-      <li>description of the reference haplotype;&nbsp; [M59228.1:g.250G&gt;C; AF209160.1:g.572CA;
-        Z11861.1:g.61T&gt;C; Z16803.1:g.114A</li>
-      <li>description haplotype;&nbsp; [C;13;T;21]</li>
-    </ul>
-  </li>
-</ul>
-
-<hr>
-
-<h3>Translocations</h3>
-
-<p>For the description of translocations the format &quot;t(X;4)(p21.2;q34)&quot;,
-suggested originally by the <a
-href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=4041569&amp;dopt=Abstract">ISCN
-(1985)</a>, is already used as a standard.<br>
-<b>NOTE:</b> current recommendations in this areas are made by the &quot;Standing
-Committee on Human Cytogenetic Nomenclature&quot; and were published recently as <a
-href="http://content.karger.com/ProdukteDB/produkte.asp?Aktion=showproducts&amp;searchWhat=books&amp;ProduktNr=257302">ISCN
-2013</a>&quot;.</p>
-
-<p>For a description at the molecular level this notation can be followed, extended with
-the standard description indicating the exact translocation breakpoint. When due to local
-similarities the exact breakpoint is uncertain, following standard nomenclature rules, it
-will be arbitrarily assigned to the most 3' nucleotide. Since the translocation
-breakpoints can have a complex structure and since it involves two different chromosomal
-locations, the sequences of the two translocation breakpoints should always be submitted
-to a sequence database (Genbank, EMBL, DDJB). The accession numbers of these files should
-be listed in the report</p>
-
-<p>Next to the exact location of the translocation breakpoint, its molecular
-characterisation will yield more details including e.g. deletions/duplications at the
-junction and the sequence joined, derived from the other chromosome. We believe that a
-description covering all these details will become too complex. However, when one wants to
-include these details, the first description should be for the translocated 5' segment of
-the gene, the second for the translocated 3' segment, separated by a
-&quot;;&quot;-character.&nbsp;It should also be noted that when a translocation joins
-genes A and B, the description of the breakpoint in the sequence variation database of
-gene A is different from that in gene B. The major difference being that the nucleotide
-numbering is based on that of gene A or gene B respectively. 
-
-<ul>
-  <li>t(X;4)(p21.2;q35)857+101_857+102 denotes a translocation breakpoint located in an
-    intron, between nucleotides 857+101 and 857+102, and joining chromosome bands Xp21.2 and
-    4q34</li>
-  <li>t(X;4)(p21.2;q35)IVS7 denotes a translocation breakpoint in intron 7, joining chromosome
-    bands Xp21.2 and 4q34</li>
-</ul>
-
-<hr>
-
-<h3>Fused genes</h3>
-
-<p>Due to (large) deletions, translocations or inversions, genetic rearrangements may have
-one breakpoint far from the gene under study. The breakpoint might lie in 'empty'
-intragenic sequences or in another gene. Consequently, to describe the breakpoint at a
-molecular level two Reference Sequences will be required. To describe cases like this, no
-recommendations have been made yet.&nbsp;<br>
-<u>Recommendation:</u> for the breakpoint residing in the gene under study, nucleotide
-numbering is clear and follows the standard. When the breakpoint lies in another gene,
-nucleotide numbering for that end should be based on the nucleotide numbering for that
-gene (accession.version number of the Reference Sequence used should be provided). To
-indicate that the end lies in another gene, the nucleotide number should be preceded with
-the gene's <a HREF="http://www.gene.ucl.ac.uk/nomenclature/">official Gene Symbol</a>,
-like GJB2:c.233. When the breakpoint does not reside in another gene, the accession number
-of the Reference Sequence will be used instead of the official Gene Symbol, like
-AC012343.2:g.763 (please note that this is always a genomic Reference Sequence). When the
-breakpoint ends on the <b>opposite strand </b>(reverse, complementary, non-transcribed or
-anti-sense strand) of a gene or on the <b>opposite</b> strand of an intragenic sequence,
-an &quot;<b>o</b>&quot; will precede the official Gene Symbol (like <b>o</b>GJB2:c.233).
-Pleas note that the use of a &quot;c&quot; (<b>c</b>omplementary), &quot;a&quot; (<b>a</b>nti-sense)
-or &quot;r&quot; (reverse) might cause confusion with nucleotides C and A or the
-&quot;r&quot; indicating description of a change on RNA-level. 
-
-<ul>
-  <li>c.1431_oXYZ:c.234-15del denotes a deletion starting at position 1431 of the gene
-    analysed, ending on the opposite translational strand in an intron of the XYZ-gene
-    (accession number to be provided)</li>
-  <li>c.1431_AC012343.2:g.23515del denotes a deletion starting at position 1431 of the gene
-    analysed, ending at position 23,515 of the intragenic sequence reported with accession
-    number AC012343.2</li>
-</ul>
-
-<hr>
-
-<h3>One or three letter amino acid code</h3>
-
-<p>Discussions regarding the use of either the <b>one- or three-letter amino acid code</b>
-to describe variants at protein level are ongoing. Basically, descriptions using the <a
-href="codon.html">one-letter amino acid code</a> are unequivocal, short and thus
-preferred. However, since the one-letter amino acid code is not obvious (Ala, Arg, Asn,
-Asp start with <b><u>A</u></b>, Gln, Glu, GLy with <b><u>G</u></b>, Leu, Lys with <b><u>L</u></b>,
-Phe, Pro with <u><b>P</b></u> and Thr, Tyr with <b><u>T</u></b>) publications often
-contain mistakes when the one-letter code is used. In addition, the '<b><u>*</u></b>' is
-not only used to indicate a stop codon (translation termination) but also to indicate
-unknown residues. Consequently, to prevent mistakes, <b>we favour the use of the <a
-href="codon.html">three-letter amino acid code</a>.</b> </p>
-
-<hr>
-
-<h3><a NAME="Met"></a>Translation initiation codon changes </h3>
-
-<p>Currently, variants in the translation initiating Methionine (M1) are usually described
-as a substitution, e.g. p.Met1Val. This is not correct. Either no protein is produced (<b>p.0</b>)
-or a new translation initiation site up- or downstream is used (e.g. <b>p.Met1ValextMet-12</b>
-or <b>p.Met1_Lys45del</b> resp.). Unless experimental proof is available, it is probably
-best to report the effect on protein level as &quot;<b>p.Met1?</b>&quot; (unknown). When
-experimental data show that no protein is made, the description &quot;<b>p.0</b>&quot; is
-recommended (<em><a href="examplesAA.html#sub">see Examples</a></em>). </p>
-
-<hr>
-
-<h3><a NAME="brackets"></a><b><img border="0" src="new.gif" width="31" height="12"></b>Protein
-description between brackets </h3>
-
-<p>Usually, descriptions at protein level have no experimental proof, i.e. are predictions
-only, deduced directly from the DNA sequence. However, when RNA has been analysed, and
-(unexpected) effects at RNA processing can be excluded, the predcited protein change will
-usually be correct. Similarly, the variant protein may have been detected using
-immuno-histochemistry or on Western blot. To indicate whether there is any experimental
-evidence for a protein description, it is recommended that <b>when RNA nor protein has
-been analysed</b>, the description is given <b>between brackets</b> (e.g. p.(Arg22Ser)).</p>
-
-<p><strong><small><font color="#FF0000">added 2012-10-12</font></small><br>
-Question;</strong> (Richard Barber) when the nucleotide change is common and well
-characterised at RNA and protein level, such as CFTR:p.Phe508del, there seems no need to
-use a description with brackets.</p>
-
-<p><strong>Answer;</strong> Agreed. However, please check carefully that such evidence is
-indeed available and do not fall into the trap of &quot;transitive proof&quot;. i.e.
-reports only referring to another source for experimental evidence without giving any
-themselves.</p>
-
-<hr>
-
-<h3><a NAME="con"></a>Gene conversions </h3>
-
-<p>A gene conversion is a nonreciprocal transfer of genetic information between two
-homologous sequences. As a result of a gene conversion the sequence of (part of) a gene
-can be copied from a highly similar sequence residing elsewhere in the genome. Usually,
-the converted segment contains a range of sequence changes, making its description rather
-complex. In such cases it is recommended to use a specific description using the format <b>&quot;region_changed&quot;
-con &quot;region of origin&quot;</b>. Please note that also here <em><a
-href="recs.html#repeat">the rule applies</a></em> to arbitrarily assign the most 3'
-position possible as the first to have been changed.</p>
-
-<h4><u>Examples</u></h4>
-
-<ul>
-  <li><b>c.15_355conNM_004006.1:c.15_355</b> - indicates that nucleotides c.15 to c.355 of the
-    coding DNA sequence of the transcript of interest were converted to nucleotides c.15 to
-    c.355 from a transcript sequence as present in GenBank file NM_004006 (version 1)</li>
-  <li><b>g.415_1655conAC096506.5:g.409_1683</b> - indicates that nucleotides g.415 to g.1655
-    of the genomic sequence of the gene of interest were converted to nucleotides g.409 to
-    g.1683 from a genomic sequence as present in GenBank file AC096506 (version 5).<em></li>
-</ul>
-
-<hr>
-
-<p align="center"></em>| <a HREF="#top">Top of page</a> | <a HREF="index.html">MutNomen
-homepage</a> | <a href="checklist.html">Check-list</a> | <a href="standards.html">Symbols,
-codons, etc.</a> |<br>
-| <b>Recommendations:</b>&nbsp; <a href="recs-DNA.html">DNA</a>,&nbsp; <a
-href="recs-RNA.html">RNA</a>,&nbsp; <a href="recs-prot.html">protein</a>, <a
-href="uncertain.html">uncertain</a> |<br>
-| <a HREF="disc.html">Discussions</a> | <a HREF="FAQ.html">FAQ's</a> | <a
-href="history.html">History</a> |<br>
-| <b>Example descriptions:&nbsp;</b> <a href="quickref.html">QuickRef</a>,&nbsp; <a
-HREF="examplesDNA.html">DNA</a>,&nbsp; <a HREF="examplesRNA.html">RNA</a>,&nbsp; <a
-HREF="examplesAA.html">protein</a> | <em></p>
-</em>
-
-<table width="100%" border="0" cellspacing="0" cellpadding="15" bgcolor="#ff9900">
-  <tr>
-    <td><p align="center"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif"
-    size="-5"><a href="http://www.HGVS.org/copyright.html">Copyright ©</a> </font><font
-    size="1">HGVS 2010 All Rights Reserved<br>
-    Website Created by Rania Horaitis, Nomenclature by J.T. Den Dunnen - <a
-    href="http://www.HGVS.org/disclaimer.html">Disclaimer</a> </font></td>
-  </tr>
-</table>
-</body>
-</html>
+<html>  <!--	Author: 	Dr. Johan T. den Dunnen	Date: 	17-11-02	URL: 	disc.html-->  <head>    <meta content="text/html; charset=windows-1252" http-equiv="content-type">    <title>HGVS recommendations - Discussions</title>    <style type="text/css"><!--  h1 { font-family : Verdana,Arial,Helvetica,Geneva,sans-serif; color : #0099cc;}h2 { font-family : Verdana,Arial,Helvetica,Geneva,sans-serif; color : #ff9900;}h3 { font-family : Verdana,Arial,Helvetica,Geneva,sans-serif; color : #0099cc;}h4 { font-family : Verdana,Arial,Helvetica,Geneva,sans-serif; color : #0099cc;}h5 {font-family : Verdana, Arial, Helvetica, Geneva, sans-serif;color : #ffffff;}.norm { font-weight : normal; } --></style> </head>  <body style="  color: black; background-color: white;" link="#0000FF" vlink="#9999ff">    <table bgcolor="#CCFF99" border="0" cellpadding="10" cellspacing="0" width="100%">      <tbody>        <tr>          <td bgcolor="#FFFFFF" valign="top" width="25%"><a href="http://www.HGVS.org"><img                src="small.gif"                border="0"                height="94"                width="155"></a></td>          <td bordercolor="#FFFFFF" bgcolor="#FFFFFF" valign="CENTER" width="75%">            <h2 align="center">Discussions regarding the description of sequence              variants </h2>          </td>        </tr>      </tbody>    </table>    <table border="0" cellpadding="10" cellspacing="0" width="100%">      <tbody>        <tr>          <td bgcolor="#0099cc" valign="BOTTOM" width="100%">            <h4 align="center"><font color="#FFFFFF" size="3"><i><br>                  Last modified November 15, 2014</i></font></h4>          </td>        </tr>      </tbody>    </table>    <!--	Author: 	Dr. Johan T. den Dunnen	Date: 	08-05-01	URL: 	http://www.dmd.nl/index_discussion.html-->    <p align="center"><i>Since references to WWW-sites are not yet acknowledged        as citations, please mention <a href="http://www3.interscience.wiley.com/cgi-bin/fulltext/68503056/PDFSTART">den
+          Dunnen JT and Antonarakis SE (2000). Hum.Mutat. 15:7-12</a> when        referring to these pages.</i></p>    <hr>    <h2>Contents</h2>    <ul>      <li><a href="#intro"><b>Introduction</b></a></li>      <li><strong>Discussion / recent modifications</strong>        <ul>          <li>reference sequences            <ul>              <li><a href="refseq.html">which reference sequence to use</a>&nbsp;
+                <i>(genomic or coding DNA)</i></li>              <li><a href="#accessionnr">accession number</a></li>            </ul>          </li>          <li><a href="#tradition">traditional descriptions</a></li>          <li><b><i><img src="new.gif" border="0" height="12" width="31"></i></b><a              href="#untrans">numbering
+              untranscribed nucleotides</a></li>          <li><a href="#polymorphism">polymorphisms</a></li>          <li><a href="#silent">silent protein changes</a></li>          <li><a href="#range">descriptions of a range using "_"</a></li>          <li><a href="#2in1">two or more sequence variants in one individual</a>            <ul>              <li>two sequence variants in one gene (chromosome) </li>              <li><b><i><img src="new.gif" border="0" height="12" width="31"></i></b>two
+                sequence changes with genes (chromosomes) unknown</li>              <li>recessive disease </li>              <li><b><i><img src="file:///Users/Boomheide/Files/WWW/HGVS/new.gif"                      border="0"                      height="12"                      width="31"></i></b><a                  href="%3Ca%20name=%222in2genes%22%3E%3C/a%3E">sequence
+                  variants in two genes on one chromosome</a></li>              <li><b><i><img src="file:///Users/Boomheide/Files/WWW/HGVS/new.gif"                      border="0"                      height="12"                      width="31"></i></b><a                  href="%3Ca%20name=%222in2gin2%22%3E%3C/a%3E">sequence
+                  variants in two genes on two different chromosome</a></li>            </ul>          </li>          <li><a href="#moreRNAs">more transcripts / proteins from one gene</a></li>          <li><a href="#largedel">large deletions, split reference sequence</a></li>          <li><a href="uncertain.html">deletions with unknown molecular              breakpoints</a></li>          <li><a href="#dupins">duplication or insertion</a>, <i><b><img src="new.gif"                  border="0"                  height="12"                  width="31"></b>duplication
+              or (2) ??</i></li>          <li><i><b><img src="new.gif" border="0" height="12" width="31"></b><a                href="#tri">triplication,
+                quadruplication, ...</a></i></li>          <li><i><b><img src="new.gif" border="0" height="12" width="31"></b><a                href="#loss">loss
+                from a run of nucleotides</a></i></li>          <li><a href="#ins">insertions</a></li>          <li><a href="#indel">insertion-deletions</a>&nbsp;<i> (indels)</i></li>          <li><b><i><img src="new.gif" border="0" height="12" width="31"></i></b><a              href="#p-initiation">translation
+              initiation</a></li>          <li><a href="#frameshift">frame shift variants</a> </li>        </ul>      </li>      <li><strong>New recommendations</strong>        <ul>          <li><a href="#refseq">alternative transcripts</a>&nbsp; <i>(Reference              Sequence)</i></li>          <li><b><i><img src="new.gif" border="0" height="12" width="31"></i></b><a              href="#indicator">accepted
+              sequence indicators</a></li>          <li><b><i><img src="new.gif" border="0" height="12" width="31">SNPs -              </i></b><a href="#SNP">description of SNP's</a>&nbsp; <i>(in              Tables and text)</i></li>          <li><a href="#homhetr">homo/heterozygotes</a></li>          <li><a href="#haplo">haplotypes</a></li>          <li><a href="#translocation">translocations</a></li>          <li><a href="#fusion">fused gene products</a></li>          <li><a href="#1or3">one or three letter amino acid code</a>&nbsp; <i>(Trp
+              or W)</i></li>          <li><a href="#Met">translation initiation codon changes</a>&nbsp; <i>(Met1)</i>          </li>          <li><b><i><img src="new.gif" border="0" height="12" width="31"></i></b><a              href="#con">gene
+              conversions</a></li>          <li><b><i><img src="new.gif" border="0" height="12" width="31"></i></b><a              href="uncertain.html">exact
+              position not known</a></li>          <li><em><small><font color="#FF0000"><strong>added 2012-10-12</strong></font></small></em><b><i><img                  src="new.gif"                  border="0"                  height="12"                  width="31"></i></b><a              href="#brackets">protein
+              description between brackets</a></li>        </ul>      </li>      <li><b>Examples&nbsp;to describe changes</b>        <ul>          <li><a href="examplesDNA.html">DNA changes</a></li>          <li><a href="examplesRNA.html">RNA changes</a></li>          <li><a href="examplesAA.html">protein changes</a></li>        </ul>      </li>    </ul>    <hr>    <h2><a name="intro"></a>Introduction</h2>    <hr>    <p>This page gives an overview of the discussions raised and suggestions      made to describe sequence variations after publication of the latest      manuscript on this issue by JT den Dunnen and S Antonarakis (2000, <b><i>Mutation
+          nomenclature extensions and suggestions to describe complex mutations:          a discussion.</i></b> Human Mutation 15: 7-12, <em><a href="http://www3.interscience.wiley.com/cgi-bin/fulltext/68503056/PDFSTART">copy
+          in PDF-format</a>).</em> We invite investigators to send us further      remarks on the issues discussed here. Furthermore, we solicit complicated      cases not yet covered, with a suggestion regarding how to describe these.      We hope these pages will be used as a guide to describe any sequence      change, ultimately evolving into a uniformly accepted standard.</p>    <em> </em>    <p><em><strong>For reactions:</strong></em> contact us <em>by E-mail</em> (<strong>to:</strong>      HGVSmn @ JohanDenDunnen.nl) or using the <em><a href="http://dmz-web03.lumc.nl/new.hgvs.org/?q=forum/2">HGVS
+          variant description forum</a></em>. </p>    <hr>    <h2><a name="modify"></a>Discussion / recent modifications</h2>    <hr>    <h3><a name="accessionnr"></a>Accession number</h3>    <p>As correctly pointed out by Peter Slickers (Clondiag Chip Technologies),      providing a database accession number is not sufficient to identify a      sequence in the database unambiguously. There may exist several different      versions for a given accession. In most cases only the annotation changes,      while the sequence remains the same, but this is not always the case and      one can not rely on this (compare e.g. <a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?val=4503642">NM_000130.1</a>      and <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=nucleotide&amp;list_uids=10518500&amp;dopt=GenBank">NM_000130.2</a>).
+Therefore
+      one should always use <b><i>accession AND version</i></b> number to refer      to the reference sequence (<em><a href="index.html">see Recommendations</a></em>).&nbsp;</p>    <hr>    <h3><a name="tradition"></a>Traditional descriptions</h3>    <p>In some cases the description of pathogenic changes in genes started well      before there were any mutation nomenclature recommendations (e.g. in      thalassemias and cystic fibrosis). When new reports describe variants      according to current recommendations, instead of using <i><b>traditional          descriptions</b></i>, experts in the field experience problems <i><b>"recognizing"</b></i>      these variants. However, nomenclature rules should be universal and thus      can not be made to apply for specific situations. The traditional notation      only rings a bell for experts in the field, for others it is cryptic and      confusing.<br>      Although annoying, traditional descriptions should not be used anymore.      When one uses the recommended descriptions it will be only a matter of      time until also the experts get acquainted. The recommendation is to list      in the variant summary Table <b>official</b> and <b>traditional</b>      names next to each other in separate columns, like c.88+2T&gt;G and      IVS#+2T&gt;G, p.Phe508del and delF508, or c.24dupG and Cd8/9+G.</p>    <hr>    <h3><a name="untrans"></a>Numbering untranscribed nucleotides</h3>    <p>Several people have requested to extend the recommendations for the      numbering of nucleotides using a <b>coding DNA reference sequence</b> to      include a specific description for <b>untranscribed nucleotides</b> (i.e.      5' of the transcription initiation site (cap-site) or 3' of the      polyA-addition site). Thus far, these requests have not been granted. The      main reason is that genes often have <b>several</b> transcription      initiation sites (promoters/5'-first exons) as well as polyA-addition      sites (3'-terminal exons). Furthermore, the transcription initiation or      cap-site, is <b>often ill-defined</b> (<em><a href="refseq.html#coding">see
+          also Practical problems coding DNA reference sequence</a></em>).      Consequently, the suggested information in the description (indicating      that the variant lies in untranscribed sequences) is <b>not very reliable        and informative</b>. In addition, it <b>further complicates</b> the      already complex description using a coding DNA Reference Sequence. </p>    <p>Recently our knowledge of the genome and its transcription is quickly      maturing and transcription initiation and polyA-addition sites have been      mapped much more precisely. When, as recommended, a stable LRG-based      reference sequence (<em><a href="refseq.html#general">see Recommendations          reference sequence</a></em>) is used, these uncertainties are less of      an issue. </p>    <p>The most mature suggestion is to extend the current recommendations (<em><a          href="standards.html#number">see
+          Numbering coding DNA reference sequence</a></em>) with; </p>    <h4><u>coding DNA reference sequence</u> </h4>    <ul>      <li>-N<b>-uM</b> = nucleotide <b>M</b> 5' (<b>u</b>pstream) of the        nucleotide -N of the transcription initiation site -N (e.g.        -237-u5A&gt;G)<br>        <b>NOTE:</b> restricted to nucleotides 5' of the transcription        initiation site (cap site, i.e. upstream of the gene incl. the promoter)</li>      <li>*N<b>+dM </b>= nucleotide <b>M </b>3' (<b>d</b>ownstream) of the        nucleotide transcription termination site *N (e.g. *237+d5A&gt;G)<br>        <b>NOTE:</b> restricted to locations 3' of the polyA-addition site        (downstream of the gene)</li>    </ul>    <hr>    <h3>Polymorphisms</h3>    <p>In the past, descriptions like c.76A/G and p.36L/I (p.36Lys/Ile) have      been used to describe "polymorphic" sequence variants (<em><a href="index.html">see
+          Mutation / polymorphism</a></em>). Note that a description of a      variant should be neutral and not include any functional conclusion;      consequently, polymorphisms and changes affecting function ("pathogenic")      <i><b>should not be described differently</b></i>. Note that it will often      be very difficult to discriminate between variants affecting function and      those that are truly neutral (not affecting function).</p>    <hr>    <h3><a name="silent"></a>Silent protein changes</h3>    <p>Description of so called "silent" changes in the format p.(Leu54Leu)      (alternatively p.(L54L)) should not be used; descriptions should be given      at <b><i>DNA level</i></b>. The description at protein level is <i><b>not
+          informative</b></i> and <b><i>not unequivocal</i></b> (there are at      least five possibilities at DNA level which may underlie p.(Leu54Leu)). A      correct description has the format c.162C&gt;G (p.(=)), with <i><b>"p.(=)"</b></i>      indicating that there is no effect on protein level expected. A recent      suggestion has been to use p.(Leu54=) (alternatively p.(L54=)) but also      this description is uninformative, indicating that there is no change at      protein level (so why mention it).</p>    <hr>    <h3><a name="range"></a>Descriptions of a range using "_"</h3>    <p>Initially, the "-"-character (hyphen) was used for two different      purposes, i.e. to indicate a <i><b>range</b></i> (nucletotides      c.12-13delTG) as well as to indicate a <i><b>negative number</b></i>      (e.g. for intronic sequences like in c.77-2A&gt;G). This description might      cause confusion, which should be circumvented. For example when the change      is c.12-13del, does this indicate a deletion <i><u>from coding DNA          nucletoide 12 to 13</u></i> or <i><u>from the intronic nucleotide          c.12-13</u></i> ?. Since for intronic positions both the "+" and "-"      characters are essential, the recommendation is to use the "_"-character      (underscore) to indicate a range.&nbsp;</p>    <hr>    <h3><a name="2in1"></a>Two sequence variants in one individual</h3>    <ul>      <li><b><i><img src="new.gif" border="0" height="12" width="31"></i><u>Two            sequence variants in a gene on one chromosome</u></b><br>        den Dunnen&amp;Antonarakis, 2000, <a href="http://dx.doi.org/10.1002/%28SICI%291098-1004%28200001%2915:1%3c7::AID-HUMU4%3e3.0.CO;2-N">Hum.Mut.
+          15: 7-12</a> suggested to describe two sequence variations in a gene        on one chromosome as [c.76A&gt;C+c.83G&gt;C], i.e. using a "+"-character        to separate the two changes. The previous description was        c.[76A&gt;C;83G&gt;C] (Antonarakis, S.E. and the Nomenclature Working        Group, 1998, <a href="http://dx.doi.org/10.1002/%28SICI%291098-1004%281998%2911:1%3c1::AID-HUMU1%3e3.0.CO;2-O">Hum.Mut.
+          11: 1-3</a>), i.e. using a semicolon (";") to separate the two        changes. Since the den Dunnen &amp; Antonarakis' suggestion might        introduce confusion with older publications<i><b> this suggestion was            retracted</b>. Furthermore, for consistency and to keep descriptions          as short as possible, it was decided to write all indications of the          reference sequence used <b>in front</b> of the square brackets. A          correct description is thus; <br>        </i></li>      <ul>        <li><span style="font-style: italic;">c.[76A&gt;C; 83G&gt;C]</span></li>      </ul>      <li><u><a name="2unknown"></a></u><b><i><img src="new.gif" border="0" height="12"              width="31"></i><u>Two
+            sequence changes in a gene (chromosome unknown)</u></b><br>        when two variants are identified in a gene but when it is not known        whether these are on one chromosome (in cis) or on different chromosomes        (in trans), the recommendation is to describe these as        "[change1(;)change2]" (<em><a href="FAQ.html#2unknown">see FAQ</a></em>).
+        Of course it <i><b>is recommended</b></i> to determine whether the        changes are on the same chromosome or not. Still, when this has not yet        been done, it is important to make this absolutely clear in the        description. <span style="font-style: italic;">A correct description          is;<br>        </span>        <ul>          <span style="font-style: italic;"> </span>          <li><i>c.[76A&gt;C(;)83G&gt;C]<br>            </i></li>        </ul>      </li>      <li><a name="2in2"></a><b><u>Recessive disease - two sequence variants in            one gene (different chromosomes)<br>          </u></b>in recessive diseases sequence changes are expected in a gene        on both chromosomes. The description of the changes found should        indicate whether variants were found in the gene on both chromosomes and        in which combination. The latter is important since severity might        depend on the combination of variants present, while other combinations        might not be deleterious.<u><br>          Examples;</u> </li>      <ul>        <li>c.[76A&gt;C];[87delG] - description of the changes in a gene on both          chromosomes in a heterozygous case with a recessive disease<br>          <i><b>On protein level</b></i>, the designation is likewise;          p.[Arg175*];[Cys305Ser], p.[(Arg175*)];[(Cys305Ser)] when RNA was not          analysed</li>        <li>c.[76A&gt;C];[76A&gt;C] - description of a homozygous change in a          recessive disease</li>        <li>c.[76A&gt;C];[?] - a case where only one variant on one chromosome          could be identified</li>        <li>when there is no change in the other chromosome the format is          c.[76A&gt;C];[=] (<em><a href="FAQ.html#2alleles">see FAQ</a></em>)</li>      </ul>      <li><a name="2in2genes"></a><u><b>Two sequence variants in two different            genes on one chromosomes<br>          </b></u>the description should be <i>as for variants on one          chromosome</i> but should <i><b>include a reference to the sequence            or gene changed</b></i>.<br>        <u>Examples;</u>        <ul>          <li>hg19 chrX:g.[30683643A&gt;G;33038273T&gt;G] - variants in two            different genes on the same X-chromosome (GK and DMD gene resp.)<em><strong></strong></em></li>          <li>c.[NM_000167.5:94A&gt;G;NM_004006.2:76A&gt;C] - variants in two            different genes on the same X-chromosome (GK and DMD gene resp.).<i><b>              </b></i>On protein level the description is; GK:p.[Thr32Ala]&nbsp;            DMD:p.[Asn26His]</li>          <li>c.[GK:94A&gt;G;DMD:76A&gt;C] - variants in two different genes on            the same X-chromosome, the GK and DMD gene.<i><b> </b></i>On            protein level the description is; GK:p.[Thr32Ala]&nbsp;            DMD:p.[Asn26His]<br>            <em><strong>NOTE:</strong></em> the reference sequences of the GK            and DMD genes should be described elsewhere in the document.</li>        </ul>      </li>      <li><a name="2in2in2"></a><u><b>Two sequence variants in two different            genes on two different chromosomes<br>          </b></u>the description should be <i>as for recessive diseases</i>        but should <i><b>include a space (" ") as a separator and a reference            to the sequence or gene changed</b></i>.<br>        <u>Examples;</u>        <ul>          <li>hg19 chr1:g.[35227587C&gt;G]&nbsp; chr13:g.[20763083A&gt;T] -            variants in two different genes (GJB4 and GJB2) on two different            chromosome (1 and 13)<em><strong></strong></em></li>          <li>NM_153212.2:c.[732C&gt;G]&nbsp; NM_004004.5:c.[638T&gt;A] -            variants in two different genes (GJB4 and GJB2) on two different            chromosome (1 and 13).<i><b> </b></i>On protein level the            description is; GJB4:p.[His244Gln]&nbsp; GJB2:p.[Leu213*]</li>          <li>c.[GK:94A&gt;G;DMD:76A&gt;C] - variants in two different genes            (GJB4 and GJB2) on two different chromosome (1 and 13).<i><b> </b></i>On            protein level the description is; GJB4:p.[His244Gln]&nbsp;            GJB2:p.[Leu213*]<br>            <em><strong>NOTE:</strong></em> the reference sequences of the GJB4            and GJB2 genes should be described elsewhere in the document.</li>        </ul>      </li>    </ul>    <hr>    <h3><a name="moreRNAs"></a>More transcripts / proteins from one gene</h3>    <p>As a consequence of the <a href="#2in1">above mentioned change</a>, the      ";"-character should not be used to describe changes which affect      RNA-processing, i.e. yielding two or more transcripts (den Dunnen &amp;      Antonarakis, 2000, <a href="http://dx.doi.org/10.1002/%28SICI%291098-1004%28200001%2915:1%3c7::AID-HUMU4%3e3.0.CO;2-N">Hum.Mut.
+15:
+        7-12</a>). <i><b>The suggestion is to use the ","-character (comma)          instead</b></i> (<em><a href="recs-RNA.html#2RNA">see Recommendations</a></em>).
+      This rule applies to both description at RNA and protein level. </p>    <hr>    <h3><a name="largedel"></a>Large deletions, split reference sequence</h3>    <p>If a <i><b>deletion is large</b></i> and the reference sequence is <i><b>split
+          over several files</b></i>, list at least once (in order) the      respective files containing the overall reference sequence. When      describing the change, to prevent confusion, include a reference to the      sequence used, e.g. <b>AC109326.2:g.82398_L78833.1:g.80466del</b>. In the      "Remarks" column of the summary table the size of the deletion could be      mentioned (e.g. 160 kb deletion spanning exons 1-22). Please note that,      since the reference sequence is split over several files, this size can      not be deduced from the description of the sequence (see also <em><a href="#fusion">Discussion
+          - Fused genes</a></em>).</p>    <hr>    <h3><a name="dupins"></a>Duplication or insertion</h3>    <p>Although duplications can be considered as a special type of insertion,      the recommendation is to describe duplications independently from      insertions, using the term <b>"dup"</b> . This recommendation also      applies for a duplicated mono-, di-, tri-, etc. nucleotide stretch. There      are several reasons why the recommendation is to describe such changes as      a "<i><b>duplication</b></i>" (<i><a href="#ins">see Triplication, ...</a></i>)    </p>    <ul>      <li>the description is <b>simpler, shorter and more unequivocal</b></li>      <li>it is clearer and <b>prevents confusion</b> regarding the exact        position introduced when an insertion is incorrectly reported like        "22insG" (<i><a href="#ins">see Insertions</a></i>)</li>      <li>it prevents discussions regarding the <b>position of the insertion</b>;        in the case of a duplication including the intron/exon border (e.g.        c.123-8_137dup) would the "insertion" be in the intron or exon ?.&nbsp;</li>      <li>insertion more or less includes "<i>coming from elsewhere</i>". <b>Mechanistically</b>,        a duplication is more likely to be caused by DNA polymerase slippage,        duplicating a local sequence.</li>    </ul>    <h4><u><b>Examples</b></u> </h4>    <ul>      <li><u>nucleotide level </u>        <ul>          <li><i>c.7dupT (or c.7dup) denotes the duplication (insertion) of a T              at position 7 in the sequence ACTTACTGCC to ACTTACT<strong><u>T</u></strong>G<em>CC</em></i></li>          <em>            <li><i>c.6_7dup (or c.6_7dupTG) denotes a TG duplication (TG                insertion) in the sequence ACATGTGCC to ACATGTG<u><strong>TG</strong></u>CC</i></li>          </em>        </ul>        <em> </em></li>      <em>        <li><i><u>protein level<br>            </u>p.His7dup (or p.H7dup) describes as a duplicating insertion in            the H repeat sequence of MKMGHHHQCC to MKMGHHH<u><strong>H</strong></u>QCC</i></li>      </em>    </ul>    <em> </em>    <p><em><strong>NOTE:</strong></em> the description<strong> "dup"</strong> (<em><a          href="standards.html#define">see
+          Standards</a></em>) may <strong>by definition</strong> only be used      when the additional copy is directly 3'-flanking of the original copy      (tandem duplication). For large duplications (e.g. one or more exons)      there will often be <strong>no such experimental proof</strong>, the      additional copy may be anywhere in the genome (i.e. inserted /      transposed). It has been suggested that, unless there is experimental      evidence, such duplications should be described using the format, i.e.      c.88-?_301+?<b>(2)</b> &nbsp; (<a href="recs-DNA.html#var"><em>see          Recommendations</em></a>).<em></em></p>    <em> </em>    <hr>    <h3>Triplication, quadruplication, ...</h3>    <p>Duplications are indicated by the term "dup". The question arose what to      do when more copies are involved, use <em><strong>triplications,          quadruplications</strong></em>, etc. ?. There are several      possibilities. First, like "dup" for duplications one could use "tri" for      triplications, "qua" for quadruplications, etc. Another possibility is to      use the recommendation to describe <em><a href="recs-DNA.html#var">sequence
+          repeat variability</a></em> and to use "3" for triplication (3      copies), "4" for quadruplication (4 copies), etc. A variant of this      possibility is to use rep3, rep4, etc.<br>      To prevent that more and more specific notations are used, making the      overall description of sequence variants increasingly complicated, tri,      qua, rep3, rep4, etc. are not recommended. The suggestion is to <em><strong>describe
+          triplications, quadruplications, etc. using the format (3), (4)</strong>,        etc.<br>        <strong>NOTE: </strong></em>square brackets (<em><strong>"[]"</strong></em>)      are not used unless their is experimental evidence that the additional      copies are in tandem on the same chromosome.<b><i><em></em></i></b></p>    <b><i><em> </em></i></b>    <h4><b><i><em></em></i><u>Examples</u></b><u> </u><em></em></h4>    <em> </em>    <ul>      <em> </em>      <li><em></em><u>nucleotide level </u><em></em>        <ul>          <em> </em>          <li><em>c.87_93[3] </em>describes the presence of two additional            copies (a triplication) of the 7 nucleotides from coding DNA            position 87 to 93.<em></em></li>          <em> </em>          <li><em>c.4987-?_5193+?(4) </em>describes the presence of three            additional copies (a quadruplication) of exons 17 to 19 of the BRCA1            gene, from an unknown position in intron 16 (c.4987-?) to an unknown            position in intron 19 (c.5193+?).<br>            <em><strong>NOTE:</strong> </em>the use of round brackets (for "<em>uncertainty</em>")
+            nicely indicates that the location of the additional copies has not            been analysed (although everybody expects them to be in tandem on            one chromosome).<em></em></li>          <em> </em>        </ul>        <em> </em></li>      <em> </em>      <li><em></em><u>protein level<i><em><br>            </em></i></u><i><em>p.(His5_Cys7[3]) (or p.(H5_C7[3]), RNA not            analysed) </em></i>describes as a triplication of the amino acid        sequence HQC in MKMGHQCC to MKMGHQC<b><u>HQCHQC</u></b>C<em></em></li>      <em> </em>    </ul>    <em> </em>    <hr>    <h3><a name="loss"></a><b><img src="new.gif" border="0" height="12" width="31"></b>Loss
+from
+      a run of nucleotides</h3>    <p><u>From Pat O'Neill (Burlington, USA):</u><br>      <em>I especially like the use of "dup" in place of "ins" when the inserted        base creates a run of two or more bases. I feel that there <b>should be          a parallel term for the loss of a base</b> from a run of two or more        bases instead of just "del". This is because of the mechanistic        implications of both an ins and a del of a base in a run. Has this been        discussed? My only thought for a term in place of "del" is <b>"los" </b>for
+        loss.<br>      </em><u>Shuji Ogino (Boston, USA)</u> <em>agrees with this suggestion but        suggest to use the term <b>"dec"</b> for a decrease in length.</em></p>    <p><u>Reply&nbsp; (JdD):</u> Basically the "dup" nomenclature was suggested      because the description is <b>simpler, shorter and less unequivocal</b> (<em><a          href="#dupins">see
+          Discussion</a></em>). The potential mechanistic relation is nice but      was not decisive. Basically a description should be clear/unequivocal and      not so much contain additional information.</p>    <hr>    <h3><a name="ins"></a>Insertions</h3>    <p>The description of insertions has had some discussion. The first point of      discussion was whether the nucleotides (amino acids) flanking the      insertion site had to be given both or not. In the past, the description      22insG (or Cys22insGly) was used both to indicate insertion <b>at</b>      position 22 and insertion <b>after</b> position 22. This situation      becomes even more complex when a "-" character is involved, like in      -14insG or 456-13insG. Does the latter mean <b>at</b> or <b>after</b>      intronic nucleotide 456-13 and in addition, <b>after</b> nucleotide      456-13 is that <b>position 456-12 or 456-14</b> ?. Consequently, to      prevent confusion, <b>both flanking residues have to be listed</b>.&nbsp;<br>      The second point of discussion was which character to use as a separator.      The initial suggestion was to use the "^"-character (e.g. p.Q83^C84insQ).      However, since a character to indicate a range was already available, it      was decided to use this character, i.e. the "_"-character (<a href="#range">see
+        above</a>).</p>    <hr>    <h3><a name="indel"></a>Insertion-deletions&nbsp;<font size="3"> (indels)</font></h3>    <p>The occurrence of a combination of a deletion and insertion, sometimes      named "<b>indel</b>", is not rare. Based on existing terminology, a      recommendation for their description can be rather straightforward; a      combination of a deletion and insertion at the same site is described      using the <b>format 112_117delinsTG. </b>On protein level, likewise, as      <b>p.Trp33_Lys35delinsArg.&nbsp;</b> </p>    <hr>    <h3><a name="p-initiation"></a>Translation initiation</h3>    <p><font color="#FF0000"><em><strong><small>date 2012-08-31 </small></strong></em></font>Based
+on
+      a <a href="http://https://oi.gene.le.ac.uk/variants.php?select_db=IFITM5&amp;action=search_all&amp;search_Variant%2FDNA=c.-14C%3ET">new
+variant
+        reported in the IFITM5 gene</a> (c.-14C&gt;T, generating a new      translation initiation codon at position -5), Raymond Dalgleish      (Leicester, UK) asked how to describe this variant on protein level.</p>    <p><b>The recommendation is to describe the generation of new upstream        translation initiation codons using the format "p.Met1ext-5"</b>, where      "-5" is the position of the new translation initiating Methionine.</p>    <p><u>Argumentation</u> </p>    <ul>      <li>the description is clear, unequivocal, short and in line/not in        conflict with existing recommendations, incl.        <ul>          <li>descriptions at protein level should describe the changes observed            on protein level (and not try to incorporate knowledge regarding the            change at DNA-level)</li>          <li>amino acids originating from changes introducing upstream            translation initiation are numbered like nucleotides (like ...,            Gln-2, Thr-1)</li>        </ul>      </li>      <li>p.Met1ext<strong>Met</strong>-5 is an alternative but "Met" in "Met-5"        is redundant</li>      <li>describing the variant as an insertion, like        p.(Met1_Asp2insAlaLeuGluProMet), is an alternative but the description        becomes quite cumbersome when the new initiation codon lies further        upstream</li>      <li>the "<em><a href="recs-prot.html#sub">Recommendations for the            description of protein sequence variants (v2.0)</a></em>" mentioned        the example <strong>p.Met1ValextMet-12</strong>. Based on the new        recommendation this example has been changed to <strong>p.Met1Valext-12</strong>.</li>    </ul>    <hr>    <h3>Frame shift variants</h3>    <p><b>NOTE: </b>description clarified with the help of Raymond Dalgleish      (Leicester, UK). </p>    <p><b>The recommendation is to designate frame shifting variants by "fs"</b>.      It is not useful to add much detail in the description of frame shifting      variants besides (especially in the case of C-terminal variants) the      length of the new, shifted reading frame.&nbsp;Two notations can be used      to describe frame shift changes, a <b>short</b> or a <b>long form</b>.</p>    <p><u>Short description</u><br>      "<b>fs</b>" after a description of the first amino acid affected by the      change. </p>    <ul>      <li>p.Arg97fs (alternative p.R97fs) denotes a frame shifting change with        Arginine-97 as the first affected amino acid</li>    </ul>    <p><u>Long description</u><br>      "<b>fs*#</b>" after a description of the amino acid(s) affected by the      change and the change occurring at the site of the frame shift. "*#"      indicates at which codon position the new reading frame ends in a stop      (*). The position of the stop in the new reading frame is calculated      starting at the first amino acid that is changed by the frame shift, and      ending at the first stop codon (*#).<br>      <b>NOTE:</b> the shifted reading frame is thus open for '#-1' amino acids.    </p>    <ul>      <li>p.Arg97Profs*23 (short p.Arg97fs) denotes a frame shifting change with        Arginine-97 as the first affected amino acid, changing into a Proline        and the new reading frame ending in a stop at position 23<br>        <br>        <b>NOTE:</b> the description at protein level does not relate to the        change at DNA-level. So a 1 nucleotide deletion (or duplication /        insertion) as well as a 100 nucleotide deletion may have the same        description at protein level, like p.Arg79fs. The description may differ        in the "long description" when the first encoded amino acid in the        shifted reading frame differs (e.g. p.Arg97Profs*23, p.Arg97Serfs*23,        etc.)</li>    </ul>    <p>Please note that the frame shift example given in den Dunnen &amp;      Antonarakis, 2000, <a href="http://dx.doi.org/10.1002/%28SICI%291098-1004%28200001%2915:1%3c7::AID-HUMU4%3e3.0.CO;2-N">Hum.Mut.
+15:
+        7-12</a> contains a mistakes; p.R97fs*121 (page 11) should be      "p.R97fs*25, indicating a frame-shifting change with Arginine-97 as the      first affected amino acid and the new reading frame being open for 24      amino acids".</p>    <hr>    <h2><a name="extend"></a>New recommendations</h2>    <hr>    <h3><a name="refseq"></a>Alternative transcripts&nbsp; <font size="3">(Reference
+        Sequence)</font></h3>    <p><em><a href="FAQ.html#refseq">As discussed</a></em>, in some cases it is      very difficult to assign a sequence which can be used as a good reference      for numbering. When a coding DNA reference sequence is used it should      represent <b>the major transcript</b> of the gene. Alternatively spliced      exons (5'-first, internal or 3'-terminal) derived from within the gene can      than be best numbered as for intronic sequences. Description of variants      in transcripts initiating or terminating outside this region is more      difficult. The suggestion is to described these as usual but to precede      them with a unique identifier of the alternative transcript and a      ":"-character, like c.Dp427c:3G&gt;T. The alternative transcript should be      precisely described and refer to a specific database record (Genbank,      EMBL, DDJB)., the accession number of which should be provided.</p>    <p>For example, for the DMD-gene, involved in Duchenne Muscular Dystrophy      (DMD), the major transcript is that found in muscle, indicated with      Dp427m. Other transcripts are initiated from within the Dp427m gene, e.g.      that found in Purkinje cells (Dp427p) and in retina (Dp260), but these are      all considered "<b>alternative transcripts</b>". Variants in the      respective promoter / exon 1 region can thus be described as intronic      sequences in relation to the Dp427m coding DNA sequence. However, the      brain promoter / exon 1 lies 5' of the Dp427m promoter. Thus, a variant in      this region should be described using the format c.Dp427c:3G&gt;T. Note      that this transcript encodes a new translation initiation site and that      the numbering used starts with nucleotide +1 for the A of the      ATG-translation initiation codon of the Dp427c-transcript.</p>    <hr>    <h3><a name="indicator"></a>Accepted sequence indicators</h3>    <p>For clarity reasons, e.g. to prevent confusion when in one manuscript      variants in relation to different reference sequences are described, it is      recommended to use <b>unique sequence indicators</b> as part of the      description of each variant. It should be noted however that for every      indicator the respective <b>reference sequence used</b> should always be      mentioned. Unique indicator and sequence description should be separated      by a colon (<b>":"</b>) (<em><a href="recs.html#indicator">see          Recommendations</a></em>).<u><br>        Examples;</u>&nbsp; </p>    <ul>      <li><b>NM_004006.1:</b>c.3G&gt;T - uses a GenBank file as indicator</li>      <li><b>GJB2:</b>c.76A&gt;C - uses a <a href="http://www.genenames.org/guidelines.html">HGNC-approved
+          gene symbol</a> as indicator</li>      <li><b>NM_004006.1(DMD):</b>c.3G&gt;T - uses both a GenBank file and a <a          href="http://www.genenames.org/guidelines.html">HGNC-approved
+          gene symbol</a> as indicator </li>      <li><b>chrX:</b>g.32,218,983_32,984,039del - uses a chromosome indicator        (here X)<br>        <b>NOTE:</b> the chromosome build used should always be mentioned (e.g.        NCBI Build 36.1)</li>      <li><b>rs2306220:</b>A&gt;G - using a <a href="http://www.ncbi.nlm.nih.gov/SNP">dbSNP</a>-identifier
+        as indicator</li>      <li><b>DXS1219:</b>g.CA[18] (or AFM297yd1:g.CA[18]) - uses marker DXS1219        / AFM297yd1 as indicator </li>    </ul>    <hr>    <h3>Single Nucleotide Polymorphisms (SNP's)</h3>    <p>Publications reporting linkage or association studies often use a range      of different markers/SNP's. Such publications should contain an <b>unequivocal
+        description of all markers</b> used. An easy way to achieve this is to      include in the description a direct, unequivocal reference to the <b>reference
+        sequence used</b> (preferably a GenBank or dbSNP record).<u><br>        Examples;</u>&nbsp; </p>    <ul>      <li><b>NM_004006.1:c.3G&gt;T</b> - uses a GenBank file as reference        sequence (coding DNA)</li>      <li><b>GJB2:c.76A&gt;C</b> - uses a <a href="http://www.genenames.org/guidelines.html">HGNC-approved
+          gene symbol</a> as reference. <b>NOTE:</b> the manuscript should list        the GenBank file of the reference sequence of the GJB2 gene (here the        coding DNA)</li>      <li><b>rs2306220:A&gt;G</b> - using a <a href="http://www.ncbi.nlm.nih.gov/SNP">dbSNP</a>-identifier
+        as a reference<br>        <b>NOTE:</b> descriptions like dbSNP2306220:A&gt;G should not be used,        they are not unequivocal since it is <b>unknown</b> whether rs2306220        or ss2306220 in meant.</li>      <li><b>DXS1219:g.CA[18];[21]</b> (or AFM297yd1:g.CA[18];[21]) - uses        marker DXS1219 (AFM297yd1) as reference to describe the length of the        two CA-repeats. <b>NOTE:</b> although descriptions of marker DXS1219        can be found at several places (e.g. GDB, GenBank), the manuscript        should <b>list the GenBank file containing the reference sequence of          the marker</b>.</li>      <li><b>variants in the promoter region</b> (<em><a href="FAQ.html#promSNP">see
+            FAQ</a></em>) - it is recommended to describe this variant in        relation to a genomic reference sequence (like <b>L01538.1:g.1407C&gt;T</b>).
+        Describing a promoter variant in relation to a coding DNA reference        sequence (i.e. in relation to the A of the ATG initiation codon) is        possible but not very informative. In such cases, next to the coding DNA        reference sequence also the genomic reference sequence used should be        given (<em><a href="refseq.html#updown">see Discussion</a></em>). A        suggestion is to describe the change as "<b>L01538.1:g.1407C&gt;T (at          -401 of the ATG)</b>".</li>    </ul>    <hr>    <h3>Homo/heterozygotes</h3>    <p>Regarding <b>SNP's and their use in the text of papers</b> Peter      Taschner (LUMC, Leiden, NEDERLAND) makes the following remark;<br>      most recommendations for sequence variant nomenclature apply to genotype      descriptions in tables. Unfortunately, these are not very useful in the      general text of a paper. For instance, the OPRM1:c.118A&gt;G or      dbSNP1799971:A&gt;G designation can be used to describe the sequence      variant, but in a paper you might like to discuss the phenotypic      consequences of different genotypes. In fact the current recommendation is      to use OPRM1:c.[118A&gt;G];[=] to describe a heterozygote and [=];[=] and      OPRM1:c.[118A&gt;G];[118A&gt;G] for the homozygotes. I would like to <b>suggest
+        to describe the genotypes in the text</b> like;</p>    <blockquote>      <blockquote>        <ul>          <li>OPRM1:c.118AA homozygotes </li>          <li>OPRM1:c.118GA heterozygotes </li>          <li>OPRM1:c.118GG homozygotes </li>        </ul>      </blockquote>    </blockquote>    <p>The different alleles could then be designated as the OPRM1:c.118A allele      and the OPRM1:c.118G allele. In combination with variants of other genes,      the genotype descriptions could be OPRM1:c.118AA, GJB2:c.76AC double      heterozygotes, etc.</p>    <hr>    <h3><a name="haplo"></a>Haplotypes</h3>    <p>Haplotypes are a special form of two or more variants in one chromosome (<em><a          href="recs-DNA.html#2in">see
+          Recommendations DNA changes</a></em>). When it is once clearly      described (e.g. in the Materials &amp; Methods) what the order of the      variants is and which reference sequences were used a rather simple      description of&nbsp;a haplotype can be used. Descriptions using "<em><strong>[]</strong></em>"      are of course only used for variants on one chromosome. Examples; </p>    <ul>      <li>Haplotype with all variants in relation to <b>one coding DNA          reference sequence</b>        <ul>          <li>description of the reference haplotype;&nbsp;            NM_004006.1:c.[837G&gt;A; 1704+51T&gt;C; 3734C&gt;T;            6438+2669T(16_23); 6571C&gt;T; 7098+13212GT(15_19)]</li>          <li>description haplotype;&nbsp; [G;C;C;18;T;17]</li>        </ul>      </li>      <li>Haplotype with all variants in relation to <b>several reference          sequences</b>, both genomic and coding DNA        <ul>          <li>description of the reference haplotype;&nbsp;            [M59228.1:g.250G&gt;C; AF209160.1:g.572CA; Z11861.1:g.61T&gt;C;            Z16803.1:g.114A</li>          <li>description haplotype;&nbsp; [C;13;T;21]</li>        </ul>      </li>    </ul>    <hr>    <h3>Translocations</h3>    <p>For the description of translocations the format "t(X;4)(p21.2;q34)",      suggested originally by the <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=4041569&amp;dopt=Abstract">ISCN
+        (1985)</a>, is already used as a standard.<br>      <b>NOTE:</b> current recommendations in this areas are made by the      "Standing Committee on Human Cytogenetic Nomenclature" and were published      recently as <a href="http://content.karger.com/ProdukteDB/produkte.asp?Aktion=showproducts&amp;searchWhat=books&amp;ProduktNr=257302">ISCN
+        2013</a>".</p>    <p>For a description at the molecular level this notation can be followed,      extended with the standard description indicating the exact translocation      breakpoint. When due to local similarities the exact breakpoint is      uncertain, following standard nomenclature rules, it will be arbitrarily      assigned to the most 3' nucleotide. Since the translocation breakpoints      can have a complex structure and since it involves two different      chromosomal locations, the sequences of the two translocation breakpoints      should always be submitted to a sequence database (Genbank, EMBL, DDJB).      The accession numbers of these files should be listed in the report</p>    <p>Next to the exact location of the translocation breakpoint, its molecular      characterisation will yield more details including e.g.      deletions/duplications at the junction and the sequence joined, derived      from the other chromosome. We believe that a description covering all      these details will become too complex. However, when one wants to include      these details, the first description should be for the translocated 5'      segment of the gene, the second for the translocated 3' segment, separated      by a ";"-character.&nbsp;It should also be noted that when a translocation      joins genes A and B, the description of the breakpoint in the sequence      variation database of gene A is different from that in gene B. The major      difference being that the nucleotide numbering is based on that of gene A      or gene B respectively. </p>    <ul>      <li>t(X;4)(p21.2;q35)857+101_857+102 denotes a translocation breakpoint        located in an intron, between nucleotides 857+101 and 857+102, and        joining chromosome bands Xp21.2 and 4q34</li>      <li>t(X;4)(p21.2;q35)IVS7 denotes a translocation breakpoint in intron 7,        joining chromosome bands Xp21.2 and 4q34</li>    </ul>    <hr>    <h3>Fused genes</h3>    <p>Due to (large) deletions, translocations or inversions, genetic      rearrangements may have one breakpoint far from the gene under study. The      breakpoint might lie in 'empty' intragenic sequences or in another gene.      Consequently, to describe the breakpoint at a molecular level two      Reference Sequences will be required. To describe cases like this, no      recommendations have been made yet.&nbsp;<br>      <u>Recommendation:</u> for the breakpoint residing in the gene under      study, nucleotide numbering is clear and follows the standard. When the      breakpoint lies in another gene, nucleotide numbering for that end should      be based on the nucleotide numbering for that gene (accession.version      number of the Reference Sequence used should be provided). To indicate      that the end lies in another gene, the nucleotide number should be      preceded with the gene's <a href="http://www.gene.ucl.ac.uk/nomenclature/">official
+        Gene Symbol</a>, like GJB2:c.233. When the breakpoint does not reside in      another gene, the accession number of the Reference Sequence will be used      instead of the official Gene Symbol, like AC012343.2:g.763 (please note      that this is always a genomic Reference Sequence). When the breakpoint      ends on the <b>opposite strand </b>(reverse, complementary,      non-transcribed or anti-sense strand) of a gene or on the <b>opposite</b>      strand of an intragenic sequence, an "<b>o</b>" will precede the official      Gene Symbol (like <b>o</b>GJB2:c.233). Pleas note that the use of a "c" (<b>c</b>omplementary),
+      "a" (<b>a</b>nti-sense) or "r" (reverse) might cause confusion with      nucleotides C and A or the "r" indicating description of a change on      RNA-level. </p>    <ul>      <li>c.1431_oXYZ:c.234-15del denotes a deletion starting at position 1431        of the gene analysed, ending on the opposite translational strand in an        intron of the XYZ-gene (accession number to be provided)</li>      <li>c.1431_AC012343.2:g.23515del denotes a deletion starting at position        1431 of the gene analysed, ending at position 23,515 of the intragenic        sequence reported with accession number AC012343.2</li>    </ul>    <hr>    <h3>One or three letter amino acid code</h3>    <p>Discussions regarding the use of either the <b>one- or three-letter        amino acid code</b> to describe variants at protein level are ongoing.      Basically, descriptions using the <a href="codon.html">one-letter amino        acid code</a> are unequivocal, short and thus preferred. However, since      the one-letter amino acid code is not obvious (Ala, Arg, Asn, Asp start      with <b><u>A</u></b>, Gln, Glu, GLy with <b><u>G</u></b>, Leu, Lys with      <b><u>L</u></b>, Phe, Pro with <u><b>P</b></u> and Thr, Tyr with <b><u>T</u></b>)      publications often contain mistakes when the one-letter code is used. In      addition, the '<b><u>*</u></b>' is not only used to indicate a stop codon      (translation termination) but also to indicate unknown residues.      Consequently, to prevent mistakes, <b>we favour the use of the <a href="codon.html">three-letter
+          amino acid code</a>.</b> </p>    <hr>    <h3><a name="Met"></a>Translation initiation codon changes </h3>    <p>Currently, variants in the translation initiating Methionine (M1) are      usually described as a substitution, e.g. p.Met1Val. This is not correct.      Either no protein is produced (<b>p.0</b>) or a new translation initiation      site up- or downstream is used (e.g. <b>p.Met1ValextMet-12</b> or <b>p.Met1_Lys45del</b>      resp.). Unless experimental proof is available, it is probably best to      report the effect on protein level as "<b>p.Met1?</b>" (unknown). When      experimental data show that no protein is made, the description "<b>p.0</b>"      is recommended (<em><a href="examplesAA.html#sub">see Examples</a></em>).    </p>    <hr>    <h3><a name="brackets"></a><b><img src="new.gif" border="0" height="12" width="31"></b>Protein
+description
+      between brackets </h3>    <p>Usually, descriptions at protein level have no experimental proof, i.e.      are predictions only, deduced directly from the DNA sequence. However,      when RNA has been analysed, and (unexpected) effects at RNA processing can      be excluded, the predcited protein change will usually be correct.      Similarly, the variant protein may have been detected using      immuno-histochemistry or on Western blot. To indicate whether there is any      experimental evidence for a protein description, it is recommended that <b>when
+        RNA nor protein has been analysed</b>, the description is given <b>between
+        brackets</b> (e.g. p.(Arg22Ser)).</p>    <p><strong><small><font color="#FF0000">added 2012-10-12</font></small><br>        Question;</strong> (Richard Barber) when the nucleotide change is common      and well characterised at RNA and protein level, such as CFTR:p.Phe508del,      there seems no need to use a description with brackets.</p>    <p><strong>Answer;</strong> Agreed. However, please check carefully that      such evidence is indeed available and do not fall into the trap of      "transitive proof". i.e. reports only referring to another source for      experimental evidence without giving any themselves.</p>    <hr>    <h3><a name="con"></a>Gene conversions </h3>    <p>A gene conversion is a nonreciprocal transfer of genetic information      between two homologous sequences. As a result of a gene conversion the      sequence of (part of) a gene can be copied from a highly similar sequence      residing elsewhere in the genome. Usually, the converted segment contains      a range of sequence changes, making its description rather complex. In      such cases it is recommended to use a specific description using the      format <b>"region_changed" con "region of origin"</b>. Please note that      also here <em><a href="recs.html#repeat">the rule applies</a></em> to      arbitrarily assign the most 3' position possible as the first to have been      changed.</p>    <h4><u>Examples</u></h4>    <ul>      <li><b>c.15_355conNM_004006.1:c.15_355</b> - indicates that nucleotides        c.15 to c.355 of the coding DNA sequence of the transcript of interest        were converted to nucleotides c.15 to c.355 from a transcript sequence        as present in GenBank file NM_004006 (version 1)</li>      <li><b>g.415_1655conAC096506.5:g.409_1683</b> - indicates that nucleotides        g.415 to g.1655 of the genomic sequence of the gene of interest were        converted to nucleotides g.409 to g.1683 from a genomic sequence as        present in GenBank file AC096506 (version 5).<em></em></li>      <em> </em>    </ul>    <em>      <hr> </em>    <p align="center"><em></em>| <a href="#top">Top of page</a> | <a href="index.html">MutNomen
+        homepage</a> | <a href="checklist.html">Check-list</a> | <a href="standards.html">Symbols,
+codons,
+        etc.</a> |<br>      | <b>Recommendations:</b>&nbsp; <a href="recs-DNA.html">DNA</a>,&nbsp; <a        href="recs-RNA.html">RNA</a>,&nbsp;
+      <a href="recs-prot.html">protein</a>, <a href="uncertain.html">uncertain</a>      |<br>      | <a href="disc.html">Discussions</a> | <a href="FAQ.html">FAQ's</a> | <a        href="history.html">History</a>      |<br>      | <b>Example descriptions:&nbsp;</b> <a href="quickref.html">QuickRef</a>,&nbsp;
+      <a href="examplesDNA.html">DNA</a>,&nbsp; <a href="examplesRNA.html">RNA</a>,&nbsp;
+      <a href="examplesAA.html">protein</a> | <em></em></p>    <em> </em>    <table bgcolor="#ff9900" border="0" cellpadding="15" cellspacing="0" width="100%">      <tbody>        <tr>          <td>            <p align="center"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif"                size="-5"><a                  href="http://www.HGVS.org/copyright.html">Copyright
+                  ©</a> </font><font size="1">HGVS 2010 All Rights Reserved<br>                Website Created by Rania Horaitis, Nomenclature by J.T. Den                Dunnen - <a href="http://www.HGVS.org/disclaimer.html">Disclaimer</a>              </font></p>          </td>        </tr>      </tbody>    </table>  </body></html>

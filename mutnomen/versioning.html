@@ -1,226 +1,22 @@
-<html>
-<!--
-	Author: 	Dr. Johan T. den Dunnen
-	Date: 	17-11-2002	
-	URL: 	recs.html
--->
-
-<head>
-<title>Nomenclature for the description of sequence variants (mutation nomenclature)</title>
-<style type="text/css">
-
-<!--  
-
-h2 {
- font-family : Verdana,Arial,Helvetica,Geneva,sans-serif;
- color : #ff9900;
-
-}
-
-h3 {
- font-family : Verdana,Arial,Helvetica,Geneva,sans-serif;
- color : #0099cc;
-
-}
-
-h4 {
- font-family : Verdana,Arial,Helvetica,Geneva,sans-serif;
- color : #0099cc;
-
-}
-
-h5 {
-font-family : Verdana, Arial, Helvetica, Geneva, sans-serif;
-color : #ffffff;
-
-}
-
-.norm {
-
- font-weight : normal;
-
- }
- -->
-</style>
-</head>
-
-<body text="#000000" bgcolor="#FFFFFF" link="#0000FF" vlink="#9999ff">
-
-<table width="100%" border="0" cellspacing="0" cellpadding="10" bgcolor="#CCFF99">
-  <tr>
-    <td width="25%" valign="top" bgcolor="#FFFFFF"><a href="http://www.HGVS.org"><img
-    src="small.gif" border="0" width="155" height="94"></a></td>
-    <td width="75%" valign="CENTER" bgcolor="#FFFFFF" bordercolor="#FFFFFF"><h3 align="center"><font
-    size="6">Versioning</font> </h3>
-    </td>
-  </tr>
-</table>
-
-<table width="100%" border="0" cellspacing="0" cellpadding="10">
-  <tr>
-    <td width="100%" valign="BOTTOM" bgcolor="#0099cc"><h4 align="center"><font size="3"
-    color="#FFFFFF"><i><br>
-    Last modified January 14, 2013</i></font></h4>
-    </td>
-  </tr>
-</table>
-
-<hr>
-
-<h2>Introduction</h2>
-
-<hr>
-
-<p>The recommendations for the description of sequence variants are designed to be <b><i>stable</i></b>,
-<b><i>meaningful</i></b>, <b><i>memorable</i></b> and <b><i>unequivocal</i></b>. Still,
-every now and then small modifications will need to be made to remove small
-inconsistencies and/or to clarify confusing conventions. In addition, the recommendations
-may be extended to resolve cases that were hitherto not covered. To allow users to specify
-up to what point they follow the HGVS recommendations we have started to work with version
-numbers.</p>
-
-<p>As of now, <b><i>any change</i></b> in the recommendations will get a new v<em>ersion
-number based on the date of the change</em>. Both in the <a href="version-list.html">version
-list</a>, and on the page giving details of the change, it will be clearly marked using a
-format like <font color="#FF0000"><small><strong><em>date 2012-08-31</em></strong></small></font>.
-The version of the HGVS recommendations including that change will be <em><strong>version
-2.120831</strong></em>.</p>
-
-<p>At the top of all pages on this site you will also find a <strong><em>Last modified</em></strong>
-date. This date indicates when the respective page was modified last. When this includes
-changes/extensions of the HGVS recommendation, the version number of the recommendation
-will also change. Note however that it often happens that simply a typing error was
-corrected, an example was added, an explanation was further clarified, a question
-answered, etc. In such cases the recommendations do not actually change and the version
-number will thus also not change.</p>
-
-<hr>
-
-<h2>Versions</h2>
-
-<hr>
-
-<p><strong>Version 0</strong>&nbsp; -&nbsp; On the page &quot;<a href="history.html">History
-regarding the description of sequence variants</a>&quot; we give an overview of all
-publications on the description of sequence variants. These papers can be considered as
-pre-versions of the first recommendations, a version 0.</p>
-
-<p><a NAME="important"></a><strong>Version 1&nbsp; -&nbsp; </strong>we consider the 2000
-publication of den Dunnen JT and Antonarakis SE (<em>Mutation nomenclature extensions and
-suggestions to describe complex mutations: a discussion</em>. <a
-href="http://www3.interscience.wiley.com/cgi-bin/fulltext/68503056/PDFSTART"><i>Hum.Mutat.
-</i><b>15</b> (1): 7-12</a>) as a more formal set of recommendations, i.e. version 1. </p>
-
-<p><strong>Version 2</strong>&nbsp; -&nbsp; We are currently preparing a new publication
-that will summarize the current HGVS recommendations. The most significant and latest
-changes for version 2.0 compared to version 1.0 include; 
-
-<ul>
-  <li><b><i>Reference sequence&nbsp;</i></b> -&nbsp; the recommendation is to use a <a
-    href="http://www.lrg-sequence.org/">Locus Reference Genomic sequence</a> (LRG) (<a
-    href="http://genomemedicine.com/content/2/4/24"><i>Dalgleish et al. 2010</i></a>) as the
-    reference sequence for variant descriptions. LRGs support descriptions using both genomic
-    and coding DNA reference sequences and have been specifically made for application in a
-    diagnostic setting (<i><a href="refseq.html">see Reference Sequences</a></i>).<br>
-    In addition, indicators for new types of reference sequences have been added (e.g. m. and
-    n., <a href="standards.html#refseq"><i>see Standards</i></a>) as well as indicators to
-    specify different transcripts / protein isoforms generated from one gene (<a
-    href="standards.html#traiso"><i>see Standards</i></a>)</li>
-  <li><b><i>Definitions</i></b>&nbsp; -&nbsp; to enhance clarity as well as to facilitate
-    computational analysis and description of sequence variants, the basic types of variants
-    had to be defined more strictly. In addition descriptions have been prioritized, meaning
-    that when a description is possible according to several classes, e.g. as a duplication or
-    an insertion, one specific class is preferred. For an overview <a
-    href="standards.html#define"><i>see Standards - definitions</i></a>)</li>
-  <li><b><i>Pre-existing standards</i></b>&nbsp; -&nbsp; several scientist have pointed out
-    that we have thus far neglected the fact that some standards were already existing before
-    those for the description of sequence changes were made. It is thus essential that we
-    follow these standards in our recommendations. The most important of these are the
-    pre-existing standards from the IUPAC (<i>International Union of Pure and Applied
-    Chemistry</i>) and IUBMB (<i>International Union of Biochemistry and Molecular Biology</i>)
-    for the description of nucleic acids and amino acids (see below). These include letter
-    codes to describe incompletely specified residues at both DNA and protein level&nbsp; (<a
-    href="standards.html#aacode">see <i>Standards</i></a>). The most controversial of these
-    changes is that where <b><font color="#FF0000">the description of the stop codon </font></b>at
-    protein/amino acid level <b><font color="#FF0000">changed from 'X' to 'Ter'/'*' </font></b>since
-    'X' in the <i>IUPAC-IUB </i>nomenclature means an &quot;<i>unspecified</i>&quot; or &quot;<i>unknown</i>&quot;
-    amino acid. <ul>
-      <li><a href="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html">Nomenclature for Incompletely
-        Specified Bases in Nucleic Acid Sequences</a>&nbsp; -&nbsp; <i>IUBMB (NC-IUB)<br>
-        </i>specifying the description of nucleotides (<a
-        href="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html#500"><i>see list</i></a>)</li>
-      <li><a href="http://www.chem.qmul.ac.uk/iupac/AminoAcid/">Nomenclature and Symbolism for
-        Amino Acids and Peptides</a>&nbsp; -&nbsp; <i>IUPAC-IUB<br>
-        </i>specifying the description of amino acids (<a
-        href="http://www.chem.qmul.ac.uk/iupac/AminoAcid/AA1n2.html#AA1"><i>see list</i></a>)</li>
-      <li>NCBI standards for sequence files and database searches (e.g. <a
-        href="http://www.ncbi.nlm.nih.gov/BLAST/blastcgihelp.shtml">BLAST)</a></li>
-    </ul>
-  </li>
-  <li><b><i>Incorporate ISCN standards</i></b>&nbsp; -&nbsp; to describe microscopically
-    visible chromosomal changes, the cytogenetics community uses the ISCN (<i>International
-    System for Human Cytogenetic Nomenclature</i>) standards (see <a
-    href="http://books.google.nl/books?id=kycmqGobz9QC&amp;printsec=frontcover&amp;source=gbs_ge_summary_r&amp;cad=0#v=onepage&amp;q&amp;f=false"><i>ISCN-2005</i></a>);
-    the latest update is from 2009 (editors Lisa Schaffer, Marilyn Slovak, Lynda Campbell).
-    Were initially direct chromosome spreads used only, later hybridisation technologies like
-    FISH (Fluorescent In Situ Hybridisation) and arrays (arrayCHG, SNP-arrays) were introduced
-    to determine the state of specific sequences tested.&nbsp;&nbsp;&nbsp; On the HGVS pages
-    we have since 2005 suggested ways to describe changes detected using such technologies (<a
-    href="uncertain.html"><i>see Uncertainties</i></a>). These recommendations have now
-    matured and been incorporated.&nbsp; Furthermore, where possible, we have incorporated
-    established ISCN standards in the HGVS recommendations. Examples include the use of&nbsp;
-    &quot;/&quot; to describe somatic variants and &quot;//&quot; for chimerism (<i><a
-    href="standards.html#ISCN">see Standards</a></i>).&nbsp;</li>
-  <li><i><b>Simplification</b></i>&nbsp; -&nbsp; in the 2000 recommendations (v1.0), some
-    symbols were used for more then one purpose which may lead to undesired confusion. For
-    example the &quot;+&quot; character was used both in nucleotide numbering (indicating an
-    intronic position) and to separate two alleles while for the latter also the &quot;;&quot;
-    character was used. The recommendation is now to use only &quot;;&quot;. A complete
-    overview of the characters and codes use can be found at the <a
-    href="standards.html#characters"><i>Standards page</i></a>.</li>
-  <li><b><i>Prediction / experimental proof&nbsp;</i></b> -&nbsp; it is often not clear
-    whether a description of a variant at protein level is based on experimental evidence or
-    merely a prediction based on what was detected at DNA level. To make this distinction more
-    obvious, the recommendation is to describe the variant at protein level between brackets,
-    like p.(Arg12Gly), when it is a prediction based on DNA data only. When RNA has been
-    analysed, and some experimental evidence exists to support the prediction, the variant may
-    be described without brackets, like p.Arg12Gly.&nbsp;</li>
-  <li><strong><em>Repeated sequences</em></strong>&nbsp; -&nbsp; the 2000 recommendations
-    where not very specific regarding the description of a variability in repeated sequences,
-    mono-, di-, tri-nucleotide stretches, etc. Recommendations for the description of such
-    variability have now set (<a href="recs-DNA.html#var"><em>see Recommendations</em></a>).
-    The format designed is also used to describe more complex copy number variation of larger
-    stretches of DNA, e.g. the presence of two additional copies of one or more exons of a
-    gene, often with the breakpoints not fully characterised.</li>
-  <em>
-</ul>
-</em>
-
-<p>See the <em><a href="version-list.html">Version list</a></em> for additional changes
-and the<strong> latest version number</strong>.</p>
-
-<hr>
-
-<p align="center"><font face="Verdana, Arial, Helvetica, sans-serif">| <a HREF="#top">Top
-of page</a> | <a HREF="index.html">Homepage</a> | <a href="checklist.html">Check-list</a>
-| <a href="standards.html">Symbols, codons, etc.</a> |<br>
-| <b>Recommendations:</b>&nbsp; <a href="recs-DNA.html">DNA</a>,&nbsp; <a
-href="recs-RNA.html">RNA</a>,&nbsp; <a href="recs-prot.html">protein</a>, <a
-href="uncertain.html">uncertain</a> |<br>
-| <a HREF="disc.html">Discussions</a> | <a HREF="FAQ.html">FAQ's</a> | <a
-href="history.html">History</a> |<br>
-| <b>Example descriptions:&nbsp;</b> <a href="quickref.html">QuickRef</a>,&nbsp; <a
-HREF="examplesDNA.html">DNA</a>,&nbsp; <a HREF="examplesRNA.html">RNA</a>,&nbsp; <a
-HREF="examplesAA.html">protein</a> |</font></p>
-
-<table width="100%" border="0" cellspacing="0" cellpadding="15" bgcolor="#ff9900">
-  <tr>
-    <td><p align="center"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif"
-    size="-5"><a href="http://www.HGVS.org/copyright.html">Copyright ©</a> </font><font
-    size="1">HGVS 2010 All Rights Reserved<br>
-    Website Created by Rania Horaitis, Nomenclature by J.T. Den Dunnen - <a
-    href="http://www.HGVS.org/disclaimer.html">Disclaimer</a> </font></td>
-  </tr>
-</table>
-</body>
-</html>
+<html>  <!--	Author: 	Dr. Johan T. den Dunnen	Date: 	17-11-2002		URL: 	recs.html-->  <head>    <meta content="text/html; charset=windows-1252" http-equiv="content-type">    <title>Nomenclature for the description of sequence variants (mutation      nomenclature)</title>    <style type="text/css"><!--  h2 { font-family : Verdana,Arial,Helvetica,Geneva,sans-serif; color : #ff9900;}h3 { font-family : Verdana,Arial,Helvetica,Geneva,sans-serif; color : #0099cc;}h4 { font-family : Verdana,Arial,Helvetica,Geneva,sans-serif; color : #0099cc;}h5 {font-family : Verdana, Arial, Helvetica, Geneva, sans-serif;color : #ffffff;}.norm { font-weight : normal; } --></style> </head>  <body style="color: black; background-color: white;" link="#0000FF" vlink="#9999ff">    <table bgcolor="#CCFF99" border="0" cellpadding="10" cellspacing="0" width="100%">      <tbody>        <tr>          <td bgcolor="#FFFFFF" valign="top" width="25%"><a href="http://www.HGVS.org"><img                src="small.gif"                border="0"                height="94"                width="155"></a></td>          <td bordercolor="#FFFFFF" bgcolor="#FFFFFF" valign="CENTER" width="75%">            <h3 align="center"><font size="6">Versioning</font> </h3>          </td>        </tr>      </tbody>    </table>    <table border="0" cellpadding="10" cellspacing="0" width="100%">      <tbody>        <tr>          <td bgcolor="#0099cc" valign="BOTTOM" width="100%">            <h4 align="center"><font color="#FFFFFF" size="3"><i><br>                  Last modified January 14, 2013</i></font></h4>          </td>        </tr>      </tbody>    </table>    <hr>    <h2>Introduction</h2>    <hr>    <p>The recommendations for the description of sequence variants are designed      to be <b><i>stable</i></b>, <b><i>meaningful</i></b>, <b><i>memorable</i></b>      and <b><i>unequivocal</i></b>. Still, every now and then small      modifications will need to be made to remove small inconsistencies and/or      to clarify confusing conventions. In addition, the recommendations may be      extended to resolve cases that were hitherto not covered. To allow users      to specify up to what point they follow the HGVS recommendations we have      started to work with version numbers.</p>    <p>As of now, <b><i>any change</i></b> in the recommendations will get a      new v<em>ersion number based on the date of the change</em>. Both in the <a        href="version-list.html">version
+        list</a>, and on the page giving details of the change, it will be      clearly marked using a format like <font color="#FF0000"><small><strong><em>date
+              2012-08-31</em></strong></small></font>. The version of the HGVS      recommendations including that change will be <font color="#FF0000"><em><strong>version
+            2.120831</strong></em></font>.</p>    <p>At the top of all pages on this site you will also find a <strong><em>Last
+          modified</em></strong> date. This date indicates when the respective      page was modified last. When this includes changes/extensions of the HGVS      recommendation, the version number of the recommendation will also change.      Note however that it often happens that simply a typing error was      corrected, an example was added, an explanation was further clarified, a      question answered, etc. In such cases the recommendations do not actually      change and the version number will thus also not change.</p>    <hr>    <h2>Versions</h2>    <hr>    <p><strong>Version 0</strong>&nbsp; -&nbsp; On the page "<a href="history.html">History
+regarding
+        the description of sequence variants</a>" we give an overview of all      publications on the description of sequence variants. These papers can be      considered as pre-versions of the first recommendations, a version 0.</p>    <p><a name="important"></a><strong>Version 1&nbsp; -&nbsp; </strong>we      consider the 2000 publication of den Dunnen JT and Antonarakis SE (<em>Mutation        nomenclature extensions and suggestions to describe complex mutations: a        discussion</em>. <a href="http://www3.interscience.wiley.com/cgi-bin/fulltext/68503056/PDFSTART"><i>Hum.Mutat.
+          </i><b>15</b> (1): 7-12</a>) as a more formal set of recommendations,      i.e. version 1. </p>    <p><strong>Version 2</strong>&nbsp; -&nbsp; We are currently preparing a new      publication that will summarize the current HGVS recommendations. The most      significant and latest changes for version 2.0 compared to version 1.0      include; </p>    <ul>      <li><b><i>Reference sequence&nbsp;</i></b> -&nbsp; the recommendation is        to use a <a href="http://www.lrg-sequence.org/">Locus Reference Genomic          sequence</a> (LRG) (<a href="http://genomemedicine.com/content/2/4/24"><i>Dalgleish
+            et al. 2010</i></a>) as the reference sequence for variant        descriptions. LRGs support descriptions using both genomic and coding        DNA reference sequences and have been specifically made for application        in a diagnostic setting (<i><a href="refseq.html">see Reference            Sequences</a></i>).<br>        In addition, indicators for new types of reference sequences have been        added (e.g. m. and n., <a href="standards.html#refseq"><i>see Standards</i></a>)        as well as indicators to specify different transcripts / protein        isoforms generated from one gene (<a href="standards.html#traiso"><i>see            Standards</i></a>)</li>      <li><b><i>Definitions</i></b>&nbsp; -&nbsp; to enhance clarity as well as        to facilitate computational analysis and description of sequence        variants, the basic types of variants had to be defined more strictly.        In addition descriptions have been prioritized, meaning that when a        description is possible according to several classes, e.g. as a        duplication or an insertion, one specific class is preferred. For an        overview <a href="standards.html#define"><i>see Standards - definitions</i></a>)</li>      <li><b><i>Pre-existing standards</i></b>&nbsp; -&nbsp; several scientist        have pointed out that we have thus far neglected the fact that some        standards were already existing before those for the description of        sequence changes were made. It is thus essential that we follow these        standards in our recommendations. The most important of these are the        pre-existing standards from the IUPAC (<i>International Union of Pure          and Applied Chemistry</i>) and IUBMB (<i>International Union of          Biochemistry and Molecular Biology</i>) for the description of nucleic        acids and amino acids (see below). These include letter codes to        describe incompletely specified residues at both DNA and protein        level&nbsp; (<a href="standards.html#aacode">see <i>Standards</i></a>).        The most controversial of these changes is that where <b><font color="#FF0000">the
+            description of the stop codon </font></b>at protein/amino acid        level <b><font color="#FF0000">changed from 'X' to 'Ter'/'*' </font></b>since
+        'X' in the <i>IUPAC-IUB </i>nomenclature means an "<i>unspecified</i>"        or "<i>unknown</i>" amino acid.        <ul>          <li><a href="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html">Nomenclature
+              for Incompletely Specified Bases in Nucleic Acid Sequences</a>&nbsp;
+            -&nbsp; <i>IUBMB (NC-IUB)<br>            </i>specifying the description of nucleotides (<a href="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html#500"><i>see
+                list</i></a>)</li>          <li><a href="http://www.chem.qmul.ac.uk/iupac/AminoAcid/">Nomenclature              and Symbolism for Amino Acids and Peptides</a>&nbsp; -&nbsp; <i>IUPAC-IUB<br>            </i>specifying the description of amino acids (<a href="http://www.chem.qmul.ac.uk/iupac/AminoAcid/AA1n2.html#AA1"><i>see
+                list</i></a>)</li>          <li>NCBI standards for sequence files and database searches (e.g. <a              href="http://www.ncbi.nlm.nih.gov/BLAST/blastcgihelp.shtml">BLAST)</a></li>        </ul>      </li>      <li><b><i>Incorporate ISCN standards</i></b>&nbsp; -&nbsp; to describe        microscopically visible chromosomal changes, the cytogenetics community        uses the ISCN (<i>International System for Human Cytogenetic          Nomenclature</i>) standards (see <a href="http://books.google.nl/books?id=kycmqGobz9QC&amp;printsec=frontcover&amp;source=gbs_ge_summary_r&amp;cad=0#v=onepage&amp;q&amp;f=false"><i>ISCN-2005</i></a>);
+        the latest update is from 2009 (editors Lisa Schaffer, Marilyn Slovak,        Lynda Campbell). Were initially direct chromosome spreads used only,        later hybridisation technologies like FISH (Fluorescent In Situ        Hybridisation) and arrays (arrayCHG, SNP-arrays) were introduced to        determine the state of specific sequences tested.&nbsp;&nbsp;&nbsp; On        the HGVS pages we have since 2005 suggested ways to describe changes        detected using such technologies (<a href="uncertain.html"><i>see            Uncertainties</i></a>). These recommendations have now matured and        been incorporated.&nbsp; Furthermore, where possible, we have        incorporated established ISCN standards in the HGVS recommendations.        Examples include the use of&nbsp; "/" to describe somatic variants and        "//" for chimerism (<i><a href="standards.html#ISCN">see Standards</a></i>).&nbsp;</li>      <li><i><b>Simplification</b></i>&nbsp; -&nbsp; in the 2000 recommendations        (v1.0), some symbols were used for more then one purpose which may lead        to undesired confusion. For example the "+" character was used both in        nucleotide numbering (indicating an intronic position) and to separate        two alleles while for the latter also the ";" character was used. The        recommendation is now to use only ";". A complete overview of the        characters and codes use can be found at the <a href="standards.html#characters"><i>Standards
+            page</i></a>.</li>      <li><b><i>Prediction / experimental proof&nbsp;</i></b> -&nbsp; it is        often not clear whether a description of a variant at protein level is        based on experimental evidence or merely a prediction based on what was        detected at DNA level. To make this distinction more obvious, the        recommendation is to describe the variant at protein level between        brackets, like p.(Arg12Gly), when it is a prediction based on DNA data        only. When RNA has been analysed, and some experimental evidence exists        to support the prediction, the variant may be described without        brackets, like p.Arg12Gly.&nbsp;</li>      <li><strong><em>Repeated sequences</em></strong>&nbsp; -&nbsp; the 2000        recommendations where not very specific regarding the description of a        variability in repeated sequences, mono-, di-, tri-nucleotide stretches,        etc. Recommendations for the description of such variability have now        set (<a href="recs-DNA.html#var"><em>see Recommendations</em></a>). The        format designed is also used to describe more complex copy number        variation of larger stretches of DNA, e.g. the presence of two        additional copies of one or more exons of a gene, often with the        breakpoints not fully characterised.</li>      <em> </em>    </ul>    <em> </em>    <p>See the <em><a href="version-list.html">Version list</a></em> for      additional changes and the<strong> latest version number</strong>.</p>    <hr>    <p align="center"><font face="Verdana, Arial, Helvetica, sans-serif">| <a href="#top">Top
+of
+          page</a> | <a href="index.html">Homepage</a> | <a href="checklist.html">Check-list</a>        | <a href="standards.html">Symbols, codons, etc.</a> |<br>        | <b>Recommendations:</b>&nbsp; <a href="recs-DNA.html">DNA</a>,&nbsp;        <a href="recs-RNA.html">RNA</a>,&nbsp; <a href="recs-prot.html">protein</a>,        <a href="uncertain.html">uncertain</a> |<br>        | <a href="disc.html">Discussions</a> | <a href="FAQ.html">FAQ's</a> |        <a href="history.html">History</a> |<br>        | <b>Example descriptions:&nbsp;</b> <a href="quickref.html">QuickRef</a>,&nbsp;
+        <a href="examplesDNA.html">DNA</a>,&nbsp; <a href="examplesRNA.html">RNA</a>,&nbsp;
+        <a href="examplesAA.html">protein</a> |</font></p>    <table bgcolor="#ff9900" border="0" cellpadding="15" cellspacing="0" width="100%">      <tbody>        <tr>          <td>            <p align="center"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif"                size="-5"><a                  href="http://www.HGVS.org/copyright.html">Copyright
+                  ©</a> </font><font size="1">HGVS 2010 All Rights Reserved<br>                Website Created by Rania Horaitis, Nomenclature by J.T. Den                Dunnen - <a href="http://www.HGVS.org/disclaimer.html">Disclaimer</a>              </font></p>          </td>        </tr>      </tbody>    </table>  </body></html>
