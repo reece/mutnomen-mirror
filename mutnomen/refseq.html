@@ -1,866 +1,66 @@
-<html>
-<!--
-	Author: 	Dr. Johan T. den Dunnen
-	Date: 	17-11-02
-	URL: 	refseq.html
--->
-
-<head>
-<title>HGVS recommendations: reference sequence</title>
-<style type="text/css">
-
-<!--  
-
-h2 {
- font-family : Verdana,Arial,Helvetica,Geneva,sans-serif;
- color : #ff9900;
-
-}
-
-h3 {
- font-family : Verdana,Arial,Helvetica,Geneva,sans-serif;
- color : #0099cc;
-
-}
-
-h4 {
- font-family : Verdana,Arial,Helvetica,Geneva,sans-serif;
- color : #0099cc;
-
-}
-
-h5 {
-font-family : Verdana, Arial, Helvetica, Geneva, sans-serif;
-color : #ffffff;
-
-}
-
-.norm {
-
- font-weight : normal;
-
- }
- -->
-</style>
-</head>
-
-<body text="#000000" bgcolor="#FFFFFF" link="#0000FF" vlink="#9999ff">
-
-<table width="100%" border="0" cellspacing="0" cellpadding="10" bgcolor="#CCFF99">
-  <tr>
-    <td width="25%" valign="top" bgcolor="#FFFFFF"><a href="http://www.HGVS.org"><img
-    src="small.gif" border="0" width="155" height="94"></a></td>
-    <td width="75%" valign="CENTER" bgcolor="#FFFFFF" bordercolor="#FFFFFF"><h2 align="center">A
-    reference sequence - discussions and FAQs </h2>
-    </td>
-  </tr>
-</table>
-
-<table width="100%" border="0" cellspacing="0" cellpadding="10">
-  <tr>
-    <td width="100%" valign="BOTTOM" bgcolor="#0099cc"><h4 align="center"><font size="3"
-    color="#FFFFFF"><i><br>
-    Last modified July 8, 2013</i></font></h4>
-    </td>
-  </tr>
-</table>
-
-<p align="center"><i>Since references to WWW-sites are not yet acknowledged as citations<font
-face="Times New Roman">, please mention <a
-href="http://www3.interscience.wiley.com/cgi-bin/fulltext/68503056/PDFSTART">den Dunnen JT
-and Antonarakis SE (2000). Hum.Mutat. 15:7-12</a> when referring to these pages.</font></i></p>
-
-<hr>
-
-<h2>Contents</h2>
-
-<ul>
-  <li><a href="#standard"><b>Reference sequence descriptions</b></a> <ul>
-      <li>reference sequence indicators</li>
-    </ul>
-  </li>
-  <li><a href="#refseq"><b>Reference sequence - genomic or coding DNA ?</b></a> <ul>
-      <li>practical problems genomic reference sequence</li>
-      <li>practical problems coding DNA reference sequence</li>
-    </ul>
-  </li>
-  <li><a href="#general"><b>Reference sequence - recommendations<br>
-    </b></a><img src="new.gif" border="0" width="31" height="12">use a LRG (Locus Reference
-    Genomic sequence, <i><a href="http://www.genomemedicine.com/content/pdf/gm145.pdf">Dalgleish
-    et al. 2010</a></i>), see <a href="http://www.lrg-sequence.org"><i>LRG website</i></a> <ul>
-      <li><a href="#generalG">genomic reference sequence</a></li>
-      <li><a href="#generalC">coding DNA reference sequence</a></li>
-      <li><a href="#refseqE">examples</a></li>
-    </ul>
-  </li>
-  <li><b><a href="#exonnumber">Numbering exons &amp; introns</a></b> <ul>
-      <li>discussion &amp; recommendations&nbsp;</li>
-    </ul>
-  </li>
-  <li><b>Changed recommendations</b> <ul>
-      <li><a href="#IVS">description of intronic variants</a></li>
-    </ul>
-  </li>
-  <li><b>Frequently Asked Questions</b>&nbsp; (FAQ) <ul>
-      <li><a href="#20">report with 20 bp on either side</a></li>
-      <li><a href="#cds">database sequence does not start with 1 at A of ATG</a></li>
-      <li><a href="#files">genomic reference sequence split in several files</a></li>
-      <li><img src="new.gif" border="0" width="31" height="12"><em><a href="#whichgene">variant 1
-        Mb upstream in another gene</a></em></li>
-      <li><a href="#IVSin5">RefSeq numbering with introns 5' of the ATG</a></li>
-      <li><a href="#exinnr">numbering exons/introns</a></li>
-      <li><a href="#complete">alternatively spliced exon</a></li>
-      <li><a href="#gseqchange">genomic sequence changes regularly</a> </li>
-      <li><img src="new.gif" border="0" width="31" height="12"><em><a href="#chrom">difference
-        chromosome / coding DNA description</a></em></li>
-      <li><a href="#EST">coding DNA sequence incomplete</a> (use EST or genomic ?) </li>
-      <li><a href="#wt">frequency / &quot;wild type&quot; sequence</a> </li>
-      <li><a href="#mtDNA">changes in mitochondrial DNA</a> </li>
-      <li><img src="new.gif" border="0" width="31" height="12"><em><a href="#ncRNA">changes in
-        non-coding RNA (ncRNA) genes</a> </em></li>
-    </ul>
-  </li>
-</ul>
-
-<hr>
-
-<h2><a NAME="standard"></a>Reference sequence descriptions</h2>
-
-<p>To indicate what type of reference sequence is used for the description of the sequence
-variant, <a href="standards.html#refseq">specific indicators</a> are used; 
-
-<ul>
-  <li>c. = coding DNA reference sequence <ul>
-      <li>covers the part of the transcript that is translated into protein; numbering starts at
-        the translation initiation site (the A of the <b><i><u>A</u></i></b>TG codon) and ends at
-        the last nucleotide of the translation termination site (translation stop codon TA<b><i><u>G</u></i></b>,
-        TA<b><i><u>A</u></i></b> TG<b><u><i>A</i></u></b>)</li>
-    </ul>
-  </li>
-  <li>g. = genomic reference sequence <ul>
-      <li>numbering starts at the first nucleotide of the reference sequence and ends at the last
-        nucleotide</li>
-    </ul>
-  </li>
-  <li>m. = mitochondrial reference sequence (<i><a href="#mtDNA">see details</a>)</i> <ul>
-      <li>numbering starts at the first nucleotide of the reference sequence and ends at the last
-        nucleotide</li>
-    </ul>
-  </li>
-  <li>n. = non-coding RNA reference sequence (gene producing an RNA transcript but not a
-    protein) <ul>
-      <li>numbering starts at the first nucleotide of the non-coding transcript and ends at the
-        last nucleotide</li>
-    </ul>
-  </li>
-  <li>r.&nbsp; = RNA reference sequence <ul>
-      <li>covers the entire transcript, excluding the poly A-tail; numbering starts at the
-        transcription initiation site (<i>cap site</i>) and ends at transcription termination site</li>
-    </ul>
-  </li>
-  <li>p. = protein reference sequence <ul>
-      <li>covers the entire protein; numbering starts at the translation initiation site (the
-        Methionine) and ends at the translation termination site (the *)</li>
-    </ul>
-  </li>
-</ul>
-
-<p>For details on residue numbering <i><a href="standards.html#number">see Standards</a></i>.
-Note that recommendations also exist to describe different transcripts/protein isoforms
-generated from one gene (<i><a href="standards.html#traiso">see Standards</a></i>).&nbsp;</p>
-
-<hr>
-
-<h2><a NAME="refseq"></a>Genomic or coding DNA reference sequence ?</h2>
-
-<p>Discussions on a proper <b><i>reference sequence</i></b> have been very lively. In
-general it can be concluded that all suggestions made have their pro's and con's, but
-there is no perfect solution.</p>
-
-<p>Theoretically, a <b>genomic reference sequence</b> is the best choice. By simply
-numbering nucleotides from 1 to the end of the file no problems occur with complex gene
-structures like multiple transcription start sites (promoters / 5'-first exons), multiple
-translation initiation sites (ATG-codons), alternative splicing and the use of different
-3'-terminal exons and poly-A addition sites.</p>
-
-<p>In practice a <b>coding DNA reference sequence</b> is mostly preferred. The most
-important reason is that from the description one immediately gets some information
-regarding the location of the variant; exonic or intronic, 5' of the ATG or 3' of the stop
-codon and, by dividing the nucleotide number by 3, the number of the amino acid residue
-that is affected (see <i><a href="nucleotide.html">Nucleotide numbering</a></i>).</p>
-<em>
-
-<h3><a NAME="genomic"></a><a NAME="length"></a><b>Practical problems genomic reference
-sequence</b></h3>
-</em>
-
-<blockquote>
-  <ul>
-    <li><i><b>for a human, a genomic reference sequence does not contain any useful information
-      (a coding DNA reference sequence does)</b></i></li>
-    <li>a <i><u>gene can be very large</u></i> (over 2.0 Mb) - this makes nucleotide numbering
-      based on a genomic reference sequence rather impractical (e.g. g.1567234_1567235insTG).
-      Furthermore, genomic reference sequences based on GenBank NT_ files become increasingly
-      long (e.g. the CFTR gene in <a href="http://www.ncbi.nlm.nih.gov/nuccore/NT_007933">NT_007933.15</a>,
-      &gt;77 Mb) and consequently loose their informativity. Downloading such large files is,
-      even with good internet connections, time consuming and working with these files is rather
-      difficult.</li>
-    <li>when a genomic reference sequence is taken from a complete genome sequence, e.g. a
-      bacterium or the human X-chromosome, the transcriptional orientation of the gene of
-      interest may be on the <i><u>minus (-)&nbsp; strand</u></i>. This makes the description of
-      sequence variants rather complicated, especially when the consequences on RNA and/or
-      protein level need to be described; nucleotides on DNA and RNA level are complementary and
-      numbering goes in different directions - a confusing situation that should be prevented.</li>
-    <li>when different genes (partly) overlap, using the same or the minus (-) DNA strand, which
-      reference sequence should one use to describe the variant and to which gene should the
-      change be assigned ? (see <i><a href="recs.html#twogenes">Recommendations</a></i>).</li>
-    <li>when the <u><i>gene sequence is incomplete</i></u> (especially when large introns are
-      present) -&nbsp; a genomic sequence can not be used.</li>
-    <li>genes may contain very large introns with many intronic <u><i>(length) variants</i></u>
-      present in the population - it is thus very difficult to give <i><b>THE</b></i> genomic
-      reference sequence (see <a href="#gseqchange"><i>Genomic sequence changes regularly</i></a>).</li>
-  </ul>
-</blockquote>
-<em>
-
-<h3><a NAME="coding"></a><b>Practical problems coding DNA reference sequence</b></h3>
-</em>
-
-<blockquote>
-  <ul>
-    <li>the exact <i><u>transcriptional start site</u></i> (cap-site) of a gene has often not
-      been determined and/or its assignment is debated - the first nucleotide can thus not be
-      assigned with certainty. The same might be true for the translation initiation site
-      (ATG-codon).</li>
-    <li>a gene may have <u><i>several transcripts</i></u>, using different promoters / 5'-first
-      exons, alternatively spliced internal exons, different 3'-terminal exons and
-      polyA-addition sites - <i><b>one</b></i> complete coding DNA reference sequence can thus
-      not be generated (see <i><a href="#diffsplice">Alternatively spliced exons - nucleotide
-      numbering</a></i>),</li>
-    <li>the different transcripts may <i><u>encode different proteins</u></i> (isoforms) with,
-      when different promoters are used, different N-terminal sequences and even using different
-      reading frames in one or more exons. <b><i>One</i></b> complete protein reference sequence
-      can thus not be assigned.</li>
-    <li>when different genes (partly) overlap, using the same or the minus (-) DNA strand, which
-      reference sequence should one use to describe the variant and to which gene should the
-      change be assigned ? (see <i><a href="recs.html#twogenes">Recommendations</a></i>).</li>
-  </ul>
-</blockquote>
-
-<hr>
-
-<h2><a NAME="general"></a>Recommendations reference sequence</h2>
-
-<p><img src="new.gif" border="0" height="12" width="31">The recommendation is to use a LRG
-(Locus Reference Genomic sequence, e.g. <a
-href="http://www.ncbi.nlm.nih.gov/nuccore/NG_008797.2"><em>LRG_329</em></a>. Information
-on LRG's (<a href="http://www.genomemedicine.com/content/pdf/gm145.pdf"><i>Dalgleish et
-al. 2010</i></a>) and how to get one for your gene of interest, can be found at the <a
-href="http://www.lrg-sequence.org"><i>LRG website</i></a>.&nbsp;When no LRG is available a
-RefSeqGene record (<em><a href="http://www.ncbi.nlm.nih.gov/refseq/rsg/">see NCBI</a></em>)
-should be used (format <a href="http://www.ncbi.nlm.nih.gov/nuccore/NG_008797.2"><em>NG_008797.2</em></a>)
-&nbsp; a <i>from the <a href="http://www.ncbi.nlm.nih.gov/RefSeq/">RefSeq database</a>,
-listing both database accession and version number (like NM_004006.2) </i></p>
-<em>
-
-<h3><a NAME="generalG"></a><b>Genomic reference sequence</b></h3>
-</em>
-
-<p>When a genomic reference sequence is used the following recommendations should be
-followed; 
-
-<ul>
-  <li>it should include all known exons and cover all known transcripts</li>
-  <li>to facilitate the description of variants in immediate gene flanking regions (e.g. the
-    promoter region), it should contain several kilobases of 5' upstream (~5 Kb) and 3'
-    downstream (~2 Kb) sequences<br>
-    <i><b>NOTE:</b></i> this demand ensures that when new data indicate that the gene's
-    transcriptional start site or polyA-addition site should be shifted, it is often not
-    necessary to generate a new reference sequence&nbsp;</li>
-  <li>descriptions in relation to a genomic reference sequence do not include &quot;+&quot;,
-    &quot;-&quot; or other signs</li>
-  <li>when the complete genomic sequence is not known, a coding DNA reference sequence should
-    be used</li>
-</ul>
-
-<p>For complex genes, when on the genomic reference sequence all transcripts are annotated
-properly, computational tools (like <i><a href="http://www.mutalyzer.nl">Mutalyzer</a> </i>and
-the <a href="http://cbio.mskcc.org/gmcc"><i>Genomic Mutation Consequence Calculator</i></a>)
-can easily predict the consequences of a sequence change <i><b>on all transcripts</b></i>
-and their encoded protein isoforms, incl. when they derive from overlapping genes.</p>
-<em>
-
-<h3><a NAME="generalC"></a><b>Coding DNA reference sequence</b></h3>
-</em>
-
-<p>When a coding DNA reference sequence is used the following recommendations should be
-followed; 
-
-<ul>
-  <li>the coding DNA reference sequence should be complete and preferably derived from the <a
-    href="http://www.ncbi.nlm.nih.gov/RefSeq/"><i>RefSeq database</i></a> (format <a
-    href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=nucleotide&amp;val=NM_033337.2"><em>NM_033337.2</em></a>)
-    or Ensembl (format <a
-    href="http://www.ensembl.org/Homo_sapiens/Transcript/Summary?g=ENSG00000182533;r=3:8775486-8788451;t=ENST00000343849"><em>ENST00000343849</em></a>);
-    When the RefSeq database does not contain a file covering the sequence of interest, one
-    should <b><i>make one, annotate it properly and submit it</i></b> to the RefSeq database</li>
-  <li>the <i><a href="#generalG">genomic reference sequence</a></i> used as its basis should
-    be given; to facilitate the description of variants in immediate gene flanking regions
-    (e.g. the promoter region), it should contain several kilobases of 5' upstream (~5 Kb) and
-    3' downstream (~2 Kb) sequences<br>
-    <i><b>NOTE:</b></i> this demand ensures that when new data indicate that the gene's
-    transcriptional start site or polyA-addition site should be shifted, it is often not
-    necessary to generate a new reference sequence</li>
-  <li>to facilitate the description of variants and to prevent confusion it should cover the
-    major and largest transcript known and include as many exons as possible, even when this
-    transcript has not been proven to actually exist in nature. Exons that disrupt the main
-    reading frame should not be included but annotated in the introns</li>
-  <li>for difficult cases the best choice is up to those that need to report sequence variants
-    in relation to the sequence, e.g. clinical labs. Important is that the experts; <ul>
-      <li>come to a consensus and <i><b>use ONE coding DNA reference sequence</b></i> only</li>
-      <li>in the coding DNA reference sequence it should be clearly annotated where sequences are
-        that are used in other transcripts and protein isoforms</li>
-    </ul>
-  </li>
-  <li>exonic sequences not covered by the coding DNA reference sequence selected should be
-    numbered in relation to the selected sequence (<i>see <a href="#refseqE">Examples</a></i>),
-    i.e.; <ul>
-      <li>using the '-' sign when 5' of the exon containing the translation initiation site
-        (ATG-codon)</li>
-      <li>when inside the gene like intronic nucleotides (e.g. c.435+574, c.896-56, etc.)</li>
-      <li>using the '*' sign when 3' of the exon containing the translation termination site (stop
-        codon)</li>
-    </ul>
-    <p><b><i>NOTE:</i></b> the numbering suggested can also be applied to amino acid numbering
-    (e.g. p.Ala456+1, Cys456+2, ..., etc. or ..., p.Phe457-2, p.Gln457-1) </p>
-  </li>
-</ul>
-
-<p>Suggestions have been made to extend the recommendations for the nucleotide numbering
-of coding DNA reference sequences to specifically indicate untranscribed nucleotides (<i><a
-href="disc.html#untrans">see Discussion</a></i>).</p>
-
-<p>As discussed, genes can be rather complex and the choice of a good coding DNA reference
-sequence can be very difficult. Below we will refer to some examples of how experts have
-tried to resolve the issue.</p>
-
-<hr>
-<em>
-
-<h3><a NAME="refseqE"></a><b>Examples</b></em></h3>
-
-<ul>
-  <li><b>one gene - many promoters/5'-first exons</b> (5' and internal) <b>- <a
-    href="http://www.dmd.nl/nmdb/refseq/DMD_codingDNA.html">the DMD-gene</a></b><br>
-    Since DMD is mainly a muscle-disease the major transcript of the gene found in muscle
-    (Dp427m) was chosen as the <a href="http://www.dmd.nl/nmdb/refseq/DMD_codingDNA.html">coding
-    DNA reference sequence</a>. This includes all differently spliced exons, e.g. exons 71 and
-    78 reported to be present each in about 50% of the transcripts.&nbsp; <ul>
-      <li>exon 78 seems to be present only in higher organisms - transcripts lacking exon 78
-        change the reading frame of exon 79, extending the C-terminal end of the encoded protein
-        beyond that of the normal reading frame. To prevent that this is not noted this feature is
-        clearly annotated in the coding DNA reference sequence (<i>see <a
-        href="http://www.dmd.nl/nmdb/refseq/DMD_codingDNA.html">DMD coding DNA reference sequence</a></i>).</li>
-      <li>the DMD-gene has seven different promoters/5'-first exons. Six of these are internal,
-        i.e. located in an intron of the coding DNA reference sequence transcript. These
-        promoters/5'-first exons are clearly annotated and they are numbered using intronic
-        nucleotides (see e.g. <a href="http://www.DMD.nl/seqs/murefDMD_intron_29.html#Dp260">Dp260
-        located in intron 29</a>). The exception is the promoter/5'-first exon expressed in brain
-        (Dp427c) which starts 128 Kb upstream of the muscle promoter. This promoter/5'-first exon
-        is again clearly annotated and is numbered using nucleotides 5' of the ATG (see e.g. <a
-        href="http://www.DMD.nl/seqs/murefDMD_intron_00.html#Dp427c">Dp427c</a>).&nbsp;</li>
-    </ul>
-  </li>
-  <li><b>one gene - two promoters/ 5'-first exons - two alternative reading frames - <a
-    href="http://chromium.liacs.nl/LOVD2/home.php?select_db=CDKN2A">the CDKN2A gene<br>
-    </a></b>The CDKN2A gene uses two alternative promoters/5'-first exons (separated by 19 Kb)
-    and shared exons 2 and 3. When the two exons 1 are spliced to exons 2 and 3 they are out
-    of frame with each other, i.e. use a different reading frame, one encoding a protein
-    called <a href="http://chromium.liacs.nl/lovd/refseq/CDKN2A_upstream.html#p14"><i>p14ARF</i></a>,
-    the other a protein called <a
-    href="http://chromium.liacs.nl/lovd/refseq/CDKN2A_codingDNA.html"><i>p16</i></a>. As a
-    consequence some sequence variants affect only one of the 2 proteins while other variants
-    have a different consequences for both proteins. To prevent confusion both transcripts /
-    proteins are clearly indicated and sequence variants are described in relation to both
-    transcripts/protein isoforms (see <a href="http://www.LOVD.nl/CDKN2A"><i>CDKN2A sequence
-    variant database</i></a>).</li>
-  <li><b>one gene - alternative splice sites internal exon - <a
-    href="http://www.LOVD.nl/MUTYH">the MUTYH gene</a></b><br>
-    The MUTYH gene encodes several transcripts differing by the splice acceptor site used in
-    exon 3 (intron 2), adding 72, 63 or 3 nucleotides 5' of a common exon 3 sequence (adding
-    14, 11 or 1 amino acids resp.). Although it is not clear in which tissues and to what
-    level these transcripts are expressed, to prevent confusion and to ensure that the entire
-    region is checked for sequence variants, the suggestion has been made to include all
-    nucleotides in the coding DNA reference sequences (<a
-    href="http://chromium.liacs.nl/LOVD2/colon_cancer/refseq/MUTYH_codingDNA.html"><i>see
-    MUTYH coding DNA reference sequence</i></a>)</li>
-  <li><b>one gene - alternative 3-last exons - <a href="http://www.DMD.nl/LMNA">the LMNA gene</a></b><br>
-    The LMNA gene encodes two major protein isoforms; lamin-A and lamin-C. These proteins are
-    generated by two major transcripts, one ending after exon 10 (lamin-C, located in intron
-    10 of lamin-A), one extending further downstream to exon 12 (lamin-A). The coding DNA
-    reference sequence used is based on the largest transcript, i.e. lamin-A (<i><a
-    href="http://www.dmd.nl/nmdb/refseq/LMNA_codingDNA.html">see LMNA</a></i>). Nucleotide
-    numbering for the shorter lamin-C uses intron 10 nucleotides (1698+1 to 1698+123 <i><a
-    href="http://www.dmd.nl/nmdb/refseq/LMNA_intron_10.html">see lamin-C</a></i>), amino acid
-    numbering uses p.Val566+1 to p.Arg566+6.</li>
-</ul>
-
-<p><i><b>Do you have other examples - please let us know (E-mail to: <a
-href="mailto:J.T.den_Dunnen%20@%20LUMC.nl">J.T.den_Dunnen @ LUMC.nl</a>) !.</b></i></p>
-
-<hr>
-
-<h2><a NAME="exonnumber"></a>Numbering exons &amp; introns</h2>
-
-<p>The HGVS recommendations for the description of sequence variants does not include
-suggestions for the numbering of exons and introns. The simple reason is that <i><b>exon/intron
-numbers are not required</b></i> for a correct description. When necessary, the <i><b>exon/intron
-numbers can be derived</b></i> from the description at DNA level. </p>
-
-<p>In fact, using exon/intron numbers introduces a lot of confusion, which is undesired;
-assume an exon number is in conflict with the description of the variant at DNA level,
-what to do ?. In many genes there is no consensus on exon/intron numbering and originally
-used numbering schemes had to be revised to include newly discovered exons (internal as
-well as 5' and/or 3' of the gene). This led to all kinds of numbering schemes using no
-consensus or overall logic, making it very difficult for non-experts in the specific gene
-to keep track of all details (see <i><a
-href="http://www.genomemedicine.com/content/pdf/gm145.pdf">Dalgleish et al. 2010</a></i>).
-With the increasing use of genome browsers, numbering exons simply from start to end 1, 2,
-3, etc., legacy numbering schemes have become even more confusing.</p>
-
-<p>The only logical thing to do is to follow the standard set by the genome browsers and <i><b>to
-start numbering with 1 for the first exon</b></i>. Although this is probably difficult to
-accept by the experts, we can not keep on confusing newcomers by forever using legacy
-numbering systems. We should realize that, at some point wrong assumptions will be made
-and a patient wiil end up with an erroneous diagnosis, which is of course unacceptable.</p>
-<em>
-
-<h3>Recommendation exon/intron numbering</h3>
-</em>
-
-<p>Describe variants at DNA level and <i><b>do not include exon or intron numbers as part
-of the description</b></i>. Exon and intron numbers may be mentioned but only when there
-use is specified and reference sequences for the exons and introns are gvien. Since
-history will leave its tracks, when refering to older data, always mention changed
-numbering schemes in M&amp;M and in Figure and Table legends to prevent any confusion. For
-tables even consider to add an additional column indicating the legacy numbering.</p>
-
-<p><i><b>Examples;</b></i> 
-
-<ul>
-  <li><i>c.IVS12-1G&gt;T<br>
-    </i>&nbsp;&nbsp; -&nbsp;&nbsp; is confusing, use a description like c.88+2T&gt;G</li>
-  <li><i>c.IVS12-1G&gt;T</i><br>
-    &nbsp;&nbsp; -&nbsp;&nbsp; is&nbsp; confusing, use a description like c.2417-1G&gt;T</li>
-  <li><i>a deletion exon 30 to 36 in the DMD-gene<br>
-    &nbsp;</i>&nbsp; -&nbsp;&nbsp; is confusing, use a description like
-    NM_004006.2:c.4072-?_5154+?del</li>
-</ul>
-
-<hr>
-
-<h2><a NAME="remarks"></a>Changed recommendations</h2>
-<em>
-
-<h3><a NAME="IVS"></a>Description of intronic variants</h3>
-</em>
-
-<p>Initial recommendations (see e.g. Antonarakis [1998] <a
-href="http://dx.doi.org/10.1002/(SICI)1098-1004(1998)11:1%3c1::AID-HUMU1%3e3.0.CO;2-O">Hum.Mut.
-11: 1-3</a>) suggested two alternative descriptions for variants in intron sequences based
-on a coding DNA reference sequence; the formats c.88+2T&gt;G / c.89-1G&gt;T and
-c.IVS2+2T&gt;G / c.IVS2-1G&gt;T. The <a href="recs.html#ntinumber">current recommendation</a>
-is that the format c.IVS2+2T&gt;G / c.IVS2-1G&gt;T should not be used anymore. </p>
-
-<p><b><u>Reason:</u></b> from the description c.IVS2+2T&gt;G it is difficult to deduce
-where the position of the intron relative to the coding DNA sequence is. In addition, when
-one wants to deduce this position, this is often problematic. First, many authors fail to
-mention the genomic + coding DNA reference sequences that were used as the basis of
-exon/intron numbering. Second, since on first publication gene sequences are often based
-on incomplete sequences, initial exon / intron structure often turns out incomplete and
-numbering changes later (see <i><a href="#exinnr">Numbering exons / introns</a></i>).
-Consequently, <b><i>descriptions using the format c.IVS2+2T&gt;G fail the basic criterion
-to be unequivocal</i></b> and should thus not be used. Descriptions using the format
-c.88+2T&gt;G do not suffer from these problems.<br>
-<b><i>NOTE:</i></b> when intronic variants are described in relation to a coding DNA
-reference sequence authors should not forget to mention the genomic reference sequence
-where the intron sequence can be found.&nbsp; </p>
-
-<p>A basic recommendations is to use the <b><i>shortest</i></b> description as much as
-possible. Therefore, in the middle of an intron nucleotide numbering <i><b>changes from +
-to -</b></i> (e.g. from &quot;c.88+..&quot; to &quot;c.89-..&quot;). In addition, when a
-change in an intron is described as c.88+4356A&gt;G (in stead of c.89-2A&gt;G) it will not
-be clear that the change might be close to the splice acceptor site, and thus might affect
-splicing.&nbsp;This is immediately clear when the description c.89-2A&gt;G is used. </p>
-
-<hr>
-
-<h2><a NAME="faq"></a>Frequently asked questions</h2>
-
-<hr>
-<em>
-
-<h3><a NAME="20"></a>Report with 20 bp on either side </h3>
-</em>
-
-<p><strong>Question</strong> <br>
-<i>When description in relation to a Reference Sequence is problematic <b>could one
-specify the change in between 20 bp of sequence on both sides</b> ?.</i></p>
-
-<p><strong>Answer</strong><br>
-In many cases this would be OK but for recently duplicated genes or genes which contain
-repeated segments even giving 20 nucleotides to either side will not be sufficient.
-Furthermore, descriptions will become very long. For problematic cases the best method is
-probably to include the raw data, i.e. the sequence file itself.</p>
-
-<hr>
-<em>
-
-<h3><a NAME="cds"></a>Database sequence does not start with 1 at A of ATG&nbsp; </h3>
-</em>
-
-<p><strong>Question</strong><br>
-<i>When I retrieve a cDNA sequence from GenBank nucleotide numbering <b>does not start
-with +1 at the A of the ATG </b>translation initiation codon.</i></p>
-
-<p><strong>Answer</strong><br>
-True, but such a file can be simply obtained. When you retrieve the sequence from the
-RefSeq-database (<i>i.e. start at <a
-HREF="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene">EntrezGene</a>, enter the
-gene symbol or gene name, select the gene of interest, click the mRNA entry</i>) it will
-be annotated extensively (<a
-HREF="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?val=5032282&amp;db=Nucleotide&amp;dopt=GenBank"><i>see
-Example</i></a>). <i><b>Clicking the &quot;CDS&quot; annotation</b></i> (<u>C</u>o<u>D</u>ing
-<u>S</u>equence) opens a window where the nucleotide numbering <i><b>will start with 1 at
-the A of the ATG</b></i> translation initiation codon (<a
-HREF="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?val=5032282&amp;from=245&amp;to=11302&amp;strand=1"><i>see
-Example</i></a>). To assist those studying or reporting sequence variants a locus specific
-database (LSDB, <a href="http://www.hgvs.org/dblist/glsdb.html"><i>see HGVS - list of
-LSDBs</i></a>) usually provides the coding DNA reference sequence with the nucleotide
-numbering (<i><a href="http://www.dmd.nl/seqs/murefDMD.html">see Example</a></i>).&nbsp;</p>
-
-<hr>
-<em>
-
-<h3><a NAME="files"></a>Genomic reference sequence split in several files </h3>
-</em>
-
-<p><strong>Question</strong><br>
-<i>The recommendation on numbering genomic and coding DNA variants based on the first
-nucleotide of the initiation codon ATG is workable only if the reference sequence in the
-database is published as a single file. In the case of the gene CDKN2A, its <b>genomic
-sequence is stored as multiple files</b>, each containing one exonic sequence and partial
-intronic sequences on both ends of the exon. I can use the above recommendation easily to
-number variants in exon 1 where the initiation codon is located. The problem is how should
-I number variants in exon 2 which is located in another database file ?.</i></p>
-
-<p><strong>Answer</strong><br>
-If no database file is available that contains the complete genomic sequence, a <strong><i>coding
-DNA Reference Sequence, </i></strong>preferably from the <a
-href="http://www.ncbi.nlm.nih.gov/RefSeq/">RefSeq database</a>, should be used. Since for
-many organisms a genome sequence is freely available, a database curator can easily make a
-fully annotated file (genomic and coding DNA) covering the sequence of interest and submit
-it to the RefSeq database. This file can than be used as the reference sequence.</p>
-
-<hr>
-<em>
-
-<h3>Variant 1 Mb upstream in another gene</h3>
-</em>
-
-<p><strong>Question&nbsp;&nbsp;</strong> <i>(Tracy Lester, Oxford, UK)</i><br>
-<em>We are wondering how to name variants in ZRS, a regulatory sequence for SHH that lies
-1 Mb upstream of SHH in intron 5 of LMBR1. Variants in ZRS are associated with various
-limb abnormalities and to-date have been numbered according to a sequence which does not
-follow HGVS guidelines. Should we create a genomic reference sequence for SHH that
-includes 1 Mb of upstream sequence to encompass the ZRS, number it according to the LMBR1
-reference sequence, or something else? </em></p>
-
-<p><strong>Answer</strong><br>
-A difficult case. I see 3 options; 
-
-<ol>
-  <li>simply describe the variants using genomic coordinates. Checking the <a
-    href="http://www.LOVD.nl/SHH">SHH gene variant database</a>, which uses NM_000193.2 as a
-    reference transcript, a change of the A of the ATG codon c.1A&gt;G would then be
-    chr7.hg19:g.155604816T&gt;C (use NM_000193.2:c.1A&gt;G in <a
-    href="http://www.mutalyzer.nl/positionConverter">Mutalyzer</a></li>
-  <li>describe the variants in the <a href="http://www.LOVD.nl/LMBR1">LMBR1 gene variant
-    database</a>, which uses NM_022458.3 as a reference transcript. To make the connection
-    with SHH you can add that no variants were found in the SHH gene (description c.=) making
-    sure the case emerges in the SHH database overview.</li>
-  <li>ask NCBI to extend the RefSeqGene record <a
-    href="http://www.ncbi.nlm.nih.gov/nuccore/NG_007504">NG_007504.1</a> for SHH with the 1 Mb
-    region upstream. Similarly, ask for a<a href="http://www.lrg-sequence.org"> LRG at EBI</a>.
-    When this reference sequence is then attached to the SHH gene variant database variants
-    can be desribed in relation to that sequence. </li>
-</ol>
-
-<hr>
-<em>
-
-<h3><a NAME="IVSin5"></a>RefSeq numbering with introns 5' of the ATG </h3>
-</em>
-
-<p><strong>Question&nbsp;&nbsp;</strong> <i>(Isabelle Touitou, Montpellier, FRANCE)</i><br>
-<i>If the first translation ATG is in exon 2, and we find a variant 5' to exon 1, should
-we include intron 1 in the counting process?.&nbsp;<br>
-<b>NOTE:</b> based on a coding DNA reference sequence intron 1 is located between
-nucleotides -15 and -14.</i> </p>
-
-<p><strong>Answer</strong><br>
-Nucleotides in introns 5' of the ATG translation initiation codon (i.e. in the 5'UTR) are <b><i>numbered
-as all other nucleotides</i></b> <i>(<a href="refseq_figure.html">see Examples and Figure</a>)</i>.
-In your example, based on a coding DNA reference sequence, an intron is present between
-nucleotides -15 and -14. The nucleotides for this intron are <b><i>numbered as -15+1,
--15+2, -15+3, ...., -14-3, -14-2, -14-1</i></b>. Consequently, regarding the question,
-when a coding DNA reference sequence is used, these intronic nucleotides are not counted. </p>
-
-<hr>
-<em>
-
-<h3><a NAME="exinnr"></a>Numbering exons / introns </h3>
-</em>
-
-<p><strong>Question</strong> <em><br>
-The CBS gene was originally thought to contain 16 exons. Later it was recognised that <b>exon
-15 does not exist</b>, and recently <b>two additional non-translated 5' exons</b> were
-detected. The current gene structure therefore includes 17 exons, of which exons 3 to 17
-are translated. Should the exons of a gene be counted from the exon that contains the
-start codon rather than the beginning of the cDNA ?. If so, should exons preceding the
-start codon be counted 0, -1, -2, etc. or should the 0 be skipped ?. Is there an agreement
-on how to deal with corrections in exon numbering ?. </p>
-</em>
-
-<p><strong>Answer</strong><br>
-For the description of sequence changes <b><i>it does not matter how exons are numbered</i></b>
-!; exon (and intron) numbers are not used in the descriptions. In fact this is one reason
-why the recommendation is as it is (see <i><a href="recs.html#ntinumber">Description of
-intronic variants</a></i>). Examples (using a coding DNA reference sequence);</p>
-
-<blockquote>
-  <ul>
-    <li><u>c.-5G&gt;T:</u> a change 5' of the ATG (in the 5'UTR)</li>
-    <li><u>c.5G&gt;T:</u> a change in the coding (related to a change in amino acid 2)</li>
-    <li><u>c.256+1G&gt;T:</u> a change in the 5' end of an intron</li>
-    <li><u>c.257-1G&gt;T:</u> a change in the 3' end of an intron</li>
-    <li><u>c.*5G&gt;T:</u> a change 3' of the stop codon (in the 3'UTR)</li>
-  </ul>
-</blockquote>
-
-<p>For exon numbering the only logical thing to do is <i><b>to start with 1 for the first
-exon</b></i>, otherwise eventually problems will emerge. For other numbering schemes only
-the <b><i>experts</i></b> will know the history; <i><b>newcomers</b></i> just blindly
-assume that the first exon is exon 1. Consequently, when historic numbering schemes are
-used, at some point wrong assumptions will be made and a patient might end up with an
-erroneous diagnosis.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; However, since history will leave its tracks it
-is suggested to always mention changed numbering schemes in M&amp;M and in all Figure and
-Table legends to prevent any further confusion. For tables even consider to add an
-additional column indicating the historic / old exon number.</p>
-
-<hr>
-<em>
-
-<h3><a NAME="complete"></a>Alternatively spliced exon </h3>
-</em>
-
-<p><strong>Question</strong>&nbsp; (<i>Alessandra Splendore, Rio de Janeiro, Brasil)</i><br>
-<i>Recently two previously unidentified exons of the TCOF1 gene were identified, and named
-6A and 16A. Exon 6A is present in most of the transcribed isoforms, exon 16A is included
-only in minor isoforms. In updating the nomenclature of reported mutations in TCOF1,
-should I use a sequence that corresponds to the major isoform (with exon 6A, but without
-16A) or the sequence that corresponds to the longest (&quot;most complete&quot;) isoform
-?.</i></p>
-
-<p><strong>Answer</strong><br>
-This is the eternal problem of changes in the coordinates of a reference sequence. The <i><b>best
-solution</b></i> is that the TCOF1-community gets together and decides to use an updated
-reference sequence representing the most complete transcript, i.e including exons 6A and
-16A. This updated sequence should be annotated properly, <b><i>submitted to the <a
-href="http://www.ncbi.nlm.nih.gov/RefSeq/">RefSeq</a> database</i></b> and used from then
-on. </p>
-
-<hr>
-<em>
-
-<h3><a NAME="gseqchange"></a>Genomic sequence changes regularly </h3>
-</em>
-
-<p><strong>Question&nbsp;&nbsp;</strong> <i>(JM Friedman, Vancouver, CANADA)</i><br>
-<i>We are working on a new locus-specific mutation database for NF1 and NF2, and we have
-run into a problem with the standard mutation nomenclature based on the <b>genomic
-sequence</b>. The problem is that the canonical genomic sequence (and consequent
-numbering) we are using as the basis of the mutation nomenclature <b>has changed
-repeatedly</b> since many of the mutations were described, and it is <b>continuing to
-change</b>. If we use the names assigned to the mutations on the basis of the version of
-the sequence that was used to name the mutations, they do not map to the proper position
-in the current version of the sequence. If we change the names to match the new sequence,
-they will not match the published names for these mutations and may need to be changed
-again the next time time the sequence changes. (Actually, the current version of the NF1
-sequence is annotated on the wrong strand, so all the numbering would be backwards if we
-used the annotated strand instead of its complement, which is the really the correct one).<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The solution to identifying the
-mutation unequivocally is to provide enough of the surrounding sequence to permit a unique
-result on a BLAST search, and we are doing this. However, this does not solve the problem
-of naming the mutations. What is your recommendation for this ?.</i> </p>
-
-<p><strong>Answer</strong><br>
-Indeed the problems you mention make live very hard. In fact, especially with genes
-containing large introns, there will be no one genomic reference sequence since every gene
-will be slightly different (<i><a href="#length">see above</a></i>). The problem of
-continuously changing genomic sequences will not settle rapidly. When designating
-&quot;THE genomic reference sequence&quot; now one can already foresee future discussions
-whether this choice was proper; it will be a &quot;random pick&quot; and might not be the
-evolutionary correct choice. The way to go in our eyes is to <b><i>declare one sequence
-THE genomic reference sequence</i></b> (starting several kilo base pairs 5' of the
-promoter region), annotate it properly, <b><i>submit it to the <a
-href="http://www.ncbi.nlm.nih.gov/RefSeq/">RefSeq</a> database</i></b> and use it from
-then on. The RefSeq database has NG_ files specifically made for this purpose (see e.g. <a
-href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=nucleotide&amp;val=21536445">NG_000004.2</a>).
-These problems are one of the reasons why for <a href="http://www.DMD.nl/db.html">the
-LSDB's I curate</a> (<i>i.e. Johan den Dunnen</i>), I prefer a <b><i>coding DNA Reference
-Sequence</i></b>. In that case the effect of the ever changing intronic sequences has only
-a marginal effect.</p>
-
-<hr>
-<em>
-
-<h3></em><img src="new.gif" border="0" width="31" height="12"><em>Difference chromosome /
-coding DNA description </h3>
-</em>
-
-<p><strong>Question</strong><br>
-<i>For genes that are on the minus strand of a chromosome (opposite transcriptional
-orientation) the description based on chromosome coordinates may differ significantly from
-that based on the coding DNA reference sequence. Say the chromosome sequence is -TGGGGCAT-
-and one of the G's is deleted (change to -TGGG_CAT-). Based on chromosome coordinates the
-description is g.5delG. However based on the coding DNA reference sequence (ATGCCCCA) the
-description is c.7delC. Not only is the deleted nucleotide different (delG vs. delC), in
-fact the descriptions also point to another nucleotide, g.5 vs. g.2 (equal to c.7delC). Is
-this correct?</i></p>
-
-<p><strong>Answer</strong><br>
-Yes, this is correct. When genes are on the minus strand of a chromosome (opposite
-transcriptional orientation) and the change is located in a repeated sequence (mono-, di-,
-tri-, etc. stretches) the rule that for all descriptions <em><strong>the most 3' position
-possible</strong></em> should be assigned (<em><a
-href="http://www.hgvs.org/mutnomen/recs-DNA.html#number">see General recommendations</a></em>)
-has this as a consequence.</p>
-
-<hr>
-<em>
-
-<h3><a NAME="EST"></a>Coding DNA sequence incomplete </h3>
-</em>
-
-<p><strong>Question</strong><br>
-<i>We are preparing an annotated set of Hox genes from the zebrafish for publication. If
-the <b>coding DNA sequence is not completely known</b>, but only an EST lacking 5'
-sequence and a genomic sequence covering the EST, <b>how do you describe a change</b> in
-this sequence; do you number it in relation to the EST or the genomic sequence ?.
-Furthermore, if there is a <b>mismatch between the genomic and the EST</b> sequence, and
-you don't know which one is correct, how do you define e.g. whether the genomic sequence
-has an insertion or the EST has a deletion ?.</i></p>
-
-<p><strong>Answer</strong><br>
-First, the<i><b> reference sequence chosen</b></i> is always <i><b>assumed to be the
-correct sequence</b></i> simply because changes are described in relation to this
-sequence. </p>
-
-<p>Second, when the EST sequence is incomplete one should describe changes in relation to
-this sequence <i><b>like AA010203.2:54_55insG</b></i> (assuming the reference sequence
-used is AA010203.2). So do <i><b>not use a 'c.' or 'g.' prefix,</b></i> since neither a
-coding DNA nor a genomic reference sequence is used. However, when a <i><b>genomic
-sequence</b></i> covering this EST is available the recommendation is to <i><b>use this as
-a reference sequence</b></i>. </p>
-
-<hr>
-<em>
-
-<h3><a NAME="wt"></a>Frequency / &quot;wild type&quot; sequence </h3>
-</em>
-
-<p><strong>Question</strong><br>
-<i>Making a judgment on what is the <b>&quot;wild type&quot; (wt) nucleotide</b> for some
-sequences seems arbitrary at best. How would you suggest that the description be presented
-for these ?.</i></p>
-
-<p><strong>Answer</strong><br>
-Changes are always described in relation to a <i><b>&quot;reference sequence&quot;</b></i>.
-This reference sequence is considered to be the <i><b>&quot;wild type&quot;</b></i>
-sequence and is expected to be the one present in the database (GenBank). Consequently,
-reference and wild type sequence can be different. Note however that everybody has
-influence on the sequences in the <b><i><a href="http://www.ncbi.nlm.nih.gov/RefSeq/">RefSeq
-database</a></i></b> and thus may request that a variant is changed into the more common
-allele. However, the debate about what is wild type can be unsolvable when variants are
-very common (near 50%) or differ between populations. </p>
-
-<hr>
-<em>
-
-<h3><a NAME="mtDNA"></a>Changes in mitochondrial DNA </h3>
-</em>
-
-<p><strong>Question&nbsp;&nbsp;</strong> <i>(M Paalman, Human Mutation)</i><br>
-<i>How should sequence variants in the mitochondrial DNA (mtDNA) be described ?.</i></p>
-
-<p><strong>Answer</strong><br>
-The mtDNA genome is rather small, completely sequenced and numbered. According to current
-recommendations variants in the mitochondrial DNA should be described in relation to a the
-full mitochondrial DNA sequence, i.e. for human the <i><b>Homo sapiens mitochondrion,
-complete genome </b></i>(GenBank <a href="http://www.ncbi.nlm.nih.gov/nuccore/NC_012920">NC_012920.1</a>).
-Descriptions should be preceded by &quot;m.&quot;, like m.8993T&gt;C (<i><a
-href="recs.html#prefix">see Recommendations</a></i>). The mtDNA encodes a range of
-different proteins. To prevent confusion, changes at protein level should be described
-including a reference to the protein changed, like ATP6:p.Leu156Pro (GenBank <a
-href="http://www.ncbi.nlm.nih.gov/protein/251831112">YP_003024031.1</a>, ATP synthase 6).<br>
-<i><b>NOTE:</b></i> for issues related to mitochondrial DNA sequences <a
-href="http://www.mitomap.org/"><b>see MITOMAP</b></a>. </p>
-
-<hr>
-<em>
-
-<h3><a NAME="ncRNA"></a></em><img src="new.gif" border="0" width="31" height="12"><em>Changes
-in non-coding RNA (ncRNA) genes </h3>
-</em>
-
-<p><strong>Question</strong><br>
-<i>How should sequence variants be described in genes that produce only RNA (so no
-protein), e.g. ncRNA, miRNA, etc. ?.</i></p>
-
-<p><strong>Answer</strong><br>
-To describe variants in genes that produce an RNA molecule but no protein a <strong><em>genomic
-reference sequence</em></strong> can be used (&quot;<em><strong>g.</strong></em>&quot;
-description). When available, it is also possible to use a <em><strong>NR_ transcript
-reference sequence</strong></em> (e.g. <a
-href="http://www.ncbi.nlm.nih.gov/nuccore/NR_000020.1">NR_000020.1</a> for the small
-nucleolar RNA, C/D box 33 (SNORD33) gene) using the prefix &quot;<strong><em>n.</em></strong>&quot;
-( see <a href="standards.html#refseq">Standards</a>).. Numbering for the transcript
-reference sequence starts with position &quot;<em><strong>n.1</strong></em>&quot; and ends
-with the last position.</p>
-
-<hr>
-
-<p align="center">| <a HREF="#top">Top of page</a> | <a HREF="index.html">MutNomen
-homepage</a> | <a href="checklist.html">Check-list</a> | <a href="standards.html">Symbols,
-codons, etc.</a> |<br>
-| <b>Recommendations:</b>&nbsp; <a href="recs-DNA.html">DNA</a>,&nbsp; <a
-href="recs-RNA.html">RNA</a>,&nbsp; <a href="recs-prot.html">protein</a>, <a
-href="uncertain.html">uncertain</a> |<br>
-| <a HREF="disc.html">Discussions</a> | <a HREF="FAQ.html">FAQ's</a> | <a
-href="history.html">History</a> |<br>
-| <b>Example descriptions:&nbsp;</b> <a href="quickref.html">QuickRef</a>,&nbsp; <a
-HREF="examplesDNA.html">DNA</a>,&nbsp; <a HREF="examplesRNA.html">RNA</a>,&nbsp; <a
-HREF="examplesAA.html">protein</a> | </p>
-
-<table width="100%" border="0" cellspacing="0" cellpadding="15" bgcolor="#ff9900">
-  <tr>
-    <td><p align="center"><font color="#FFFFFF"><a href="http://www.HGVS.org/copyright.html">Copyright
-    ©</a> </font><font size="1">HGVS 2010 All Rights Reserved<br>
-    Website Created by Rania Horaitis, Nomenclature by J.T. Den Dunnen - <a
-    href="http://www.HGVS.org/disclaimer.html">Disclaimer</a> </font></td>
-  </tr>
-</table>
-</body>
-</html>
+<html>  <!--	Author: 	Dr. Johan T. den Dunnen	Date: 	17-11-02	URL: 	refseq.html-->  <head>    <meta content="text/html; charset=windows-1252" http-equiv="content-type">    <title>HGVS recommendations: reference sequence</title>    <style type="text/css"><!--  h2 { font-family : Verdana,Arial,Helvetica,Geneva,sans-serif; color : #ff9900;}h3 { font-family : Verdana,Arial,Helvetica,Geneva,sans-serif; color : #0099cc;}h4 { font-family : Verdana,Arial,Helvetica,Geneva,sans-serif; color : #0099cc;}h5 {font-family : Verdana, Arial, Helvetica, Geneva, sans-serif;color : #ffffff;}.norm { font-weight : normal; } --></style> </head>  <body style="color: black; background-color: white;" link="#0000FF" vlink="#9999ff">    <table bgcolor="#CCFF99" border="0" cellpadding="10" cellspacing="0" width="100%">      <tbody>        <tr>          <td bgcolor="#FFFFFF" valign="top" width="25%"><a href="http://www.HGVS.org"><img                src="small.gif"                border="0"                height="94"                width="155"></a></td>          <td bordercolor="#FFFFFF" bgcolor="#FFFFFF" valign="CENTER" width="75%">            <h2 align="center">A reference sequence - discussions and FAQs </h2>          </td>        </tr>      </tbody>    </table>    <table border="0" cellpadding="10" cellspacing="0" width="100%">      <tbody>        <tr>          <td bgcolor="#0099cc" valign="BOTTOM" width="100%">            <h4 align="center"><font color="#FFFFFF" size="3"><i><br>                  Last modified September 11, 2015</i></font></h4>          </td>        </tr>      </tbody>    </table>    <p align="center"><i>Since references to WWW-sites are not yet acknowledged        as citations<font face="Times New Roman">, please mention <a href="http://www3.interscience.wiley.com/cgi-bin/fulltext/68503056/PDFSTART">den
+            Dunnen JT and Antonarakis SE (2000). Hum.Mutat. 15:7-12</a> when          referring to these pages.</font></i></p>    <hr>    <h2>Contents</h2>    <ul>      <li><a href="#standard"><b>Reference sequence descriptions</b></a>        <ul>          <li>reference sequence indicators</li>        </ul>      </li>      <li><a href="#refseq"><b>Reference sequence - genomic or coding DNA ?</b></a>        <ul>          <li>practical problems genomic reference sequence</li>          <li>practical problems coding DNA reference sequence</li>        </ul>      </li>      <li><a href="#general"><b>Reference sequence - recommendations<br>          </b></a><img src="new.gif" border="0" height="12" width="31">use a LRG        (Locus Reference Genomic sequence, <i><a href="http://www.genomemedicine.com/content/pdf/gm145.pdf">Dalgleish
+            et al. 2010</a></i>), see <a href="http://www.lrg-sequence.org"><i>LRG
+            website</i></a>        <ul>          <li><a href="#generalG">genomic reference sequence</a></li>          <li><a href="#generalC">coding DNA reference sequence</a></li>          <li><a href="#refseqE">examples</a></li>        </ul>      </li>      <li><b><a href="#exonnumber">Numbering exons &amp; introns</a></b>        <ul>          <li>discussion &amp; recommendations&nbsp;</li>        </ul>      </li>      <li><b>Changed recommendations</b>        <ul>          <li><a href="#IVS">description of intronic variants</a></li>        </ul>      </li>      <li><b>Frequently Asked Questions</b>&nbsp; (FAQ)        <ul>          <li><a href="#20">report with 20 bp on either side</a></li>          <li><a href="#cds">database sequence does not start with 1 at A of ATG</a></li>          <li><a href="#files">genomic reference sequence split in several files</a></li>          <li><img src="new.gif" border="0" height="12" width="31"><em><a href="#whichgene">variant
+                1 Mb upstream in another gene</a></em></li>          <li><a href="#IVSin5">RefSeq numbering with introns 5' of the ATG</a></li>          <li><a href="#exinnr">numbering exons/introns</a></li>          <li><a href="#complete">alternatively spliced exon</a></li>          <li><a href="#gseqchange">genomic sequence changes regularly</a> </li>          <li><img src="new.gif" border="0" height="12" width="31"><em><a href="#chrom">difference
+                chromosome / coding DNA description</a></em></li>          <li><a href="#EST">coding DNA sequence incomplete</a> (use EST or            genomic ?) </li>          <li><a href="#wt">frequency / "wild type" sequence</a> </li>          <li><a href="#mtDNA">changes in mitochondrial DNA</a> </li>          <li><img src="new.gif" border="0" height="12" width="31"><em><a href="#ncRNA">changes
+                in non-coding RNA (ncRNA) genes</a> </em></li>        </ul>      </li>    </ul>    <hr>    <h2><a name="standard"></a>Reference sequence descriptions</h2>    <p>To indicate what type of reference sequence is used for the description      of the sequence variant, <a href="standards.html#refseq">specific        indicators</a> are used; </p>    <ul>      <li>c. = coding DNA reference sequence        <ul>          <li>covers the part of the transcript that is translated into protein;            numbering starts at the translation initiation site (the A of the <b><i><u>A</u></i></b>TG
+            codon) and ends at the last nucleotide of the translation            termination site (translation stop codon TA<b><i><u>G</u></i></b>,            TA<b><i><u>A</u></i></b> TG<b><u><i>A</i></u></b>)</li>        </ul>      </li>      <li>g. = genomic reference sequence        <ul>          <li>numbering starts at the first nucleotide of the reference sequence            and ends at the last nucleotide</li>        </ul>      </li>      <li>m. = mitochondrial reference sequence (<i><a href="#mtDNA">see details</a>)</i>        <ul>          <li>numbering starts at the first nucleotide of the reference sequence            and ends at the last nucleotide</li>        </ul>      </li>      <li>n. = non-coding RNA reference sequence (gene producing an RNA        transcript but not a protein)        <ul>          <li>numbering starts at the first nucleotide of the non-coding            transcript and ends at the last nucleotide</li>        </ul>      </li>      <li>r.&nbsp; = RNA reference sequence        <ul>          <li>covers the entire transcript, excluding the poly A-tail; numbering            starts at the transcription initiation site (<i>cap site</i>) and            ends at transcription termination site</li>        </ul>      </li>      <li>p. = protein reference sequence        <ul>          <li>covers the entire protein; numbering starts at the translation            initiation site (the Methionine) and ends at the translation            termination site (the *)</li>        </ul>      </li>    </ul>    <p>For details on residue numbering <i><a href="standards.html#number">see          Standards</a></i>. Note that recommendations also exist to describe      different transcripts/protein isoforms generated from one gene (<i><a href="standards.html#traiso">see
+          Standards</a></i>).&nbsp;</p>    <hr>    <h2><a name="refseq"></a>Genomic or coding DNA reference sequence ?</h2>    <p>Discussions on a proper <b><i>reference sequence</i></b> have been very      lively. In general it can be concluded that all suggestions made have      their pro's and con's, but there is no perfect solution.</p>    <p>Theoretically, a <b>genomic reference sequence</b> is the best choice.      By simply numbering nucleotides from 1 to the end of the file no problems      occur with complex gene structures like multiple transcription start sites      (promoters / 5'-first exons), multiple translation initiation sites      (ATG-codons), alternative splicing and the use of different 3'-terminal      exons and poly-A addition sites.</p>    <p>In practice a <b>coding DNA reference sequence</b> is mostly preferred.      The most important reason is that from the description one immediately      gets some information regarding the location of the variant; exonic or      intronic, 5' of the ATG or 3' of the stop codon and, by dividing the      nucleotide number by 3, the number of the amino acid residue that is      affected (see <i><a href="nucleotide.html">Nucleotide numbering</a></i>).</p>    <em>      <h3><a name="genomic"></a><a name="length"></a><b>Practical problems          genomic reference sequence</b></h3>    </em>    <blockquote>      <ul>        <li><i><b>for a human, a genomic reference sequence does not contain any              useful information (a coding DNA reference sequence does)</b></i></li>        <li>a <i><u>gene can be very large</u></i> (over 2.0 Mb) - this makes          nucleotide numbering based on a genomic reference sequence rather          impractical (e.g. g.1567234_1567235insTG). Furthermore, genomic          reference sequences based on GenBank NT_ files become increasingly          long (e.g. the CFTR gene in <a href="http://www.ncbi.nlm.nih.gov/nuccore/NT_007933">NT_007933.15</a>,          &gt;77 Mb) and consequently loose their informativity. Downloading          such large files is, even with good internet connections, time          consuming and working with these files is rather difficult.</li>        <li>when a genomic reference sequence is taken from a complete genome          sequence, e.g. a bacterium or the human X-chromosome, the          transcriptional orientation of the gene of interest may be on the <i><u>minus
+              (-)&nbsp; strand</u></i>. This makes the description of sequence          variants rather complicated, especially when the consequences on RNA          and/or protein level need to be described; nucleotides on DNA and RNA          level are complementary and numbering goes in different directions - a          confusing situation that should be prevented.</li>        <li>when different genes (partly) overlap, using the same or the minus          (-) DNA strand, which reference sequence should one use to describe          the variant and to which gene should the change be assigned ? (see <i><a              href="recs.html#twogenes">Recommendations</a></i>).</li>        <li>when the <u><i>gene sequence is incomplete</i></u> (especially when          large introns are present) -&nbsp; a genomic sequence can not be used.</li>        <li>genes may contain very large introns with many intronic <u><i>(length)
+              variants</i></u> present in the population - it is thus very          difficult to give <i><b>THE</b></i> genomic reference sequence (see <a            href="#gseqchange"><i>Genomic
+              sequence changes regularly</i></a>).</li>      </ul>    </blockquote>    <em>      <h3><a name="coding"></a><b>Practical problems coding DNA reference          sequence</b></h3>    </em>    <blockquote>      <ul>        <li>the exact <i><u>transcriptional start site</u></i> (cap-site) of a          gene has often not been determined and/or its assignment is debated -          the first nucleotide can thus not be assigned with certainty. The same          might be true for the translation initiation site (ATG-codon).</li>        <li>a gene may have <u><i>several transcripts</i></u>, using different          promoters / 5'-first exons, alternatively spliced internal exons,          different 3'-terminal exons and polyA-addition sites - <i><b>one</b></i>          complete coding DNA reference sequence can thus not be generated (see          <i><a href="#diffsplice">Alternatively spliced exons - nucleotide              numbering</a></i>),</li>        <li>the different transcripts may <i><u>encode different proteins</u></i>          (isoforms) with, when different promoters are used, different          N-terminal sequences and even using different reading frames in one or          more exons. <b><i>One</i></b> complete protein reference sequence can          thus not be assigned.</li>        <li>when different genes (partly) overlap, using the same or the minus          (-) DNA strand, which reference sequence should one use to describe          the variant and to which gene should the change be assigned ? (see <i><a              href="recs.html#twogenes">Recommendations</a></i>).</li>      </ul>    </blockquote>    <hr>    <h2><a name="general"></a>Recommendations reference sequence</h2>    <p><img src="new.gif" border="0" height="12" width="31">The recommendation      is to use a LRG (Locus Reference Genomic sequence, e.g. <a href="http://www.ncbi.nlm.nih.gov/nuccore/NG_008797.2"><em>LRG_329</em></a>.      Information on LRG's (<a href="http://www.genomemedicine.com/content/pdf/gm145.pdf"><i>Dalgleish
+          et al. 2010</i></a>) and how to get one for your gene of interest, can      be found at the <a href="http://www.lrg-sequence.org"><i>LRG website</i></a>.&nbsp;When
+      no LRG is available a RefSeqGene record (<em><a href="http://www.ncbi.nlm.nih.gov/refseq/rsg/">see
+          NCBI</a></em>) should be used (format <a href="http://www.ncbi.nlm.nih.gov/nuccore/NG_008797.2"><em>NG_008797.2</em></a>)      &nbsp; a <i>from the <a href="http://www.ncbi.nlm.nih.gov/RefSeq/">RefSeq
+          database</a>, listing both database accession and version number (like        NM_004006.2) </i></p>    <em>      <h3><a name="generalG"></a><b>Genomic reference sequence</b></h3>    </em>    <p>When a genomic reference sequence is used the following recommendations      should be followed; </p>    <ul>      <li>it should include all known exons and cover all known transcripts</li>      <li>to facilitate the description of variants in immediate gene flanking        regions (e.g. the promoter region), it should contain several kilobases        of 5' upstream (~5 kb) and 3' downstream (~2 kb) sequences<br>        <i><b>NOTE:</b></i> this demand ensures that when new data indicate that        the gene's transcriptional start site or polyA-addition site should be        shifted, it is often not necessary to generate a new reference        sequence&nbsp;</li>      <li>descriptions in relation to a genomic reference sequence do not        include "+", "-" or other signs</li>      <li>when the complete genomic sequence is not known, a coding DNA        reference sequence should be used</li>    </ul>    <p>For complex genes, when on the genomic reference sequence all transcripts      are annotated properly, computational tools (like <i><a href="http://www.mutalyzer.nl">Mutalyzer</a>      </i>and the <a href="http://cbio.mskcc.org/gmcc"><i>Genomic Mutation          Consequence Calculator</i></a>) can easily predict the consequences of      a sequence change <i><b>on all transcripts</b></i> and their encoded      protein isoforms, incl. when they derive from overlapping genes.</p>    <em>      <h3><a name="generalC"></a><b>Coding DNA reference sequence</b></h3>    </em>    <p>When a coding DNA reference sequence is used the following      recommendations should be followed; </p>    <ul>      <li>the coding DNA reference sequence should be complete and preferably        derived from the <a href="http://www.ncbi.nlm.nih.gov/RefSeq/"><i>RefSeq
+            database</i></a> (format <a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=nucleotide&amp;val=NM_033337.2"><em>NM_033337.2</em></a>)        or Ensembl (format <a href="http://www.ensembl.org/Homo_sapiens/Transcript/Summary?g=ENSG00000182533;r=3:8775486-8788451;t=ENST00000343849"><em>ENST00000343849</em></a>);
+        When the RefSeq database does not contain a file covering the sequence        of interest, one should <b><i>make one, annotate it properly and submit            it</i></b> to the RefSeq database</li>      <li>the <i><a href="#generalG">genomic reference sequence</a></i> used as        its basis should be given; to facilitate the description of variants in        immediate gene flanking regions (e.g. the promoter region), it should        contain several kilobases of 5' upstream (~5 kb) and 3' downstream (~2        kb) sequences<br>        <i><b>NOTE:</b></i> this demand ensures that when new data indicate that        the gene's transcriptional start site or polyA-addition site should be        shifted, it is often not necessary to generate a new reference sequence</li>      <li>to facilitate the description of variants and to prevent confusion it        should cover the major and largest transcript known and include as many        exons as possible, even when this transcript has not been proven to        actually exist in nature. Exons that disrupt the main reading frame        should not be included but annotated in the introns</li>      <li>for difficult cases the best choice is up to those that need to report        sequence variants in relation to the sequence, e.g. clinical labs.        Important is that the experts;        <ul>          <li>come to a consensus and <i><b>use ONE coding DNA reference                sequence</b></i> only</li>          <li>in the coding DNA reference sequence it should be clearly            annotated where sequences are that are used in other transcripts and            protein isoforms</li>        </ul>      </li>      <li>exonic sequences not covered by the coding DNA reference sequence        selected should be numbered in relation to the selected sequence (<i>see          <a href="#refseqE">Examples</a></i>), i.e.;        <ul>          <li>using the '-' sign when 5' of the exon containing the translation            initiation site (ATG-codon)</li>          <li>when inside the gene like intronic nucleotides (e.g. c.435+574,            c.896-56, etc.)</li>          <li>using the '*' sign when 3' of the exon containing the translation            termination site (stop codon)</li>        </ul>        <p><b><i>NOTE:</i></b> the numbering suggested can also be applied to          amino acid numbering (e.g. p.Ala456+1, Cys456+2, ..., etc. or ...,          p.Phe457-2, p.Gln457-1) </p>      </li>    </ul>    <p>Suggestions have been made to extend the recommendations for the      nucleotide numbering of coding DNA reference sequences to specifically      indicate untranscribed nucleotides (<i><a href="disc.html#untrans">see          Discussion</a></i>).</p>    <p>As discussed, genes can be rather complex and the choice of a good coding      DNA reference sequence can be very difficult. Below we will refer to some      examples of how experts have tried to resolve the issue.</p>    <hr> <em> </em>    <h3><em><a name="refseqE"></a><b>Examples</b></em></h3>    <ul>      <li><b>one gene - many promoters/5'-first exons</b> (5' and internal) <b>-          <a href="http://www.dmd.nl/nmdb/refseq/DMD_codingDNA.html">the            DMD-gene</a></b><br>        Since DMD is mainly a muscle-disease the major transcript of the gene        found in muscle (Dp427m) was chosen as the <a href="http://www.dmd.nl/nmdb/refseq/DMD_codingDNA.html">coding
+          DNA reference sequence</a>. This includes all differently spliced        exons, e.g. exons 71 and 78 reported to be present each in about 50% of        the transcripts.&nbsp;        <ul>          <li>exon 78 seems to be present only in higher organisms - transcripts            lacking exon 78 change the reading frame of exon 79, extending the            C-terminal end of the encoded protein beyond that of the normal            reading frame. To prevent that this is not noted this feature is            clearly annotated in the coding DNA reference sequence (<i>see <a href="http://www.dmd.nl/nmdb/refseq/DMD_codingDNA.html">DMD
+                coding DNA reference sequence</a></i>).</li>          <li>the DMD-gene has seven different promoters/5'-first exons. Six of            these are internal, i.e. located in an intron of the coding DNA            reference sequence transcript. These promoters/5'-first exons are            clearly annotated and they are numbered using intronic nucleotides            (see e.g. <a href="http://www.DMD.nl/seqs/murefDMD_intron_29.html#Dp260">Dp260
+              located in intron 29</a>). The exception is the promoter/5'-first            exon expressed in brain (Dp427c) which starts 128 kb upstream of the            muscle promoter. This promoter/5'-first exon is again clearly            annotated and is numbered using nucleotides 5' of the ATG (see e.g.            <a href="http://www.DMD.nl/seqs/murefDMD_intron_00.html#Dp427c">Dp427c</a>).&nbsp;</li>        </ul>      </li>      <li><b>one gene - two promoters/ 5'-first exons - two alternative reading          frames - <a href="http://chromium.liacs.nl/LOVD2/home.php?select_db=CDKN2A">the
+            CDKN2A gene<br>          </a></b>The CDKN2A gene uses two alternative promoters/5'-first exons        (separated by 19 kb) and shared exons 2 and 3. When the two exons 1 are        spliced to exons 2 and 3 they are out of frame with each other, i.e. use        a different reading frame, one encoding a protein called <a href="http://chromium.liacs.nl/lovd/refseq/CDKN2A_upstream.html#p14"><i>p14ARF</i></a>,        the other a protein called <a href="http://chromium.liacs.nl/lovd/refseq/CDKN2A_codingDNA.html"><i>p16</i></a>.        As a consequence some sequence variants affect only one of the 2        proteins while other variants have a different consequences for both        proteins. To prevent confusion both transcripts / proteins are clearly        indicated and sequence variants are described in relation to both        transcripts/protein isoforms (see <a href="http://www.LOVD.nl/CDKN2A"><i>CDKN2A
+            sequence variant database</i></a>).</li>      <li><b>one gene - alternative splice sites internal exon - <a href="http://www.LOVD.nl/MUTYH">the
+            MUTYH gene</a></b><br>        The MUTYH gene encodes several transcripts differing by the splice        acceptor site used in exon 3 (intron 2), adding 72, 63 or 3 nucleotides        5' of a common exon 3 sequence (adding 14, 11 or 1 amino acids resp.).        Although it is not clear in which tissues and to what level these        transcripts are expressed, to prevent confusion and to ensure that the        entire region is checked for sequence variants, the suggestion has been        made to include all nucleotides in the coding DNA reference sequences (<a          href="http://chromium.liacs.nl/LOVD2/colon_cancer/refseq/MUTYH_codingDNA.html"><i>see
+            MUTYH coding DNA reference sequence</i></a>)</li>      <li><b>one gene - alternative 3-last exons - <a href="http://www.DMD.nl/LMNA">the
+            LMNA gene</a></b><br>        The LMNA gene encodes two major protein isoforms; lamin-A and lamin-C.        These proteins are generated by two major transcripts, one ending after        exon 10 (lamin-C, located in intron 10 of lamin-A), one extending        further downstream to exon 12 (lamin-A). The coding DNA reference        sequence used is based on the largest transcript, i.e. lamin-A (<i><a href="http://www.dmd.nl/nmdb/refseq/LMNA_codingDNA.html">see
+            LMNA</a></i>). Nucleotide numbering for the shorter lamin-C uses        intron 10 nucleotides (1698+1 to 1698+123 <i><a href="http://www.dmd.nl/nmdb/refseq/LMNA_intron_10.html">see
+            lamin-C</a></i>), amino acid numbering uses p.Val566+1 to        p.Arg566+6.</li>    </ul>    <p><i><b>Do you have other examples - please let us know (E-mail to: <a href="mailto:J.T.den_Dunnen%20@%20LUMC.nl">J.T.den_Dunnen
+            @ LUMC.nl</a>) !.</b></i></p>    <hr>    <h2><a name="exonnumber"></a>Numbering exons &amp; introns</h2>    <p>The HGVS recommendations for the description of sequence variants does      not include suggestions for the numbering of exons and introns. The simple      reason is that <i><b>exon/intron numbers are not required</b></i> for a      correct description. When necessary, the <i><b>exon/intron numbers can be          derived</b></i> from the description at DNA level. </p>    <p>In fact, using exon/intron numbers introduces a lot of confusion, which      is undesired; assume an exon number is in conflict with the description of      the variant at DNA level, what to do ?. In many genes there is no      consensus on exon/intron numbering and originally used numbering schemes      had to be revised to include newly discovered exons (internal as well as      5' and/or 3' of the gene). This led to all kinds of numbering schemes      using no consensus or overall logic, making it very difficult for      non-experts in the specific gene to keep track of all details (see <i><a          href="http://www.genomemedicine.com/content/pdf/gm145.pdf">Dalgleish
+          et al. 2010</a></i>). With the increasing use of genome browsers,      numbering exons simply from start to end 1, 2, 3, etc., legacy numbering      schemes have become even more confusing.</p>    <p>The only logical thing to do is to follow the standard set by the genome      browsers and <i><b>to start numbering with 1 for the first exon</b></i>.      Although this is probably difficult to accept by the experts, we can not      keep on confusing newcomers by forever using legacy numbering systems. We      should realize that, at some point wrong assumptions will be made and a      patient wiil end up with an erroneous diagnosis, which is of course      unacceptable.</p>    <em>      <h3>Recommendation exon/intron numbering</h3>    </em>    <p>Describe variants at DNA level and <i><b>do not include exon or intron          numbers as part of the description</b></i>. Exon and intron numbers      may be mentioned but only when there use is specified and reference      sequences for the exons and introns are gvien. Since history will leave      its tracks, when refering to older data, always mention changed numbering      schemes in M&amp;M and in Figure and Table legends to prevent any      confusion. For tables even consider to add an additional column indicating      the legacy numbering.</p>    <p><i><b>Examples;</b></i> </p>    <ul>      <li><i>c.IVS12-1G&gt;T<br>        </i>&nbsp;&nbsp; -&nbsp;&nbsp; is confusing, use a description like        c.88+2T&gt;G</li>      <li><i>c.IVS12-1G&gt;T</i><br>        &nbsp;&nbsp; -&nbsp;&nbsp; is&nbsp; confusing, use a description like        c.2417-1G&gt;T</li>      <li><i>a deletion exon 30 to 36 in the DMD-gene<br>          &nbsp;</i>&nbsp; -&nbsp;&nbsp; is confusing, use a description like        NM_004006.2:c.4072-?_5154+?del</li>    </ul>    <hr>    <h2><a name="remarks"></a>Changed recommendations</h2>    <em>      <h3><a name="IVS"></a>Description of intronic variants</h3>    </em>    <p>Initial recommendations (see e.g. Antonarakis [1998] <a href="http://dx.doi.org/10.1002/%28SICI%291098-1004%281998%2911:1%3c1::AID-HUMU1%3e3.0.CO;2-O">Hum.Mut.
+11:
+        1-3</a>) suggested two alternative descriptions for variants in intron      sequences based on a coding DNA reference sequence; the formats      c.88+2T&gt;G / c.89-1G&gt;T and c.IVS2+2T&gt;G / c.IVS2-1G&gt;T. The <a href="recs.html#ntinumber">current
+        recommendation</a> is that the format c.IVS2+2T&gt;G / c.IVS2-1G&gt;T      should not be used anymore. </p>    <p><b><u>Reason:</u></b> from the description c.IVS2+2T&gt;G it is difficult      to deduce where the position of the intron relative to the coding DNA      sequence is. In addition, when one wants to deduce this position, this is      often problematic. First, many authors fail to mention the genomic +      coding DNA reference sequences that were used as the basis of exon/intron      numbering. Second, since on first publication gene sequences are often      based on incomplete sequences, initial exon / intron structure often turns      out incomplete and numbering changes later (see <i><a href="#exinnr">Numbering
+          exons / introns</a></i>). Consequently, <b><i>descriptions using the          format c.IVS2+2T&gt;G fail the basic criterion to be unequivocal</i></b>      and should thus not be used. Descriptions using the format c.88+2T&gt;G do      not suffer from these problems.<br>      <b><i>NOTE:</i></b> when intronic variants are described in relation to a      coding DNA reference sequence authors should not forget to mention the      genomic reference sequence where the intron sequence can be found.&nbsp; </p>    <p>A basic recommendations is to use the <b><i>shortest</i></b> description      as much as possible. Therefore, in the middle of an intron nucleotide      numbering <i><b>changes from + to -</b></i> (e.g. from "c.88+.." to      "c.89-.."). In addition, when a change in an intron is described as      c.88+4356A&gt;G (in stead of c.89-2A&gt;G) it will not be clear that the      change might be close to the splice acceptor site, and thus might affect      splicing.&nbsp;This is immediately clear when the description c.89-2A&gt;G      is used.&nbsp;</p>    <ul>      <li><i><b>NOTE:</b></i> when an intron immediately follows the last        nucleotide of the stop codon (position c.876), nucleotides in the intron        are numbered like c.876+1, c.876+2, c.876+3, … c.*1-3, c.*1-2, c.*1-1.</li>    </ul>    <hr>    <h2><a name="faq"></a>Frequently asked questions</h2>    <hr> <em>      <h3><a name="20"></a>Report with 20 bp on either side </h3>    </em>    <p><strong>Question</strong> <br>      <i>When description in relation to a Reference Sequence is problematic <b>could
+          one specify the change in between 20 bp of sequence on both sides</b>        ?.</i></p>    <p><strong>Answer</strong><br>      In many cases this would be OK but for recently duplicated genes or genes      which contain repeated segments even giving 20 nucleotides to either side      will not be sufficient. Furthermore, descriptions will become very long.      For problematic cases the best method is probably to include the raw data,      i.e. the sequence file itself.</p>    <hr> <em>      <h3><a name="cds"></a>Database sequence does not start with 1 at A of        ATG&nbsp; </h3>    </em>    <p><strong>Question</strong><br>      <i>When I retrieve a cDNA sequence from GenBank nucleotide numbering <b>does
+          not start with +1 at the A of the ATG </b>translation initiation        codon.</i></p>    <p><strong>Answer</strong><br>      True, but such a file can be simply obtained. When you retrieve the      sequence from the RefSeq-database (<i>i.e. start at <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene">EntrezGene</a>,        enter the gene symbol or gene name, select the gene of interest, click        the mRNA entry</i>) it will be annotated extensively (<a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?val=5032282&amp;db=Nucleotide&amp;dopt=GenBank"><i>see
+          Example</i></a>). <i><b>Clicking the "CDS" annotation</b></i> (<u>C</u>o<u>D</u>ing
+      <u>S</u>equence) opens a window where the nucleotide numbering <i><b>will          start with 1 at the A of the ATG</b></i> translation initiation codon      (<a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?val=5032282&amp;from=245&amp;to=11302&amp;strand=1"><i>see
+          Example</i></a>). To assist those studying or reporting sequence      variants a locus specific database (LSDB, <a href="http://www.hgvs.org/dblist/glsdb.html"><i>see
+          HGVS - list of LSDBs</i></a>) usually provides the coding DNA      reference sequence with the nucleotide numbering (<i><a href="http://www.dmd.nl/seqs/murefDMD.html">see
+          Example</a></i>).&nbsp;</p>    <hr> <em>      <h3><a name="files"></a>Genomic reference sequence split in several files      </h3>    </em>    <p><strong>Question</strong><br>      <i>The recommendation on numbering genomic and coding DNA variants based        on the first nucleotide of the initiation codon ATG is workable only if        the reference sequence in the database is published as a single file. In        the case of the gene CDKN2A, its <b>genomic sequence is stored as          multiple files</b>, each containing one exonic sequence and partial        intronic sequences on both ends of the exon. I can use the above        recommendation easily to number variants in exon 1 where the initiation        codon is located. The problem is how should I number variants in exon 2        which is located in another database file ?.</i></p>    <p><strong>Answer</strong><br>      If no database file is available that contains the complete genomic      sequence, a <strong><i>coding DNA Reference Sequence, </i></strong>preferably
+      from the <a href="http://www.ncbi.nlm.nih.gov/RefSeq/">RefSeq database</a>,      should be used. Since for many organisms a genome sequence is freely      available, a database curator can easily make a fully annotated file      (genomic and coding DNA) covering the sequence of interest and submit it      to the RefSeq database. This file can than be used as the reference      sequence.</p>    <hr> <em>      <h3>Variant 1 Mb upstream in another gene</h3>    </em>    <p><strong>Question&nbsp;&nbsp;</strong> <i>(Tracy Lester, Oxford, UK)</i><br>      <em>We are wondering how to name variants in ZRS, a regulatory sequence        for SHH that lies 1 Mb upstream of SHH in intron 5 of LMBR1. Variants in        ZRS are associated with various limb abnormalities and to-date have been        numbered according to a sequence which does not follow HGVS guidelines.        Should we create a genomic reference sequence for SHH that includes 1 Mb        of upstream sequence to encompass the ZRS, number it according to the        LMBR1 reference sequence, or something else? </em></p>    <p><strong>Answer</strong><br>      A difficult case. I see 3 options; </p>    <ol>      <li>simply describe the variants using genomic coordinates. Checking the <a          href="http://www.LOVD.nl/SHH">SHH
+          gene variant database</a>, which uses NM_000193.2 as a reference        transcript, a change of the A of the ATG codon c.1A&gt;G would then be        chr7.hg19:g.155604816T&gt;C (use NM_000193.2:c.1A&gt;G in <a href="http://www.mutalyzer.nl/positionConverter">Mutalyzer</a></li>      <li>describe the variants in the <a href="http://www.LOVD.nl/LMBR1">LMBR1          gene variant database</a>, which uses NM_022458.3 as a reference        transcript. To make the connection with SHH you can add that no variants        were found in the SHH gene (description c.=) making sure the case        emerges in the SHH database overview.</li>      <li>ask NCBI to extend the RefSeqGene record <a href="http://www.ncbi.nlm.nih.gov/nuccore/NG_007504">NG_007504.1</a>        for SHH with the 1 Mb region upstream. Similarly, ask for a<a href="http://www.lrg-sequence.org">          LRG at EBI</a>. When this reference sequence is then attached to the        SHH gene variant database variants can be desribed in relation to that        sequence. </li>    </ol>    <hr> <em>      <h3><a name="IVSin5"></a>RefSeq numbering with introns 5' of the ATG </h3>    </em>    <p><strong>Question&nbsp;&nbsp;</strong> <i>(Isabelle Touitou, Montpellier,        FRANCE)</i><br>      <i>If the first translation ATG is in exon 2, and we find a variant 5' to        exon 1, should we include intron 1 in the counting process?.&nbsp;<br>        <b>NOTE:</b> based on a coding DNA reference sequence intron 1 is        located between nucleotides -15 and -14.</i> </p>    <p><strong>Answer</strong><br>      Nucleotides in introns 5' of the ATG translation initiation codon (i.e. in      the 5'UTR) are <b><i>numbered as all other nucleotides</i></b> <i>(<a href="refseq_figure.html">see
+          Examples and Figure</a>)</i>. In your example, based on a coding DNA      reference sequence, an intron is present between nucleotides -15 and -14.      The nucleotides for this intron are <b><i>numbered as -15+1, -15+2,          -15+3, ...., -14-3, -14-2, -14-1</i></b>. Consequently, regarding the      question, when a coding DNA reference sequence is used, these intronic      nucleotides are not counted. </p>    <hr> <em>      <h3><a name="exinnr"></a>Numbering exons / introns </h3>    </em>    <p><strong>Question</strong> <em><br>        The CBS gene was originally thought to contain 16 exons. Later it was        recognised that <b>exon 15 does not exist</b>, and recently <b>two          additional non-translated 5' exons</b> were detected. The current gene        structure therefore includes 17 exons, of which exons 3 to 17 are        translated. Should the exons of a gene be counted from the exon that        contains the start codon rather than the beginning of the cDNA ?. If so,        should exons preceding the start codon be counted 0, -1, -2, etc. or        should the 0 be skipped ?. Is there an agreement on how to deal with        corrections in exon numbering ?. </em></p>    <em> </em>    <p><strong>Answer</strong><br>      For the description of sequence changes <b><i>it does not matter how          exons are numbered</i></b> !; exon (and intron) numbers are not used      in the descriptions. In fact this is one reason why the recommendation is      as it is (see <i><a href="recs.html#ntinumber">Description of intronic          variants</a></i>). Examples (using a coding DNA reference sequence);</p>    <blockquote>      <ul>        <li><u>c.-5G&gt;T:</u> a change 5' of the ATG (in the 5'UTR)</li>        <li><u>c.5G&gt;T:</u> a change in the coding (related to a change in          amino acid 2)</li>        <li><u>c.256+1G&gt;T:</u> a change in the 5' end of an intron</li>        <li><u>c.257-1G&gt;T:</u> a change in the 3' end of an intron</li>        <li><u>c.*5G&gt;T:</u> a change 3' of the stop codon (in the 3'UTR)</li>      </ul>    </blockquote>    <p>For exon numbering the only logical thing to do is <i><b>to start with 1          for the first exon</b></i>, otherwise eventually problems will emerge.      For other numbering schemes only the <b><i>experts</i></b> will know the      history; <i><b>newcomers</b></i> just blindly assume that the first exon      is exon 1. Consequently, when historic numbering schemes are used, at some      point wrong assumptions will be made and a patient might end up with an      erroneous diagnosis.<br>      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; However, since history will      leave its tracks it is suggested to always mention changed numbering      schemes in M&amp;M and in all Figure and Table legends to prevent any      further confusion. For tables even consider to add an additional column      indicating the historic / old exon number.</p>    <hr> <em>      <h3><a name="complete"></a>Alternatively spliced exon </h3>    </em>    <p><strong>Question</strong>&nbsp; (<i>Alessandra Splendore, Rio de Janeiro,        Brasil)</i><br>      <i>Recently two previously unidentified exons of the TCOF1 gene were        identified, and named 6A and 16A. Exon 6A is present in most of the        transcribed isoforms, exon 16A is included only in minor isoforms. In        updating the nomenclature of reported mutations in TCOF1, should I use a        sequence that corresponds to the major isoform (with exon 6A, but        without 16A) or the sequence that corresponds to the longest ("most        complete") isoform ?.</i></p>    <p><strong>Answer</strong><br>      This is the eternal problem of changes in the coordinates of a reference      sequence. The <i><b>best solution</b></i> is that the TCOF1-community      gets together and decides to use an updated reference sequence      representing the most complete transcript, i.e including exons 6A and 16A.      This updated sequence should be annotated properly, <b><i>submitted to          the <a href="http://www.ncbi.nlm.nih.gov/RefSeq/">RefSeq</a> database</i></b>      and used from then on. </p>    <hr> <em>      <h3><a name="gseqchange"></a>Genomic sequence changes regularly </h3>    </em>    <p><strong>Question&nbsp;&nbsp;</strong> <i>(JM Friedman, Vancouver,        CANADA)</i><br>      <i>We are working on a new locus-specific mutation database for NF1 and        NF2, and we have run into a problem with the standard mutation        nomenclature based on the <b>genomic sequence</b>. The problem is that        the canonical genomic sequence (and consequent numbering) we are using        as the basis of the mutation nomenclature <b>has changed repeatedly</b>        since many of the mutations were described, and it is <b>continuing to          change</b>. If we use the names assigned to the mutations on the basis        of the version of the sequence that was used to name the mutations, they        do not map to the proper position in the current version of the        sequence. If we change the names to match the new sequence, they will        not match the published names for these mutations and may need to be        changed again the next time time the sequence changes. (Actually, the        current version of the NF1 sequence is annotated on the wrong strand, so        all the numbering would be backwards if we used the annotated strand        instead of its complement, which is the really the correct one).<br>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The solution to        identifying the mutation unequivocally is to provide enough of the        surrounding sequence to permit a unique result on a BLAST search, and we        are doing this. However, this does not solve the problem of naming the        mutations. What is your recommendation for this ?.</i> </p>    <p><strong>Answer</strong><br>      Indeed the problems you mention make live very hard. In fact, especially      with genes containing large introns, there will be no one genomic      reference sequence since every gene will be slightly different (<i><a href="#length">see
+          above</a></i>). The problem of continuously changing genomic sequences      will not settle rapidly. When designating "THE genomic reference sequence"      now one can already foresee future discussions whether this choice was      proper; it will be a "random pick" and might not be the evolutionary      correct choice. The way to go in our eyes is to <b><i>declare one          sequence THE genomic reference sequence</i></b> (starting several kilo      base pairs 5' of the promoter region), annotate it properly, <b><i>submit          it to the <a href="http://www.ncbi.nlm.nih.gov/RefSeq/">RefSeq</a>          database</i></b> and use it from then on. The RefSeq database has NG_      files specifically made for this purpose (see e.g. <a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=nucleotide&amp;val=21536445">NG_000004.2</a>).
+These
+      problems are one of the reasons why for <a href="http://www.DMD.nl/db.html">the
+LSDB's
+        I curate</a> (<i>i.e. Johan den Dunnen</i>), I prefer a <b><i>coding          DNA Reference Sequence</i></b>. In that case the effect of the ever      changing intronic sequences has only a marginal effect.</p>    <hr> <em> </em>    <h3><em></em><img src="new.gif" border="0" height="12" width="31"><em>Difference
+        chromosome / coding DNA description </em></h3>    <em> </em>    <p><strong>Question</strong><br>      <i>For genes that are on the minus strand of a chromosome (opposite        transcriptional orientation) the description based on chromosome        coordinates may differ significantly from that based on the coding DNA        reference sequence. Say the chromosome sequence is -TGGGGCAT- and one of        the G's is deleted (change to -TGGG_CAT-). Based on chromosome        coordinates the description is g.5delG. However based on the coding DNA        reference sequence (ATGCCCCA) the description is c.7delC. Not only is        the deleted nucleotide different (delG vs. delC), in fact the        descriptions also point to another nucleotide, g.5 vs. g.2 (equal to        c.7delC). Is this correct?</i></p>    <p><strong>Answer</strong><br>      Yes, this is correct. When genes are on the minus strand of a chromosome      (opposite transcriptional orientation) and the change is located in a      repeated sequence (mono-, di-, tri-, etc. stretches) the rule that for all      descriptions <em><strong>the most 3' position possible</strong></em>      should be assigned (<em><a href="http://www.hgvs.org/mutnomen/recs-DNA.html#number">see
+          General recommendations</a></em>) has this as a consequence.</p>    <hr> <em>      <h3><a name="EST"></a>Coding DNA sequence incomplete </h3>    </em>    <p><strong>Question</strong><br>      <i>We are preparing an annotated set of Hox genes from the zebrafish for        publication. If the <b>coding DNA sequence is not completely known</b>,        but only an EST lacking 5' sequence and a genomic sequence covering the        EST, <b>how do you describe a change</b> in this sequence; do you        number it in relation to the EST or the genomic sequence ?. Furthermore,        if there is a <b>mismatch between the genomic and the EST</b> sequence,        and you don't know which one is correct, how do you define e.g. whether        the genomic sequence has an insertion or the EST has a deletion ?.</i></p>    <p><strong>Answer</strong><br>      First, the<i><b> reference sequence chosen</b></i> is always <i><b>assumed
+          to be the correct sequence</b></i> simply because changes are      described in relation to this sequence. </p>    <p>Second, when the EST sequence is incomplete one should describe changes      in relation to this sequence <i><b>like AA010203.2:54_55insG</b></i>      (assuming the reference sequence used is AA010203.2). So do <i><b>not use          a 'c.' or 'g.' prefix,</b></i> since neither a coding DNA nor a      genomic reference sequence is used. However, when a <i><b>genomic          sequence</b></i> covering this EST is available the recommendation is      to <i><b>use this as a reference sequence</b></i>. </p>    <hr> <em>      <h3><a name="wt"></a>Frequency / "wild type" sequence </h3>    </em>    <p><strong>Question</strong><br>      <i>Making a judgment on what is the <b>"wild type" (wt) nucleotide</b>        for some sequences seems arbitrary at best. How would you suggest that        the description be presented for these ?.</i></p>    <p><strong>Answer</strong><br>      Changes are always described in relation to a <i><b>"reference sequence"</b></i>.      This reference sequence is considered to be the <i><b>"wild type"</b></i>      sequence and is expected to be the one present in the database (GenBank).      Consequently, reference and wild type sequence can be different. Note      however that everybody has influence on the sequences in the <b><i><a href="http://www.ncbi.nlm.nih.gov/RefSeq/">RefSeq
+            database</a></i></b> and thus may request that a variant is changed      into the more common allele. However, the debate about what is wild type      can be unsolvable when variants are very common (near 50%) or differ      between populations. </p>    <hr> <em>      <h3><a name="mtDNA"></a>Changes in mitochondrial DNA </h3>    </em>    <p><strong>Question&nbsp;&nbsp;</strong> <i>(M Paalman, Human Mutation)</i><br>      <i>How should sequence variants in the mitochondrial DNA (mtDNA) be        described ?.</i></p>    <p><strong>Answer</strong><br>      The mtDNA genome is rather small, completely sequenced and numbered.      According to current recommendations variants in the mitochondrial DNA      should be described in relation to a the full mitochondrial DNA sequence,      i.e. for human the <i><b>Homo sapiens mitochondrion, complete genome </b></i>(GenBank
+      <a href="http://www.ncbi.nlm.nih.gov/nuccore/NC_012920">NC_012920.1</a>).      Descriptions should be preceded by "m.", like m.8993T&gt;C (<i><a href="recs.html#prefix">see
+          Recommendations</a></i>). The mtDNA encodes a range of different      proteins. To prevent confusion, changes at protein level should be      described including a reference to the protein changed, like      ATP6:p.Leu156Pro (GenBank <a href="http://www.ncbi.nlm.nih.gov/protein/251831112">YP_003024031.1</a>,      ATP synthase 6).<br>      <i><b>NOTE:</b></i> for issues related to mitochondrial DNA sequences <a        href="http://www.mitomap.org/"><b>see
+          MITOMAP</b></a>. </p>    <hr> <em> </em>    <h3><em><a name="ncRNA"></a></em><img src="new.gif" border="0" height="12" width="31"><em>Changes
+in
+        non-coding RNA (ncRNA) genes </em></h3>    <em> </em>    <p><strong>Question</strong><br>      <i>How should sequence variants be described in genes that produce only        RNA (so no protein), e.g. ncRNA, miRNA, etc. ?.</i></p>    <p><strong>Answer</strong><br>      To describe variants in genes that produce an RNA molecule but no protein      a <strong><em>genomic reference sequence</em></strong> can be used ("<em><strong>g.</strong></em>"      description). When available, it is also possible to use a <em><strong>NR_
+          transcript reference sequence</strong></em> (e.g. <a href="http://www.ncbi.nlm.nih.gov/nuccore/NR_000020.1">NR_000020.1</a>      for the small nucleolar RNA, C/D box 33 (SNORD33) gene) using the prefix "<strong><em>n.</em></strong>"      ( see <a href="standards.html#refseq">Standards</a>). Numbering for the      transcript reference sequence starts with position "<em><strong>n.1</strong></em>"      and ends with the last position.<br>      <span style="font-weight: bold; font-style: italic;">NOTE:</span>      suggested addition, see <a href="SVD-WG002.html">SVD-WG002</a></p>    <hr>    <p align="center">| <a href="#top">Top of page</a> | <a href="index.html">MutNomen
+        homepage</a> | <a href="checklist.html">Check-list</a> | <a href="standards.html">Symbols,
+codons,
+        etc.</a> |<br>      | <b>Recommendations:</b>&nbsp; <a href="recs-DNA.html">DNA</a>,&nbsp; <a        href="recs-RNA.html">RNA</a>,&nbsp;
+      <a href="recs-prot.html">protein</a>, <a href="uncertain.html">uncertain</a>      |<br>      | <a href="disc.html">Discussions</a> | <a href="FAQ.html">FAQ's</a> | <a        href="history.html">History</a>      |<br>      | <b>Example descriptions:&nbsp;</b> <a href="quickref.html">QuickRef</a>,&nbsp;
+      <a href="examplesDNA.html">DNA</a>,&nbsp; <a href="examplesRNA.html">RNA</a>,&nbsp;
+      <a href="examplesAA.html">protein</a> | </p>    <table bgcolor="#ff9900" border="0" cellpadding="15" cellspacing="0" width="100%">      <tbody>        <tr>          <td>            <p align="center"><font color="#FFFFFF"><a href="http://www.HGVS.org/copyright.html">Copyright
+                  ©</a> </font><font size="1">HGVS 2010 All Rights Reserved<br>                Website Created by Rania Horaitis, Nomenclature by J.T. Den                Dunnen - <a href="http://www.HGVS.org/disclaimer.html">Disclaimer</a>              </font></p>          </td>        </tr>      </tbody>    </table>  </body></html>
